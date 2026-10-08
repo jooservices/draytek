@@ -1,0 +1,17 @@
+---
+import { asset } from '../lib/ui';
+---
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Port Atlas</title>
+    <meta http-equiv="refresh" content={`0; url=${asset('vi/')}`} />
+    <script is:inline define:vars={{ vi: asset('vi/'), en: asset('en/') }}>
+      var l = (navigator.language || 'vi').toLowerCase().indexOf('vi') === 0 ? vi : en;
+      try { l = localStorage.getItem('lang') === 'en' ? en : localStorage.getItem('lang') === 'vi' ? vi : l; } catch (e) {}
+      location.replace(l);
+    </script>
+  </head>
+  <body><a href={asset('vi/')}>Tiếng Việt</a> · <a href={asset('en/')}>English</a></body>
+</html>

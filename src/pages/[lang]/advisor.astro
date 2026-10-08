@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Advisor from '../../components/Advisor';
+import { T } from '../../lib/i18n';
+import type { Lang } from '../../lib/types';
+export function getStaticPaths() { return [{ params: { lang: 'vi' } }, { params: { lang: 'en' } }]; }
+const lang = Astro.params.lang as Lang;
+---
+<Base lang={lang} title={T[lang].advH} path="advisor" active="advisor">
+  <div class="wrap view">
+    <div class="sec-h"><h1 style="font-size:2rem">{T[lang].advH}</h1></div>
+    <Advisor client:load lang={lang} />
+  </div>
+</Base>

@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import { devices, byId, L, status, sources } from '../../lib/data';
+import { T } from '../../lib/i18n';
+import { UI, href } from '../../lib/ui';
+import guides from '../../../data/guides.json';
+import type { Lang } from '../../lib/types';
+export function getStaticPaths() { return [{ params: { lang: 'vi' } }, { params: { lang: 'en' } }]; }
+const lang = Astro.params.lang as Lang;
+const t = T[lang];
+const vi = lang === 'vi';
+const life = devices.filter((d) => d.eol).sort((a, b) => a.eol!.localeCompare(b.eol!));
+const g = t.g as Record<string, string>;
+const toc = [['names', g.names], ['os', g.os], ['life', g.life], ['terms', g.terms], ['data', g.data]];
+---
+<Base lang={lang} title={UI[lang].guideH} path="guides" active="guides">
+  <div class="wrap view">
+    <div class="sec-h"><h1 style="font-size:2rem">{UI[lang].guideH}</h1></div>
+    <div class="chips" style="margin-bottom:24px">{toc.map(([id, l]) => <a class="chip" href={`#g-${id}`}>{l}</a>)}</div>
+    <div class="specs" style="gap:36px">
+      <section id="g-names">
+        <h2 style="margin-bottom:8px">{g.names}</h2>
+        <p class="muted" style="margin-bottom:12px">{vi ? 'Số trong tên cho biết dòng sản phẩm; chữ phía sau cho biết bản có thêm gì.' : 'The number is the product line; the letters after it tell you what the variant adds.'}</p>
+        <div class="tbl-wrap"><table class="cmp"><thead><tr><th>{vi ? 'Ký hiệu' : 'Suffix'}</th><th>{vi ? 'Ý nghĩa' : 'Meaning'}</th></tr></thead>
+          <tbody>{guides.suffixes.map((s) => <tr><td class="mono">{s.k}</td><td>{vi ? s.v : s.e}</td></tr>)}</tbody></table></div>
+      </section>
+      <section id="g-os">
+        <h2 style="margin-bottom:12px">{g.os}</h2>
+        <div class="tbl-wrap"><table class="cmp"><thead><tr><th>{vi ? 'Nền tảng' : 'Platform'}</th><th>{vi ? 'Model' : 'Models'}</th><th>{vi ? 'Đặc điểm' : 'Notes'}</th><th>Firmware</th></tr></thead>
+          <tbody>{guides.os.map((o) => <tr><td><b>{o.platform}</b></td><td>{o.models}</td><td>{vi ? o.note.v : o.note.e}</td><td class="mono">{o.fw}</td></tr>)}</tbody></table></div>
+      </section>
+      <section id="g-life">
+        <h2 style="margin-bottom:8px">{g.life}</h2>
+        <p class="muted" style="margin-bottom:12px">{vi ? 'Theo DrayTek UK: sau khi ngừng bán (EoS), firmware còn được duy trì 3–5 năm tới ngày EoL. Sau EoL không còn bản vá bảo mật.' : 'Per DrayTek UK: after end of sale (EoS), firmware is maintained for 3–5 years until EoL. No security fixes after EoL.'}</p>
+        <div class="tbl-wrap"><table class="cmp"><thead><tr><th>Model</th><th>EoS</th><th>EoL</th><th>{vi ? 'Trạng thái' : 'Status'}</th><th>{vi ? 'Thay bằng' : 'Replace with'}</th></tr></thead>
+          <tbody>{life.map((d) => <tr><td><a href={href(lang, `devices/${d.id}`)}>{d.m}</a></td><td class="mono">{d.eos ?? ''}</td><td class="mono">{d.eol}</td><td><span class={`pill ${status(d)}`}>{t.st[status(d)]}</span></td><td>{d.next && byId[d.next] ? <a href={href(lang, `devices/${d.next}`)}>{byId[d.next].m}</a> : ''}</td></tr>)}</tbody></table></div>
+      </section>
+      <section id="g-terms">
+        <h2 style="margin-bottom:12px">{g.terms}</h2>
+        <div class="two-col">{guides.terms.map((x) => <div class="box"><h3>{x.k}</h3><p class="muted">{vi ? x.v : x.e}</p></div>)}</div>
+      </section>
+      <section id="g-data">
+        <h2 style="margin-bottom:8px">{g.data}</h2>
+        <p class="muted" style="margin-bottom:12px">{vi ? 'Ưu tiên datasheet toàn cầu mới nhất; khi thiếu thì dùng trang sản phẩm và bảng so sánh của DrayTek UK. Số liệu UK có thể khác bản toàn cầu (ví dụ Vigor2136ax bản UK chỉ 4 kênh VPN). Số người dùng là ước tính để tham khảo, không phải số của hãng.' : 'The latest global datasheet comes first; DrayTek UK product and comparison pages fill gaps. UK figures can differ (e.g. UK Vigor2136ax has 4 VPN tunnels). User counts are estimates, not vendor figures.'}</p>
+        <ul style="display:grid;gap:4px;padding-left:18px">
+          {Object.values(sources).filter((s) => s.u).map((s) => <li><a href={s.u} target="_blank" rel="noopener">{L(s.n, lang)} ↗</a></li>)}
+          <li>{vi ? 'Datasheet và firmware từng model' : 'Per-model datasheets and firmware'}: <a href="https://fw.draytek.com.tw/" target="_blank" rel="noopener">fw.draytek.com.tw ↗</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</Base>

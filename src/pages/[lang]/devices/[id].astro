@@ -1,0 +1,140 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Faceplate from '../../../components/Faceplate.astro';
+import DevicePic from '../../../components/DevicePic.astro';
+import CompareButton from '../../../components/CompareButton.astro';
+import { devices, byId, L, status, useById, advisory, sources } from '../../../lib/data';
+import { specGroups, keyStats, docLinks, related } from '../../../lib/specs';
+import { T } from '../../../lib/i18n';
+import { UI, href } from '../../../lib/ui';
+import type { Lang } from '../../../lib/types';
+
+export function getStaticPaths() {
+  return ['vi', 'en'].flatMap((lang) => devices.map((d) => ({ params: { lang, id: d.id } })));
+}
+const lang = Astro.params.lang as Lang;
+const d = byId[Astro.params.id!];
+const t = T[lang];
+const u = UI[lang];
+const st = status(d);
+const groups = specGroups(d, lang);
+const stats = keyStats(d, lang);
+const notes: string[] = d.note ? (L(d.note, lang) as string[]) : [];
+const docs = docLinks(d, lang);
+const rel = related(d);
+const vi = lang === 'vi';
+const hasPhoto = !!(await import('../../../lib/data')).images[d.id];
+const apSwAdvisory = (d.cat === 'ap' || d.cat === 'switch') && d.st === 'cur';
+---
+<Base lang={lang} title={`${d.m} · ${L(d.t, lang)}`} description={L(d.t, lang)} path={`devices/${d.id}`} active="devices">
+  <div class="wrap view">
+    <p class="crumbs"><a href={href(lang, 'devices')}>{t.back}</a></p>
+    <div class="detail-head">
+      <div class="detail-pic"><DevicePic d={d} lang={lang} size="lg" /></div>
+      <div style="display:grid;gap:12px;align-content:center">
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class={`pill ${st}`}>{t.st[st]}{d.eol && st !== 'cur' ? ` · EoL ${d.eol}` : ''}</span><span class="muted">{t[d.cat]}</span></div>
+        <h1>{d.m}</h1>
+        <p class="muted" style="font-size:1.1rem">{L(d.t, lang)}</p>
+        <div class="kv" style="gap:10px 28px;margin-top:4px">
+          {stats.map((s) => <span style="display:grid"><span>{s.label}</span><b style="font-size:1.1rem">{s.value}</b></span>)}
+        </div>
+        <div><CompareButton id={d.id} lang={lang} /></div>
+      </div>
+    </div>
+
+    <h2 style="margin:8px 0 12px;font-size:1.1rem">{u.diagram}</h2>
+    <Faceplate d={d} lang={lang} legend />
+
+    <div class="two-col" style="grid-template-columns:minmax(0,2fr) minmax(280px,1fr);margin-top:28px;align-items:start">
+      <div class="specs">
+        {groups.map((g) => (
+          <section class="spec-g">
+            <h3>{g.label}</h3>
+            <dl>
+              {g.rows.map((r) => (
+                <div class="row">
+                  <dt>{r.label}</dt>
+                  {r.value == null
+                    ? <dd class="nv">{t.nv}</dd>
+                    : <dd class={r.yes ? 'yes' : r.no ? 'no' : ''}>{r.value}{r.src && <sup class="src">{r.src.url ? <a href={r.src.url} target="_blank" rel="noopener" title={r.src.name}>{r.src.short}</a> : r.src.short}</sup>}</dd>}
+                </div>
+              ))}
+            </dl>
+          </section>
+        ))}
+        <p class="muted" style="font-size:.85rem">{t.srcNote}</p>
+      </div>
+
+      <aside class="specs">
+        {st === 'dead' && (
+          <div class="box crit"><h3>{t.st.dead}</h3><p>{vi ? `Đã hết cập nhật firmware từ ${d.eol}. Không nên dùng cho mạng mới; nên thay bằng model gợi ý.` : `Firmware updates ended on ${d.eol}. Avoid for new networks; replace with the suggested model.`}</p></div>
+        )}
+        {d.uses && d.uses.length > 0 && (
+          <div class="box"><h3>{t.usesFor}</h3>
+            {d.u && d.cat === 'router' && <p class="muted" style="font-size:.9rem">{t.estUsers(d.u[0], d.u[1])}</p>}
+            <div class="chips">{d.uses.map((x) => <a class="chip" href={`${href(lang, 'devices')}?use=${x}`}>{vi ? useById[x]?.v : useById[x]?.e}</a>)}</div>
+          </div>
+        )}
+        {d.var && d.var.length > 0 && (
+          <div class="box"><h3>{t.variants}</h3>
+            <ul style="margin:0;padding-left:18px;display:grid;gap:4px">{d.var.map(([n, x]) => <li><b class="mono">{n}</b> <span class="muted">{L(x, lang)}</span></li>)}</ul>
+          </div>
+        )}
+        {notes.length > 0 && (
+          <div class="box warn"><h3>{t.notes}</h3><ul style="margin:0;padding-left:18px;display:grid;gap:4px">{notes.map((n) => <li>{n}</li>)}</ul></div>
+        )}
+        <div class="box"><h3>{t.lifecycle}</h3>
+          <ul style="margin:0;padding-left:18px;display:grid;gap:4px">
+            {d.s.fwv && <li>{t.fwLatest}: <span class="mono">{d.s.fwv}</span>{d.s.fwdate && <span class="muted"> · {d.s.fwdate}</span>}</li>}
+            {d.s.launch && <li>{t.launched}: <span class="mono">{d.s.launch}</span></li>}
+            {d.eos && <li>{t.eosD}: <span class="mono">{d.eos}</span></li>}
+            {d.eol && <li>{t.eolD}: <span class="mono">{d.eol}</span></li>}
+          </ul>
+        </div>
+        {d.cve && (
+          <div class={`box ${st === 'dead' ? 'crit' : 'warn'}`}><h3>{t.security}</h3>
+            <p style="font-size:.92rem">{advisory.id}: {vi ? advisory.v : advisory.e} <b class="mono">{d.cve}</b></p>
+            <a href={sources.cve.u} target="_blank" rel="noopener">Advisory ↗</a>
+          </div>
+        )}
+        {!d.cve && apSwAdvisory && (
+          <div class="box"><h3>{t.security}</h3>
+            <p style="font-size:.92rem">{vi ? 'Năm 2026 có các bản vá cho VigorAP (CVE-2026-71904–71914) và VigorSwitch (CVE-2026-52497–52503). Luôn dùng firmware mới nhất.' : '2026 fixes exist for VigorAP (CVE-2026-71904–71914) and VigorSwitch (CVE-2026-52497–52503). Keep firmware current.'}</p>
+            <a href={sources.adv26.u} target="_blank" rel="noopener">Advisory ↗</a>
+          </div>
+        )}
+        {(rel.prev.length > 0 || rel.older.length > 0 || rel.smaller.length > 0 || rel.succ) && (
+          <div class="box"><h3>{t.path}</h3>
+            <ul style="margin:0;padding-left:18px;display:grid;gap:4px">
+              {rel.prev.length > 0 && <li>{t.replaces}: {rel.prev.map((x, i) => <>{i > 0 && ', '}<a href={href(lang, `devices/${x.id}`)}>{x.m}</a></>)}</li>}
+              {rel.older.length > 0 && <li>{t.replaces}: {rel.older.map((x, i) => <>{i > 0 && ', '}<a href={href(lang, `devices/${x.id}`)}>{x.m}</a></>)}</li>}
+              {rel.smaller.length > 0 && <li>{t.smaller}: {rel.smaller.map((x, i) => <>{i > 0 && ', '}<a href={href(lang, `devices/${x.id}`)}>{x.m}</a></>)}</li>}
+              {rel.succ && <li>{t.succ}: <a href={href(lang, `devices/${rel.succ.id}`)}>{rel.succ.m}</a></li>}
+            </ul>
+          </div>
+        )}
+        <div class="box"><h3>{t.docs}</h3>
+          <ul style="margin:0;padding-left:18px;display:grid;gap:4px">{docs.map((l) => <li><a href={l.url} target="_blank" rel="noopener">{l.label} ↗</a></li>)}</ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<script>
+  // Compare toggle, shared with the catalog via localStorage ("cmp").
+  const KEY = 'cmp';
+  const read = (): string[] => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
+  const write = (v: string[]) => { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch {} window.dispatchEvent(new Event('cmp-change')); };
+  const sync = () => document.querySelectorAll<HTMLButtonElement>('.cmp-toggle').forEach((b) => {
+    const list = read(); const on = list.includes(b.dataset.id!);
+    b.textContent = on ? b.dataset.added! : list.length >= 4 ? b.dataset.full! : b.dataset.add!;
+    b.disabled = !on && list.length >= 4;
+  });
+  document.querySelectorAll<HTMLButtonElement>('.cmp-toggle').forEach((b) => b.addEventListener('click', () => {
+    const id = b.dataset.id!; const list = read(); const i = list.indexOf(id);
+    if (i >= 0) list.splice(i, 1); else if (list.length < 4) list.push(id);
+    write(list); sync();
+  }));
+  window.addEventListener('cmp-change', sync); sync();
+</script>

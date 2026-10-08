@@ -1,0 +1,26 @@
+---
+import type { Device, Lang } from '../lib/types';
+interface Props { d: Device; lang: Lang; legend?: boolean }
+const { d, lang, legend = false } = Astro.props;
+const fp = d.fp ?? [];
+const roles = [['r-w', 'WAN'], ['r-l', 'LAN'], ['r-s', 'WAN/LAN'], ['r-x', lang === 'vi' ? 'DSL / PON / di động' : 'DSL / PON / cellular'], ['r-u', 'USB / console']];
+---
+{fp.length > 0 && (
+  <div class="plate" role="img" aria-label={lang === 'vi' ? 'Sơ đồ cổng' : 'Port layout'}>
+    {fp.map((p) => {
+      const n = p.n ?? 1;
+      const cap = [p.lb, p.sp, n > 1 ? `×${n}` : ''].filter(Boolean).join(' ');
+      return (
+        <div class={`pg r-${p.r}`} title={cap}>
+          <div class="gl">{Array.from({ length: Math.min(n, 12) }, () => <i class={`port ${p.m}${p.poe ? ' poe' : ''}`} />)}</div>
+          <small>{cap || p.m.toUpperCase()}</small>
+        </div>
+      );
+    })}
+    {legend && (
+      <div class="legend">
+        {roles.map(([c, l]) => <span class={c}><i />{l}</span>)}
+      </div>
+    )}
+  </div>
+)}

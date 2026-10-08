@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import { devices, status, advisory, sources, L, firmware, firmwareOf, advisoryFeed } from '../../lib/data';
+import { T } from '../../lib/i18n';
+import { UI, href } from '../../lib/ui';
+import type { Lang } from '../../lib/types';
+export function getStaticPaths() { return [{ params: { lang: 'vi' } }, { params: { lang: 'en' } }]; }
+const lang = Astro.params.lang as Lang;
+const t = T[lang];
+const vi = lang === 'vi';
+const cves = devices.filter((d) => d.cve);
+const withFw = devices.filter((d) => d.s.fwv && d.cat !== 'more');
+const checked = (iso: string) => iso.slice(0, 10);
+const recent = (date: string | null | undefined) => !!date && (Date.parse(firmware.checked) - Date.parse(date)) / 86400000 <= 30;
+const cveText = (c: string[]) => (c.length > 1 ? `${c[0]} – ${c[c.length - 1].replace(/^CVE-\d{4}-/, '')}` : c[0] ?? '');
+const families = ['VigorAP', 'VigorSwitch', 'Vigor3900', 'Vigor2960', 'Vigor300B', 'Vigor3910', 'Vigor2962'];
+---
+<Base lang={lang} title={UI[lang].secH} path="security" active="security">
+  <div class="wrap view">
+    <div class="sec-h"><h1 style="font-size:2rem">{UI[lang].secH}</h1><p class="muted">{UI[lang].secP}</p></div>
+    <div class="specs" style="gap:28px">
+
+      <section>
+        <div class="bar">
+          <h2>{vi ? 'Cảnh báo bảo mật' : 'Security advisories'}</h2>
+          <span class="muted" style="font-size:.88rem">{vi ? 'Cập nhật' : 'Updated'} {checked(advisoryFeed.checked)} · <a href={advisoryFeed.source} target="_blank" rel="noopener">{vi ? 'Nguồn: DrayTek UK' : 'Source: DrayTek UK'} ↗</a></span>
+        </div>
+        <div class="chips" style="margin-bottom:12px" id="advfilter">
+          <button type="button" class="chip" aria-pressed="true" data-f="">{UI[lang].all}</button>
+          {families.slice(0, 2).map((f) => <button type="button" class="chip" aria-pressed="false" data-f={f}>{f}</button>)}
+        </div>
+        <div class="tbl-wrap"><table class="cmp" id="advtable">
+          <thead><tr><th>{vi ? 'Ngày' : 'Date'}</th><th>{vi ? 'Nội dung' : 'Advisory'}</th><th>CVE</th></tr></thead>
+          <tbody>{advisoryFeed.items.map((a) => (
+            <tr data-f={a.families.join(',')}>
+              <td class="mono" style="white-space:nowrap">{a.date}</td>
+              <td><a href={a.url} target="_blank" rel="noopener">{a.title} ↗</a>{a.families.length > 0 && <span class="muted"> · {a.families.join(', ')}</span>}</td>
+              <td class="mono">{cveText(a.cves)}</td>
+            </tr>
+          ))}</tbody>
+        </table></div>
+        <p class="muted" style="font-size:.88rem;margin-top:10px">{vi ? 'Không mở giao diện quản trị ra Internet; giới hạn quản trị từ xa bằng danh sách IP hoặc qua VPN.' : 'Do not expose the admin UI to the Internet; restrict remote admin by IP list or VPN.'}</p>
+      </section>
+
+      <div class="box warn">
+        <h2 style="font-size:1.2rem">{advisory.id}</h2>
+        <p>{vi ? advisory.v : advisory.e}</p>
+        <a href={sources.cve.u} target="_blank" rel="noopener">{advisory.id} ↗</a>
+        <div class="tbl-wrap" style="background:transparent"><table class="cmp"><thead><tr><th>Model</th><th>{vi ? 'Firmware tối thiểu' : 'Minimum firmware'}</th><th>{vi ? 'Mới nhất' : 'Latest'}</th></tr></thead>
+          <tbody>{cves.map((d) => <tr><td><a href={href(lang, `devices/${d.id}`)}>{d.m}</a></td><td class="mono">{d.cve}</td><td class="mono">{d.s.fwv ?? ''}</td></tr>)}</tbody></table></div>
+      </div>
+
+      <section>
+        <div class="bar"><h2>{vi ? 'Firmware mới nhất theo model' : 'Latest firmware by model'}</h2>
+          <div class="field" style="min-width:220px"><label class="sr" for="fq">{vi ? 'Lọc' : 'Filter'}</label><input id="fq" type="search" placeholder={vi ? 'Lọc theo tên model…' : 'Filter by model…'} /></div></div>
+        <p class="muted" style="font-size:.88rem;margin-bottom:10px">{vi ? 'Kiểm tra lần cuối' : 'Last checked'} {checked(firmware.checked)} · <a href={firmware.source} target="_blank" rel="noopener">{vi ? 'Nguồn: máy chủ firmware chính thức' : 'Source: official firmware server'} ↗</a></p>
+        <div class="tbl-wrap"><table class="cmp" id="fwtable"><thead><tr><th>Model</th><th>{vi ? 'Loại' : 'Type'}</th><th>Firmware</th><th>{vi ? 'Ngày phát hành' : 'Released'}</th><th>{vi ? 'Trạng thái' : 'Status'}</th></tr></thead>
+          <tbody>{withFw.map((d) => {
+            const f = firmwareOf(d.id);
+            return (
+              <tr data-m={d.m.toLowerCase()}>
+                <td><a href={href(lang, `devices/${d.id}`)}>{d.m}</a></td>
+                <td>{t[d.cat]}</td>
+                <td class="mono">{f ? <a href={f.url} target="_blank" rel="noopener">{d.s.fwv} ↗</a> : d.s.fwv}{f?.stable && <span class="muted"> ({vi ? 'ổn định' : 'stable'} {f.stable})</span>}{recent(d.s.fwdate) && <span class="pill cur" style="margin-left:6px">{vi ? 'mới' : 'new'}</span>}</td>
+                <td class="mono">{d.s.fwdate ?? '—'}</td>
+                <td><span class={`pill ${status(d)}`}>{t.st[status(d)]}</span></td>
+              </tr>
+            );
+          })}</tbody></table></div>
+      </section>
+    </div>
+  </div>
+</Base>
+<script>
+  const q = document.getElementById('fq') as HTMLInputElement | null;
+  q?.addEventListener('input', () => {
+    const v = q.value.trim().toLowerCase();
+    document.querySelectorAll<HTMLElement>('#fwtable tbody tr').forEach((r) => { r.hidden = !!v && !r.dataset.m!.includes(v); });
+  });
+  const chips = document.querySelectorAll<HTMLButtonElement>('#advfilter .chip');
+  chips.forEach((c) => c.addEventListener('click', () => {
+    chips.forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+    const f = c.dataset.f!;
+    document.querySelectorAll<HTMLElement>('#advtable tbody tr').forEach((r) => { r.hidden = !!f && !(r.dataset.f || '').split(',').includes(f); });
+  }));
+</script>

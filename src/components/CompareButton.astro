@@ -1,0 +1,7 @@
+---
+import { T } from '../lib/i18n';
+import type { Lang } from '../lib/types';
+interface Props { id: string; lang: Lang }
+const { id, lang } = Astro.props;
+---
+<button class="btn sm cmp-toggle" type="button" data-id={id} data-add={T[lang].add} data-added={T[lang].added} data-full={T[lang].full}>{T[lang].add}</button>

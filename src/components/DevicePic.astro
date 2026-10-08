@@ -1,0 +1,17 @@
+---
+import { imageOf } from '../lib/data';
+import { asset } from '../lib/ui';
+import type { Device, Lang } from '../lib/types';
+import Faceplate from './Faceplate.astro';
+interface Props { d: Device; lang: Lang; size?: 'sm' | 'lg' }
+const { d, lang, size = 'sm' } = Astro.props;
+const img = imageOf(d.id);
+const file = img ? (size === 'sm' ? img.thumb : img.src) : '';
+const w = img ? (size === 'sm' ? 400 : img.w) : 0;
+const h = img ? Math.round((w * img.h) / img.w) : 0;
+---
+{img
+  ? size === 'lg'
+    ? <button type="button" class="zoom" data-zoom={asset(`img/devices/${img.full}`)} data-alt={d.m} aria-label={lang === 'vi' ? `Phóng to ảnh ${d.m}` : `Enlarge photo of ${d.m}`}><img class="photo" src={asset(`img/devices/${file}`)} alt={d.m} width={w} height={h} decoding="async" /></button>
+    : <img class="photo" src={asset(`img/devices/${file}`)} alt={d.m} width={w} height={h} loading="lazy" decoding="async" />
+  : <div class="ph"><Faceplate d={d} lang={lang} /></div>}

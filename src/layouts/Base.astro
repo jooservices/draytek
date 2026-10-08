@@ -1,0 +1,73 @@
+---
+import '../styles/global.css';
+import { UI, href, asset, LANGS } from '../lib/ui';
+import type { Lang } from '../lib/types';
+interface Props { lang: Lang; title?: string; description?: string; path?: string; active?: string }
+const { lang, title, description, path = '', active = '' } = Astro.props;
+const u = UI[lang];
+const full = title ? `${title} · ${u.site}` : `${u.site} · ${u.heroH}`;
+const other: Lang = lang === 'vi' ? 'en' : 'vi';
+const nav = [['', u.nHome, 'home'], ['devices', u.nDevices, 'devices'], ['advisor', u.nAdvisor, 'advisor'], ['compare', u.nCompare, 'compare'], ['guides', u.nGuides, 'guides'], ['security', u.nSecurity, 'security']];
+---
+<!doctype html>
+<html lang={lang} data-lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{full}</title>
+    <meta name="description" content={description ?? u.heroP} />
+    <link rel="icon" href={asset('favicon.svg')} type="image/svg+xml" />
+    <link rel="alternate" hreflang={other} href={href(other, path)} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;600&display=swap&subset=vietnamese" rel="stylesheet" />
+    <script is:inline>
+      try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href={href(lang)}><span class="leds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>{u.site}</a>
+        <nav class="nav" aria-label="Main">
+          {nav.map(([p, label, id]) => (
+            <a href={href(lang, p)} aria-current={active === id ? 'page' : undefined}>{label}{id === 'compare' && <span class="n cmp-count" aria-hidden="true"></span>}</a>
+          ))}
+        </nav>
+        <div class="tools">
+          <a class="btn sm" href={href(other, path)} hreflang={other} lang={other}>{u.langName}</a>
+          <button class="btn sm" id="theme" type="button" aria-label={u.theme}>◐</button>
+        </div>
+      </div>
+    </header>
+    <main><slot /></main>
+    <footer class="foot"><div class="wrap"><p>{u.footer}</p></div></footer>
+    <dialog class="lightbox" id="lightbox" aria-label="Image">
+      <div class="stage"><img alt="" /></div>
+      <button class="btn x" type="button" id="lb-close" aria-label="Close">✕</button>
+    </dialog>
+    <script is:inline>
+      (function () {
+        var dlg = document.getElementById('lightbox');
+        if (dlg) {
+          var im = dlg.querySelector('img');
+          document.addEventListener('click', function (e) {
+            var z = e.target.closest && e.target.closest('[data-zoom]');
+            if (z) { im.src = z.getAttribute('data-zoom'); im.alt = z.getAttribute('data-alt') || ''; dlg.showModal(); }
+          });
+          dlg.addEventListener('click', function () { dlg.close(); });
+        }
+        var b = document.getElementById('theme');
+        if (b) b.addEventListener('click', function () {
+          var r = document.documentElement, cur = r.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          var n = cur === 'dark' ? 'light' : 'dark'; r.dataset.theme = n; try { localStorage.setItem('theme', n); } catch (e) {}
+        });
+        function sync() {
+          var n = 0; try { n = JSON.parse(localStorage.getItem('cmp') || '[]').length; } catch (e) {}
+          document.querySelectorAll('.cmp-count').forEach(function (el) { el.textContent = n; el.className = 'n cmp-count' + (n ? ' on' : ''); el.style.marginLeft = '6px'; });
+        }
+        sync(); window.addEventListener('cmp-change', sync); window.addEventListener('storage', sync);
+      })();
+    </script>
+  </body>
+</html>

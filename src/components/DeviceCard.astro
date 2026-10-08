@@ -1,0 +1,18 @@
+---
+import DevicePic from './DevicePic.astro';
+import { L, status } from '../lib/data';
+import { href } from '../lib/ui';
+import { T } from '../lib/i18n';
+import type { Device, Lang } from '../lib/types';
+interface Props { d: Device; lang: Lang }
+const { d, lang } = Astro.props;
+const st = status(d);
+---
+<article class="card">
+  <div class="pic"><DevicePic d={d} lang={lang} /></div>
+  <div class="body">
+    <span class={`pill ${st}`}>{T[lang].st[st]}</span>
+    <h3><a href={href(lang, `devices/${d.id}`)}>{d.m}</a></h3>
+    <p class="muted" style="font-size:.92rem">{L(d.t, lang)}</p>
+  </div>
+</article>

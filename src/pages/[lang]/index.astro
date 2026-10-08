@@ -1,0 +1,76 @@
+---
+import Base from '../../layouts/Base.astro';
+import DeviceCard from '../../components/DeviceCard.astro';
+import { devices, uses, byId } from '../../lib/data';
+import { UI, href } from '../../lib/ui';
+import { T } from '../../lib/i18n';
+import type { Lang } from '../../lib/types';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'vi' } }, { params: { lang: 'en' } }];
+}
+const lang = Astro.params.lang as Lang;
+const u = UI[lang];
+const t = T[lang];
+const cur = devices.filter((d) => d.st === 'cur');
+const cats = (['router', 'ap', 'switch', 'more'] as const).map((c) => ({ c, n: cur.filter((d) => d.cat === c).length }));
+const featured = ['v2928', 'v3912', 'v2136', 'ap962c', 'swp2542x', 'v2927'].map((id) => byId[id]).filter(Boolean);
+const tries = lang === 'vi'
+  ? ['quán cafe 60 khách, 2 đường mạng', 'VPN 10 chi nhánh', 'camera PoE 16 mắt', 'router 10G', 'Wi-Fi 7']
+  : ['cafe with 60 guests, 2 lines', 'VPN for 10 branches', '16 PoE cameras', '10G router', 'Wi-Fi 7'];
+const homeUses = uses.slice(0, 8);
+---
+<Base lang={lang} path="" active="home">
+  <section class="hero">
+    <div class="wrap">
+      <h1>{u.heroH}</h1>
+      <p class="lede">{u.heroP}</p>
+      <form class="search" action={href(lang, 'devices')} method="get" role="search">
+        <label class="sr" for="q">{u.search}</label>
+        <input id="q" name="q" type="search" placeholder={u.heroPh} autocomplete="off" />
+        <button class="btn primary" type="submit">{u.search}</button>
+      </form>
+      <div class="chips"><span class="muted" style="padding:7px 0">{u.tryLbl}</span>
+        {tries.map((q) => <a class="chip" href={`${href(lang, 'devices')}?q=${encodeURIComponent(q)}`}>{q}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec"><div class="wrap">
+    <div class="sec-h"><h2>{u.byUse}</h2><p class="muted">{u.byUseP}</p></div>
+    <div class="chips">
+      {homeUses.map((x) => <a class="chip" href={`${href(lang, 'devices')}?use=${x.id}`}>{lang === 'vi' ? x.v : x.e}</a>)}
+      <a class="chip" href={href(lang, 'devices')}>{u.all}</a>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <div class="sec-h"><h2>{u.byCat}</h2></div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      {cats.map(({ c, n }) => (
+        <a class="box" href={`${href(lang, 'devices')}?cat=${c}`} style="text-decoration:none">
+          <h3>{t[c]}</h3><span class="big mono">{n}</span><span class="muted">{u.devicesN}</span>
+        </a>
+      ))}
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <div class="sec-h"><h2>{u.featured}</h2><a class="btn sm" href={href(lang, 'devices')}>{u.all}</a></div>
+    <div class="grid">{featured.map((d) => <DeviceCard d={d} lang={lang} />)}</div>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <div class="sec-h"><h2>{u.tools}</h2></div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <a class="box" href={href(lang, 'advisor')} style="text-decoration:none"><h3>{u.toolAdv}</h3><p class="muted">{u.toolAdvP}</p></a>
+      <a class="box" href={href(lang, 'compare')} style="text-decoration:none"><h3>{u.toolCmp}</h3><p class="muted">{u.toolCmpP}</p></a>
+      <a class="box" href={href(lang, 'security')} style="text-decoration:none"><h3>{u.toolSec}</h3><p class="muted">{u.toolSecP}</p></a>
+      <a class="box" href={href(lang, 'guides')} style="text-decoration:none"><h3>{u.toolGuide}</h3><p class="muted">{u.toolGuideP}</p></a>
+    </div>
+  </div></section>
+
+  <section class="sec"><div class="wrap">
+    <div class="box"><h2>{u.dataH}</h2><p>{u.dataP}</p></div>
+  </div></section>
+</Base>

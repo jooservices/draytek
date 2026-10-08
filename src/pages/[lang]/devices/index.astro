@@ -1,0 +1,15 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Catalog from '../../../components/Catalog';
+import { UI } from '../../../lib/ui';
+import { T } from '../../../lib/i18n';
+import type { Lang } from '../../../lib/types';
+export function getStaticPaths() { return [{ params: { lang: 'vi' } }, { params: { lang: 'en' } }]; }
+const lang = Astro.params.lang as Lang;
+---
+<Base lang={lang} title={UI[lang].nDevices} path="devices" active="devices">
+  <div class="wrap view">
+    <div class="sec-h"><h1 style="font-size:2rem">{UI[lang].nDevices}</h1></div>
+    <Catalog client:load lang={lang} />
+  </div>
+</Base>
