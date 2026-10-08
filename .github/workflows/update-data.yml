@@ -1,7 +1,7 @@
 name: Update data
 
 # Refreshes firmware versions and security advisories from official sources.
-# Runs weekly and on demand (Actions tab -> Update data -> Run workflow).
+# Runs weekly (Monday 03:17 UTC) and on demand (Actions tab -> Update data -> Run workflow).
 on:
   schedule:
     - cron: '17 3 * * 1'
