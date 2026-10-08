@@ -1,0 +1,72 @@
+{
+  "id": "swq60x",
+  "cat": "switch",
+  "m": "VigorSwitch Q60x",
+  "st": "cur",
+  "fw": "VigorSwitch%20Q60x",
+  "t": {
+    "v": "Switch 2.5G không quản lý, 5 cổng + SFP+",
+    "e": "Unmanaged 2.5G switch, 5 ports + SFP+"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G",
+      "n": 5
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G"
+    }
+  ],
+  "s": {
+    "level": {
+      "v": "Không quản lý",
+      "e": "Unmanaged"
+    },
+    "ports": "5× 2.5GbE",
+    "uplink": "1× 10G SFP+",
+    "poe": false,
+    "cap": 45,
+    "fan": {
+      "v": "Không quạt, 4.85 W",
+      "e": "Fanless, 4.85 W"
+    }
+  },
+  "src": {
+    "cap": "db26",
+    "uplink": "uksw"
+  },
+  "u": [
+    1,
+    10
+  ],
+  "uses": [
+    "home",
+    "fast"
+  ],
+  "f": [
+    "2.5g",
+    "sfp+",
+    "10g"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-q60x",
+    "cons": "4.85 W",
+    "dim": "114 × 90 × 25 mm",
+    "temp": "0–45 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Fanless"
+    },
+    "mount": {
+      "v": "Treo tường; không gắn rack",
+      "e": "Wall; not rack mountable"
+    },
+    "fwd": "33.5 Mpps",
+    "buf": "8 Mbit",
+    "jumbo": "12 KB"
+  }
+}

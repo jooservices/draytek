@@ -1,0 +1,89 @@
+{
+  "id": "ap918r",
+  "cat": "ap",
+  "m": "VigorAP 918R",
+  "st": "cur",
+  "fw": "VigorAP%20918R",
+  "t": {
+    "v": "AP ngoài trời Wi-Fi 5 AC1300, IP67",
+    "e": "Outdoor Wi-Fi 5 AC1300 AP, IP67"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 5 Wave 2",
+    "cls": "AC1300",
+    "bands": "2.4 + 5 GHz",
+    "link": "400 + 867 Mbps",
+    "clients": 256,
+    "ssid": "4 + 4",
+    "ports": "1× GbE",
+    "power": "PoE+",
+    "poein": "PoE+",
+    "poeout": false,
+    "mount": {
+      "v": "Cột, tường",
+      "e": "Pole, wall"
+    },
+    "outdoor": "IP67",
+    "antenna": {
+      "v": "2 đầu nối anten",
+      "e": "2 antenna connectors"
+    },
+    "sensor": {
+      "v": "Cảm biến nhiệt độ, độ ẩm",
+      "e": "Temperature & humidity sensor"
+    },
+    "mesh": "Root / Node",
+    "hotspot": true,
+    "launch": "2018-02-05"
+  },
+  "src": {
+    "link": "ukap",
+    "ports": "ukap",
+    "launch": "uklc"
+  },
+  "u": [
+    10,
+    60
+  ],
+  "uses": [
+    "outdoor",
+    "hotel",
+    "cafe"
+  ],
+  "f": [
+    "wifi5",
+    "outdoor",
+    "mesh",
+    "poe",
+    "hotspot"
+  ],
+  "prev": [
+    "ap920r"
+  ],
+  "hw": {
+    "uk": "business/vigorap-918r",
+    "pwr": {
+      "v": "PoE+ 802.3at (không kèm injector)",
+      "e": "PoE+ 802.3at (injector not supplied)"
+    },
+    "cons": "18 W",
+    "dim": {
+      "v": "161 × 72 mm, cao 244 mm (460 mm kể cả anten)",
+      "e": "161 × 72 mm, 244 mm high (460 mm with antennas)"
+    },
+    "wt": "1 kg",
+    "temp": "−40 – 70 °C",
+    "hum": "5–95%",
+    "mount": {
+      "v": "Cột, tường",
+      "e": "Pole, wall"
+    }
+  }
+}

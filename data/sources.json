@@ -1,0 +1,52 @@
+{
+  "db26": {
+    "n": "Databook 2026 (29/04/2026)",
+    "u": "https://fw.draytek.com.tw/Databook/databook-2026-260429.pdf"
+  },
+  "ds": {
+    "n": {
+      "v": "Datasheet chính thức",
+      "e": "Official datasheet"
+    }
+  },
+  "fwl": {
+    "n": {
+      "v": "Danh sách firmware",
+      "e": "Firmware list"
+    }
+  },
+  "ukr": {
+    "n": "UK router comparison",
+    "u": "https://www.draytek.co.uk/products/comparison/router-comparison"
+  },
+  "ukap": {
+    "n": "UK AP comparison",
+    "u": "https://www.draytek.co.uk/products/comparison/wireless-ap-comparison"
+  },
+  "uksw": {
+    "n": "UK switch comparison",
+    "u": "https://www.draytek.co.uk/products/business/vigorswitch-series-comparison"
+  },
+  "uklc": {
+    "n": "UK product lifecycle",
+    "u": "https://www.draytek.co.uk/support/product-lifecycle"
+  },
+  "ukp": {
+    "n": {
+      "v": "Trang sản phẩm UK",
+      "e": "UK product page"
+    },
+    "u": "https://www.draytek.co.uk/products/"
+  },
+  "cve": {
+    "n": "Advisory CVE-2025-10547",
+    "u": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2025-10547"
+  },
+  "adv26": {
+    "n": {
+      "v": "Advisory 2026 (AP, switch)",
+      "e": "2026 advisories (AP, switch)"
+    },
+    "u": "https://www.draytek.com.au/draytek-security-advisory-updates-12-08-26/"
+  }
+}

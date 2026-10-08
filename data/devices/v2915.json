@@ -1,0 +1,104 @@
+{
+  "id": "v2915",
+  "cat": "router",
+  "m": "Vigor2915",
+  "st": "old",
+  "fw": "Vigor2915",
+  "t": {
+    "v": "Router 2 WAN nhỏ, 16 VPN",
+    "e": "Small dual-WAN router, 16 VPN"
+  },
+  "var": [
+    [
+      "2915",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2915ac",
+      {
+        "v": "Wi-Fi 5",
+        "e": "Wi-Fi 5"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G",
+      "lb": "P4"
+    },
+    {
+      "r": "u",
+      "m": "usb"
+    }
+  ],
+  "s": {
+    "sess": 30000,
+    "vpn": 16,
+    "sslvpn": 8,
+    "proto": "PPTP, L2TP, IPsec, L2TP/IPsec, DrayTek SSL, GRE, IKEv2, IKEv2-EAP, IPsec-XAuth, OpenVPN",
+    "wanmax": 2,
+    "wan": {
+      "v": "1× GbE + WAN2 từ P4, USB hoặc Wi-Fi",
+      "e": "1× GbE + WAN2 via P4, USB or Wi-Fi"
+    },
+    "lan": "3× GbE + P4",
+    "usb": "1× USB 2.0",
+    "routing": "Static, Inter-VLAN, RIP v1/v2",
+    "ha": false,
+    "lb": true,
+    "wifi": "ac: Wi-Fi 5",
+    "os": "DrayOS 4",
+    "fwv": "4.4.10",
+    "launch": "2020-01-15"
+  },
+  "src": {
+    "sess": "ds",
+    "vpn": "ds",
+    "fwv": "fwl",
+    "launch": "uklc"
+  },
+  "u": [
+    5,
+    50
+  ],
+  "uses": [
+    "home",
+    "small",
+    "remote"
+  ],
+  "f": [
+    "wifi5",
+    "ssl",
+    "openvpn",
+    "lb",
+    "usbmodem"
+  ],
+  "note": {
+    "v": [
+      "Không còn trong Databook 2026; DrayTek UK vẫn ghi \"Available\".",
+      "Bản 2915Fac có bán ở một số thị trường nhưng không có trong datasheet toàn cầu."
+    ],
+    "e": [
+      "Not in Databook 2026; DrayTek UK still lists it as Available.",
+      "2915Fac is sold in some markets but is not in the global datasheet."
+    ]
+  },
+  "next": "v2136",
+  "cve": "4.4.6.1"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ap960c",
+  "cat": "ap",
+  "m": "VigorAP 960C",
+  "st": "eos",
+  "fw": "VigorAP%20960C",
+  "eos": "2024-12-21",
+  "eol": "2027-12-21",
+  "t": {
+    "v": "AP Wi-Fi 6 AX1800 ốp trần đời trước",
+    "e": "Earlier Wi-Fi 6 AX1800 ceiling AP"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 6 (802.11ax)",
+    "cls": "AX1800 2x2",
+    "bands": "2.4 + 5 GHz",
+    "link": "574 + 1201 Mbps",
+    "clients": 256,
+    "ports": {
+      "v": "1× GbE (nhận PoE)",
+      "e": "1× GbE (PoE in)"
+    },
+    "launch": "2020-12-02"
+  },
+  "src": {
+    "link": "ukp",
+    "eos": "uklc"
+  },
+  "u": [
+    20,
+    60
+  ],
+  "uses": [
+    "small",
+    "mid"
+  ],
+  "f": [
+    "wifi6",
+    "poe"
+  ],
+  "next": "ap962c",
+  "hw": {
+    "uk": "business/vigorap-960c",
+    "pwr": "DC 12V",
+    "cons": "11 W",
+    "wt": "380 g",
+    "temp": "0–40 °C",
+    "mount": {
+      "v": "Ốp trần, treo tường",
+      "e": "Ceiling, wall"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "poe600",
+  "cat": "more",
+  "m": "VigorPoE 600",
+  "st": "cur",
+  "fw": "VigorPoE%20600",
+  "t": {
+    "v": "Bộ cấp nguồn PoE 1 cổng, 60.5 W",
+    "e": "Single-port PoE injector, 60.5 W"
+  },
+  "s": {
+    "kind": {
+      "v": "Phụ kiện",
+      "e": "Accessory"
+    },
+    "what": {
+      "v": "Cấp nguồn và dữ liệu qua 1 dây; tới 60.5 W, hợp AP ngoài trời có PoE ra (918RPD)",
+      "e": "Power and data on one cable; up to 60.5 W, suits outdoor APs with PoE out (918RPD)"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "outdoor",
+    "camera"
+  ],
+  "f": [
+    "poe"
+  ]
+}

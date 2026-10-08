@@ -1,0 +1,67 @@
+{
+  "id": "swg2100",
+  "cat": "switch",
+  "m": "VigorSwitch G2100",
+  "st": "cur",
+  "fw": "VigorSwitch%20G2100",
+  "t": {
+    "v": "Switch L2+ 8 cổng Gigabit + 2 SFP",
+    "e": "8-port Gigabit L2+ switch + 2 SFP"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 8
+    },
+    {
+      "r": "l",
+      "m": "sfp",
+      "sp": "1G",
+      "n": 2
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "8× GbE",
+    "uplink": "2× SFP",
+    "poe": false,
+    "vlan": 512,
+    "l3": "Static route, VLAN routing, DHCP server",
+    "console": true,
+    "launch": "2021-01-27"
+  },
+  "src": {
+    "ports": "uksw",
+    "launch": "uklc"
+  },
+  "u": [
+    5,
+    20
+  ],
+  "uses": [
+    "small",
+    "retail"
+  ],
+  "f": [
+    "sfp",
+    "l3"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-g2100",
+    "pwr": "100–240VAC",
+    "cons": "18 W",
+    "dim": "270 × 181 × 44 mm",
+    "wt": "1.78 kg",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Passively cooled"
+    },
+    "mount": "Rack 1U",
+    "fwd": "14.88 Mpps",
+    "buf": "4.1 Mbit",
+    "jumbo": "9 KB"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "v3220",
+  "cat": "router",
+  "m": "Vigor3220",
+  "st": "eos",
+  "fw": "Vigor3220",
+  "eos": "2022-04-01",
+  "eol": "2027-04-01",
+  "t": {
+    "v": "Router 4 WAN đời cũ, 200 VPN",
+    "e": "Older 4-WAN router, 200 VPN"
+  },
+  "var": [
+    [
+      "3220",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ],
+    [
+      "3220n",
+      {
+        "v": "Wi-Fi n",
+        "e": "Wi-Fi n"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "lb": "DMZ"
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 500,
+    "sess": 100000,
+    "vpn": 200,
+    "sslvpn": 50,
+    "wanmax": 5,
+    "wan": {
+      "v": "4× GbE WAN + USB (tối đa 5 WAN hoạt động)",
+      "e": "4× GbE WAN + USB (up to 5 active WANs)"
+    },
+    "lan": {
+      "v": "1× GbE + 1 cổng DMZ",
+      "e": "1× GbE + 1 DMZ port"
+    },
+    "usb": 2,
+    "subnet": 8,
+    "lb": true,
+    "apm": 30,
+    "swm": 10,
+    "os": "DrayOS 3",
+    "fwv": "3.9.8.9",
+    "launch": "2015-11-23"
+  },
+  "src": {
+    "nat": "ds",
+    "sess": "ds",
+    "vpn": "ds",
+    "fwv": "fwl",
+    "eos": "uklc"
+  },
+  "u": [
+    80,
+    200
+  ],
+  "uses": [
+    "multiwan",
+    "hq"
+  ],
+  "f": [
+    "ssl",
+    "lb",
+    "usbmodem"
+  ],
+  "next": "v2962",
+  "cve": "3.9.8.8",
+  "hw": {
+    "uk": "business/vigor-3220",
+    "pwr": {
+      "v": "220–240VAC cấp trực tiếp",
+      "e": "220–240VAC direct"
+    },
+    "cons": "19 W",
+    "dim": "273 × 176 × 46 mm",
+    "temp": "0–45 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Fanless"
+    },
+    "mount": {
+      "v": "Rack, có kèm tai",
+      "e": "Rack, brackets included"
+    }
+  }
+}

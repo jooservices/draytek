@@ -1,0 +1,114 @@
+{
+  "id": "v2767",
+  "cat": "router",
+  "m": "Vigor2767",
+  "st": "cur",
+  "fw": "Vigor2767",
+  "t": {
+    "v": "Router VDSL2 35b + 2.5GbE, DrayOS 5",
+    "e": "VDSL2 35b + 2.5GbE router, DrayOS 5"
+  },
+  "var": [
+    [
+      "2767",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2767ax",
+      {
+        "v": "Wi-Fi 6",
+        "e": "Wi-Fi 6"
+      }
+    ],
+    [
+      "2767Vax",
+      {
+        "v": "Wi-Fi 6 + VoIP (theo dự án)",
+        "e": "Wi-Fi 6 + VoIP (project based)"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "VDSL"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "2.5G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "nat": 2300,
+    "sess": 50000,
+    "ipsec": 300,
+    "ssl": false,
+    "vpn": 16,
+    "wan": "1× ADSL/VDSL2 35b + 1× 2.5GbE WAN/LAN",
+    "lan": "3× GbE",
+    "vlan": 4,
+    "subnet": 4,
+    "wifi": "ax: Wi-Fi 6",
+    "apm": 20,
+    "swm": 5,
+    "secu": "IAM, Threat Protection Sentry*",
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "nat": "db26",
+    "ipsec": "ukr",
+    "vpn": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    5,
+    60
+  ],
+  "uses": [
+    "home",
+    "small"
+  ],
+  "f": [
+    "dsl",
+    "2.5g",
+    "wifi6",
+    "threat",
+    "iam",
+    "wg",
+    "openvpn"
+  ],
+  "hw": {
+    "uk": "soho/vigor-2767",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": {
+      "v": "13.7 W (2767), 21.6 W (ax), 21.1 W (Vax)",
+      "e": "13.7 W (2767), 21.6 W (ax), 21.1 W (Vax)"
+    },
+    "dim": "207 × 131 × 42 mm",
+    "wt": {
+      "v": "455.3 g (2767), 506.4 g (ax), 665.8 g (Vax)",
+      "e": "455.3 g (2767), 506.4 g (ax), 665.8 g (Vax)"
+    },
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường",
+      "e": "Shelf, wall"
+    }
+  }
+}

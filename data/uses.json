@@ -1,0 +1,134 @@
+[
+  {
+    "id": "home",
+    "v": "Gia đình, văn phòng rất nhỏ",
+    "e": "Home & micro office",
+    "k": "gia dinh nha rieng ho gia dinh home soho phong nho micro it nguoi"
+  },
+  {
+    "id": "small",
+    "v": "Văn phòng nhỏ (20–80 người)",
+    "e": "Small office (20–80 users)",
+    "k": "van phong nho cong ty nho small office sme startup"
+  },
+  {
+    "id": "mid",
+    "v": "Doanh nghiệp vừa (80–300 người)",
+    "e": "Mid-size business (80–300 users)",
+    "k": "doanh nghiep vua cong ty vua tru so medium business mid size"
+  },
+  {
+    "id": "large",
+    "v": "Toà nhà, doanh nghiệp lớn (300+)",
+    "e": "Large site (300+ users)",
+    "k": "toa nha doanh nghiep lon nha may khu cong nghiep large enterprise building campus factory"
+  },
+  {
+    "id": "cafe",
+    "v": "Quán cafe, nhà hàng (Wi-Fi khách)",
+    "e": "Cafe & restaurant guest Wi-Fi",
+    "k": "quan cafe ca phe nha hang quan an tra sua wifi khach wifi marketing hotspot captive portal guest"
+  },
+  {
+    "id": "hotel",
+    "v": "Khách sạn, homestay, căn hộ dịch vụ",
+    "e": "Hotel, homestay, serviced apartments",
+    "k": "khach san homestay nha nghi resort can ho dich vu hotel hospitality phong"
+  },
+  {
+    "id": "retail",
+    "v": "Chuỗi cửa hàng, nhiều điểm bán",
+    "e": "Retail chain, many shops",
+    "k": "chuoi cua hang shop sieu thi mini diem ban pos retail chain store franchise"
+  },
+  {
+    "id": "hq",
+    "v": "Trụ sở nhận VPN từ nhiều chi nhánh",
+    "e": "HQ VPN hub for many branches",
+    "k": "tru so chinh chi nhanh vpn hub concentrator site to site lan to lan nhieu chi nhanh head office branch"
+  },
+  {
+    "id": "remote",
+    "v": "Nhân viên làm việc từ xa",
+    "e": "Remote workers",
+    "k": "lam viec tu xa wfh work from home remote access vpn client teleworker openvpn wireguard ssl vpn"
+  },
+  {
+    "id": "multiwan",
+    "v": "Gộp, cân bằng nhiều đường Internet",
+    "e": "Multi-WAN load balancing",
+    "k": "nhieu duong mang gop bang thong can bang tai load balance multi wan dual wan 2 nha mang fpt viettel vnpt failover"
+  },
+  {
+    "id": "backup4g",
+    "v": "Dự phòng bằng 4G/5G",
+    "e": "4G/5G backup",
+    "k": "du phong 4g 5g lte sim usb dcom backup failover mobile"
+  },
+  {
+    "id": "mobile",
+    "v": "Công trường, điểm tạm, xe (4G/5G chính)",
+    "e": "Temporary site / vehicle on 4G/5G",
+    "k": "cong truong diem tam su kien xe di dong khong co cap 4g 5g sim primary mobile site temporary"
+  },
+  {
+    "id": "fast",
+    "v": "Internet 2.5–10 Gbps",
+    "e": "2.5–10 Gbps Internet",
+    "k": "10g 10gbps 2.5g multi gig sfp+ cap quang toc do cao gigabit fiber fast xgs pon"
+  },
+  {
+    "id": "iptv",
+    "v": "IPTV (FPT, Viettel, VNPT)",
+    "e": "IPTV (Vietnamese ISPs)",
+    "k": "iptv truyen hinh fpt play viettel tv mytv vnpt igmp vlan bridge"
+  },
+  {
+    "id": "camera",
+    "v": "Camera giám sát, PoE",
+    "e": "CCTV cameras & PoE",
+    "k": "camera giam sat cctv nvr dau ghi poe onvif an ninh surveillance ip camera"
+  },
+  {
+    "id": "dense",
+    "v": "Trường học, hội trường (mật độ cao)",
+    "e": "School & hall (high density)",
+    "k": "truong hoc lop hoc hoi truong hoi nghi su kien mat do cao dong nguoi school classroom auditorium high density"
+  },
+  {
+    "id": "outdoor",
+    "v": "Ngoài trời, nối điểm–điểm",
+    "e": "Outdoor & point-to-point",
+    "k": "ngoai troi san vuon bai xe resort ip67 point to point ptp noi diem outdoor pole"
+  },
+  {
+    "id": "ha",
+    "v": "Không gián đoạn (2 router dự phòng)",
+    "e": "High availability (router pair)",
+    "k": "high availability ha du phong router khong gian doan vrrp carp hot standby redundancy"
+  },
+  {
+    "id": "secure",
+    "v": "An ninh nâng cao, lọc web",
+    "e": "Advanced security & web filtering",
+    "k": "bao mat an ninh loc web chan trang content filter threat protection ids ips suricata reputation iot"
+  },
+  {
+    "id": "isp",
+    "v": "Nhà mạng, FTTH (PON)",
+    "e": "ISP / FTTH (PON)",
+    "k": "nha mang isp ftth gpon xgs pon ont modem quang triple play"
+  },
+  {
+    "id": "core",
+    "v": "Core switch, uplink 10G",
+    "e": "Core switch, 10G uplinks",
+    "k": "core switch loi trung tam 10g uplink sfp+ backbone xuong server nas aggregation"
+  },
+  {
+    "id": "voip",
+    "v": "Điện thoại IP, tổng đài",
+    "e": "VoIP & phones",
+    "k": "voip dien thoai ip tong dai sip fxs analog phone pbx"
+  }
+]

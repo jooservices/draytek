@@ -1,0 +1,76 @@
+{
+  "id": "swp2100",
+  "cat": "switch",
+  "m": "VigorSwitch P2100",
+  "st": "cur",
+  "fw": "VigorSwitch%20P2100",
+  "t": {
+    "v": "Switch L2+ PoE+ 8 cổng nhỏ gọn, 140 W",
+    "e": "Compact 8-port L2+ PoE+ switch, 140 W"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 8,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "sfp",
+      "sp": "1G",
+      "n": 2
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "8× GbE PoE+",
+    "uplink": "2× SFP",
+    "poe": "8× PoE+",
+    "budget": 140,
+    "cap": 20,
+    "vlan": 512,
+    "l3": "Static route, VLAN routing, DHCP server",
+    "stp": "STP, RSTP, MSTP",
+    "onvif": true,
+    "console": true,
+    "launch": "2021-01-27"
+  },
+  "src": {
+    "cap": "db26",
+    "budget": "db26",
+    "launch": "uklc"
+  },
+  "u": [
+    5,
+    20
+  ],
+  "uses": [
+    "camera",
+    "small",
+    "retail"
+  ],
+  "f": [
+    "poe",
+    "sfp",
+    "l3",
+    "onvif"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-p2100",
+    "pwr": "100–240VAC",
+    "cons": "164.3 W",
+    "dim": "319 × 208 × 44 mm",
+    "wt": "2.61 kg",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Passively cooled"
+    },
+    "mount": "Rack 1U",
+    "fwd": "14.88 Mpps",
+    "buf": "4.1 Mbit",
+    "jumbo": "9 KB"
+  }
+}

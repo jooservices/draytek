@@ -1,0 +1,28 @@
+{
+  "id": "ant1205",
+  "cat": "more",
+  "m": "ANT-1205",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Cặp anten trong nhà 2.4/5 GHz độ lợi cao",
+    "e": "High-gain 2.4/5 GHz indoor antenna pair"
+  },
+  "s": {
+    "kind": {
+      "v": "Phụ kiện",
+      "e": "Accessory"
+    },
+    "what": {
+      "v": "Thay anten cho router hoặc AP có đầu nối; hỗ trợ tới Wi-Fi 6; màu đen hoặc trắng",
+      "e": "Replacement antenna for routers/APs with connectors; up to Wi-Fi 6; black or white"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "small"
+  ],
+  "f": []
+}

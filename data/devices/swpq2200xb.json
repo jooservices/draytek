@@ -1,0 +1,75 @@
+{
+  "id": "swpq2200xb",
+  "cat": "switch",
+  "m": "VigorSwitch PQ2200xb",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Switch L2+ PoE 16 cổng 2.5G, 400 W",
+    "e": "L2+ 16× 2.5G PoE switch, 400 W"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G",
+      "n": 16,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "16× 2.5GbE",
+    "uplink": "4× 10G SFP+",
+    "poe": "4× PoE++ + 12× PoE+",
+    "budget": 400,
+    "cap": 160,
+    "l3": "VLAN routing, DHCP server",
+    "stp": "STP, RSTP, MSTP",
+    "launch": "2022-07-06"
+  },
+  "src": {
+    "cap": "db26",
+    "budget": "db26",
+    "launch": "uklc"
+  },
+  "u": [
+    16,
+    40
+  ],
+  "uses": [
+    "dense",
+    "mid",
+    "camera"
+  ],
+  "f": [
+    "2.5g",
+    "sfp+",
+    "10g",
+    "poe",
+    "poe++",
+    "l3"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-pq2200xb",
+    "pwr": "100–240VAC",
+    "cons": "550 W",
+    "dim": "440 × 281 × 44 mm",
+    "wt": "4.3 kg",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "Quạt",
+      "e": "Fan"
+    },
+    "mount": "Rack 1U",
+    "fwd": "119.04 Mpps",
+    "buf": "12 Mbit",
+    "jumbo": "12 KB"
+  }
+}

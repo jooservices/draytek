@@ -1,0 +1,71 @@
+{
+  "id": "swfx2120",
+  "cat": "switch",
+  "m": "VigorSwitch FX2120",
+  "st": "cur",
+  "fw": "VigorSwitch%20FX2120",
+  "t": {
+    "v": "Switch quang 12× SFP+ 10G, OpenFlow",
+    "e": "12× 10G SFP+ fiber switch, OpenFlow"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 12
+    },
+    {
+      "r": "u",
+      "m": "con"
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "12× 10G SFP+",
+    "poe": false,
+    "cap": 240,
+    "vlan": 512,
+    "l3": "Static route, VLAN routing, DHCP server",
+    "stp": "STP, RSTP, MSTP",
+    "extra": "OpenFlow 1.3 (SDN)",
+    "console": true,
+    "rack": true,
+    "launch": "2022-04-27"
+  },
+  "src": {
+    "cap": "db26",
+    "launch": "uklc"
+  },
+  "u": [
+    10,
+    100
+  ],
+  "uses": [
+    "core",
+    "fast",
+    "large"
+  ],
+  "f": [
+    "10g",
+    "sfp+",
+    "l3",
+    "console"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-fx2120",
+    "pwr": "100–240VAC",
+    "cons": "28.9 W",
+    "dim": "441 × 197 × 44 mm",
+    "wt": "2.67 kg",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "Quạt thông minh",
+      "e": "Smart fan"
+    },
+    "mount": "Rack 1U",
+    "fwd": "178.56 Mpps",
+    "buf": "16 Mbit",
+    "jumbo": "12 KB"
+  }
+}

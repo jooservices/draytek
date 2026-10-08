@@ -1,0 +1,165 @@
+{
+  "id": "v2962",
+  "cat": "router",
+  "m": "Vigor2962",
+  "st": "cur",
+  "fw": "Vigor2962",
+  "t": {
+    "v": "Router đa WAN hiệu năng cao, 200 VPN, 300K session",
+    "e": "High-performance multi-WAN router, 200 VPN, 300K sessions"
+  },
+  "var": [
+    [
+      "2962",
+      {
+        "v": "Bản tiêu chuẩn",
+        "e": "Standard"
+      }
+    ],
+    [
+      "2962P",
+      {
+        "v": "Bản PoE, đã ngừng bán (EoS 01/11/2023)",
+        "e": "PoE model, end of sale 2023-11-01"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "2.5G",
+      "lb": "P1"
+    },
+    {
+      "r": "s",
+      "m": "combo",
+      "sp": "1G",
+      "lb": "P2"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 2200,
+    "sess": 300000,
+    "ipsec": 900,
+    "ssl": 500,
+    "vpn": 200,
+    "sslvpn": 50,
+    "proto": "PPTP, L2TP, IPsec, L2TP/IPsec, DrayTek SSL, GRE, IKEv2, IKEv2-EAP, IPsec-XAuth, OpenVPN (host-to-LAN), WireGuard",
+    "wanmax": 4,
+    "wan": {
+      "v": "4 cổng WAN/LAN: 1× 2.5GbE, 1× GbE/SFP combo, 2× GbE; thêm modem USB 4G",
+      "e": "4 WAN/LAN ports: 1× 2.5GbE, 1× GbE/SFP combo, 2× GbE; plus USB 4G modem"
+    },
+    "lan": {
+      "v": "2× GbE cố định",
+      "e": "2× fixed GbE"
+    },
+    "usb": "1× USB 2.0 + 1× USB 3.0",
+    "cell": {
+      "v": "Qua modem USB",
+      "e": "Via USB modem"
+    },
+    "vlan": 20,
+    "subnet": 20,
+    "routing": "Static, Policy, Inter-VLAN, RIP, OSPF, BGP",
+    "ha": true,
+    "lb": {
+      "v": "Có (theo IP, theo session)",
+      "e": "Yes (IP / session based)"
+    },
+    "apm": 50,
+    "swm": 30,
+    "hotspot": "Click-Through, Social Login, SMS PIN, RADIUS, External Portal",
+    "auth": "Local, RADIUS, LDAP, TACACS+, mOTP",
+    "secu": "Web Category*, APP / URL / DNS filter",
+    "os": "DrayOS 4",
+    "fwv": "4.4.6.3",
+    "launch": "2020-12-09"
+  },
+  "src": {
+    "nat": "ds",
+    "ipsec": "ukp",
+    "ssl": "ukp",
+    "sess": "ds",
+    "vpn": "ds",
+    "usb": "ds",
+    "fwv": "fwl",
+    "launch": "uklc"
+  },
+  "u": [
+    100,
+    300
+  ],
+  "uses": [
+    "mid",
+    "hq",
+    "multiwan",
+    "remote",
+    "ha",
+    "hotel",
+    "iptv",
+    "cafe"
+  ],
+  "f": [
+    "2.5g",
+    "sfp",
+    "ssl",
+    "openvpn",
+    "wg",
+    "ospf",
+    "bgp",
+    "ha",
+    "lb",
+    "hotspot",
+    "usbmodem"
+  ],
+  "note": {
+    "v": [
+      "Bảng so sánh UK ghi NAT 2.4 Gbps; datasheet ghi 2.2 Gbps."
+    ],
+    "e": [
+      "UK comparison says 2.4 Gbps NAT; datasheet says 2.2 Gbps."
+    ]
+  },
+  "prev": [
+    "v2952",
+    "v2960",
+    "v3220"
+  ],
+  "next": "v3912",
+  "cve": "4.4.3.6",
+  "hw": {
+    "uk": "business/vigor-2962",
+    "pwr": {
+      "v": "220–240VAC cấp trực tiếp (nguồn trong)",
+      "e": "220–240VAC direct (internal PSU)"
+    },
+    "cons": "15 W",
+    "dim": "273 × 170 × 45 mm",
+    "wt": "1.7 kg",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Gắn rack 1U, có kèm tai rack",
+      "e": "1U rack, brackets included"
+    }
+  }
+}

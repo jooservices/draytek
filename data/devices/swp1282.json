@@ -1,0 +1,77 @@
+{
+  "id": "swp1282",
+  "cat": "switch",
+  "m": "VigorSwitch P1282",
+  "st": "cur",
+  "fw": "VigorSwitch%20P1282",
+  "t": {
+    "v": "Switch PoE+ 24 cổng, 400 W",
+    "e": "24-port PoE+ switch, 400 W"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 24,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "combo",
+      "sp": "1G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "level": "Web Smart",
+    "ports": "24× GbE PoE+ + 4× combo",
+    "poe": "24× PoE+",
+    "budget": 400,
+    "cap": 56,
+    "vlan": 512,
+    "qos": 8,
+    "onvif": true,
+    "rack": true,
+    "launch": "2022-04-27"
+  },
+  "src": {
+    "cap": "db26",
+    "budget": "db26",
+    "launch": "uklc"
+  },
+  "u": [
+    10,
+    30
+  ],
+  "uses": [
+    "camera",
+    "mid",
+    "hotel"
+  ],
+  "f": [
+    "poe",
+    "sfp",
+    "onvif"
+  ],
+  "prev": [
+    "swp1280"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-p1282",
+    "pwr": "100–240VAC",
+    "cons": "450 W",
+    "dim": "441 × 281 × 44 mm",
+    "wt": "4.3 kg",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "2 quạt",
+      "e": "Dual fan"
+    },
+    "mount": "Rack 1U",
+    "fwd": "41.7 Mpps",
+    "buf": "4.1 Mbit",
+    "mac": "8K",
+    "jumbo": "9 KB"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "damex10",
+  "cat": "more",
+  "m": "DAM-EX10",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Module SFP+ sang RJ-45 1/2.5/5/10G",
+    "e": "SFP+ to RJ-45 1/2.5/5/10G module"
+  },
+  "s": {
+    "kind": {
+      "v": "Phụ kiện SFP+",
+      "e": "SFP+ accessory"
+    },
+    "what": {
+      "v": "Biến khe SFP+ thành cổng đồng; bản 100 m hoặc 30 m, Cat5e/Cat6a",
+      "e": "Turns an SFP+ slot into a copper port; 100 m or 30 m versions, Cat5e/Cat6a"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "fast",
+    "core"
+  ],
+  "f": [
+    "sfp+",
+    "10g"
+  ]
+}

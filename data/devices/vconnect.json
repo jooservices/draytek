@@ -1,0 +1,31 @@
+{
+  "id": "vconnect",
+  "cat": "more",
+  "m": "VigorConnect",
+  "st": "cur",
+  "fw": "VigorConnect",
+  "t": {
+    "v": "Quản lý AP và switch trong mạng LAN, tới 100 thiết bị",
+    "e": "Local AP & switch manager, up to 100 devices"
+  },
+  "s": {
+    "kind": {
+      "v": "Phần mềm miễn phí, chạy trên PC hoặc Vigor3912S",
+      "e": "Free software, runs on a PC or Vigor3912S"
+    },
+    "what": {
+      "v": "Tự tìm AP/switch, đẩy cấu hình Wi-Fi/VLAN/PoE, cảnh báo mất kết nối, phát hiện AP lạ, lịch nâng cấp firmware",
+      "e": "Auto-discovers APs/switches, pushes Wi-Fi/VLAN/PoE config, alerts, rogue AP detection, scheduled firmware"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "hotel",
+    "dense",
+    "mid",
+    "large"
+  ],
+  "f": []
+}

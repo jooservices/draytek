@@ -1,0 +1,34 @@
+{
+  "id": "acs3",
+  "cat": "more",
+  "m": "VigorACS 3",
+  "st": "cur",
+  "fw": "ACS%203",
+  "t": {
+    "v": "Phần mềm quản lý tập trung và SD-WAN",
+    "e": "Central management & SD-WAN software"
+  },
+  "s": {
+    "kind": {
+      "v": "Phần mềm (on-premise)",
+      "e": "Software (on-premise)"
+    },
+    "what": {
+      "v": "Quản lý router, AP, switch; SD-WAN (đo độ trễ/mất gói/jitter từng WAN/VPN); điểm MOS cho VoIP; cấp cấu hình tự động; lịch nâng cấp firmware; trình tạo VPN; máy chủ captive portal 20 ngôn ngữ, thống kê khách",
+      "e": "Manage routers, APs, switches; SD-WAN (latency/loss/jitter per WAN/VPN); VoIP MOS; zero-touch provisioning; scheduled firmware; VPN wizard; captive portal server in 20 languages with guest analytics"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "retail",
+    "hq",
+    "cafe",
+    "hotel",
+    "large"
+  ],
+  "f": [
+    "sdwan"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "ap918rpd",
+  "cat": "ap",
+  "m": "VigorAP 918RPD",
+  "st": "cur",
+  "fw": "VigorAP%20918R",
+  "t": {
+    "v": "AP ngoài trời có cổng PoE ra, anten định hướng",
+    "e": "Outdoor AP with PoE out and directional antenna"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "lb": "PoE in"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "lb": "PoE out"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 5 Wave 2",
+    "cls": "AC1300",
+    "bands": "2.4 + 5 GHz",
+    "link": "400 + 867 Mbps",
+    "clients": 256,
+    "ssid": "4 + 4",
+    "ports": "2× GbE",
+    "power": "PoE+ (VigorPoE 600 cho tải cao)",
+    "poein": "PoE+",
+    "poeout": {
+      "v": "Có, cấp nguồn cho camera IP",
+      "e": "Yes, powers an IP camera"
+    },
+    "mount": {
+      "v": "Cột, tường",
+      "e": "Pole, wall"
+    },
+    "outdoor": "IP67",
+    "antenna": {
+      "v": "Anten patch định hướng 5 GHz tích hợp, nối điểm–điểm",
+      "e": "Built-in 5 GHz directional patch, point-to-point"
+    },
+    "mesh": "Root / Node",
+    "hotspot": true
+  },
+  "src": {
+    "link": "ukap",
+    "ports": "ukap",
+    "poeout": "db26"
+  },
+  "u": [
+    10,
+    60
+  ],
+  "uses": [
+    "outdoor",
+    "camera"
+  ],
+  "f": [
+    "wifi5",
+    "outdoor",
+    "mesh",
+    "poe",
+    "poeout"
+  ],
+  "hw": {
+    "uk": "business/vigorap-918r",
+    "pwr": {
+      "v": "PoE+ 802.3at (không kèm injector)",
+      "e": "PoE+ 802.3at (injector not supplied)"
+    },
+    "cons": {
+      "v": "18 W; 43.2 W khi cấp PoE ra",
+      "e": "18 W; 43.2 W with PoE passthrough"
+    },
+    "poe": {
+      "v": "PoE ra ở 100 m: tới 12 W (nguồn 802.3at), tới 18 W (VigorPoE 600)",
+      "e": "PoE out at 100 m: up to 12 W (802.3at source), up to 18 W (VigorPoE 600)"
+    },
+    "dim": {
+      "v": "161 × 72 mm, cao 244 mm (460 mm kể cả anten)",
+      "e": "161 × 72 mm, 244 mm high (460 mm with antennas)"
+    },
+    "wt": "1 kg",
+    "temp": "−40 – 70 °C",
+    "hum": "5–95%",
+    "mount": {
+      "v": "Cột, tường",
+      "e": "Pole, wall"
+    }
+  }
+}

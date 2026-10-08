@@ -1,0 +1,109 @@
+{
+  "id": "v2865l",
+  "cat": "router",
+  "m": "Vigor2865L / L-5G",
+  "st": "cur",
+  "fw": "Vigor2865",
+  "t": {
+    "v": "Vigor2865 tích hợp 4G hoặc 5G",
+    "e": "Vigor2865 with built-in 4G or 5G"
+  },
+  "var": [
+    [
+      "2865L / Lac",
+      {
+        "v": "4G LTE Cat6",
+        "e": "4G LTE Cat6"
+      }
+    ],
+    [
+      "2865L-5G / Lax-5G",
+      {
+        "v": "5G NR",
+        "e": "5G NR"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "VDSL"
+    },
+    {
+      "r": "x",
+      "m": "sim",
+      "lb": "4G/5G"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 5
+    }
+  ],
+  "s": {
+    "nat": 1300,
+    "sess": 60000,
+    "ipsec": 800,
+    "ssl": 120,
+    "vpn": 32,
+    "sslvpn": 16,
+    "cell": "4G Cat6 hoặc 5G NR, 2 SIM (1 hoạt động)",
+    "vlan": 8,
+    "ha": true,
+    "apm": 20,
+    "swm": 10,
+    "os": "DrayOS 4",
+    "fwv": "4.5.3.2"
+  },
+  "src": {
+    "nat": "ukr",
+    "cell": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    10,
+    80
+  ],
+  "uses": [
+    "small",
+    "backup4g"
+  ],
+  "f": [
+    "dsl",
+    "lte",
+    "5g",
+    "ssl",
+    "ha",
+    "lb"
+  ],
+  "cve": "4.5.1",
+  "hw": {
+    "uk": "business/vigor-2865lax-5g",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": {
+      "v": "24 W (Lac), 31.2 W (L-5G, Lax-5G)",
+      "e": "24 W (Lac), 31.2 W (L-5G, Lax-5G)"
+    },
+    "dim": "241 × 165 × 44 mm",
+    "wt": {
+      "v": "600 g (L-5G), 620 g (Lac), 670 g (Lax-5G)",
+      "e": "600 g (L-5G), 620 g (Lac), 670 g (Lax-5G)"
+    },
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Treo tường; rack cần giá RM1",
+      "e": "Wall; rack needs RM1 bracket"
+    }
+  }
+}

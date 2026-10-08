@@ -1,0 +1,37 @@
+{
+  "id": "threat",
+  "cat": "more",
+  "m": "Threat Protection (Sentry / Guardian)",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Dịch vụ bảo mật AI trên router, bảo vệ thiết bị IoT",
+    "e": "AI-assisted router security service for IoT devices"
+  },
+  "s": {
+    "kind": {
+      "v": "Thuê bao (license)",
+      "e": "Subscription"
+    },
+    "what": {
+      "v": "Chống DoS/DDoS, quét cổng, dò mật khẩu; nhận diện thiết bị, phát hiện hành vi bất thường, cô lập thiết bị nghi vấn; lọc phishing/malware/botnet",
+      "e": "DoS/DDoS, port-scan and brute-force protection; device fingerprinting, anomaly detection, quarantine; phishing/malware/botnet blocking"
+    },
+    "models": {
+      "v": "Sentry: Vigor2136, 2767 (≤100 thiết bị). Guardian: Vigor2867, 2928 (≤200 thiết bị)",
+      "e": "Sentry: Vigor2136, 2767 (≤100 devices). Guardian: Vigor2867, 2928 (≤200 devices)"
+    }
+  },
+  "src": {
+    "what": "db26",
+    "models": "db26"
+  },
+  "uses": [
+    "secure",
+    "camera",
+    "small"
+  ],
+  "f": [
+    "threat"
+  ]
+}

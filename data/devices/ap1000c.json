@@ -1,0 +1,71 @@
+{
+  "id": "ap1000c",
+  "cat": "ap",
+  "m": "VigorAP 1000C",
+  "st": "eos",
+  "fw": "VigorAP%201000C",
+  "eos": "2024-07-25",
+  "eol": "2027-07-25",
+  "t": {
+    "v": "AP Wi-Fi 5 AC2200 ba băng đời trước",
+    "e": "Earlier tri-radio Wi-Fi 5 AC2200 AP"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 5 (802.11ac Wave 1 & 2)",
+    "cls": "AC2200",
+    "bands": "2.4 + 5 + 5 GHz",
+    "link": "400 + 866 + 866 Mbps",
+    "clients": {
+      "v": "384 (128 mỗi radio)",
+      "e": "384 (128 per radio)"
+    },
+    "ports": {
+      "v": "2× GbE (cổng 1 nhận PoE)",
+      "e": "2× GbE (port 1 PoE in)"
+    },
+    "mesh": {
+      "v": "Radio 5 GHz thứ hai có thể làm đường mesh riêng",
+      "e": "Second 5 GHz radio can be a dedicated mesh backhaul"
+    },
+    "launch": "2020-03-04"
+  },
+  "src": {
+    "link": "ukp",
+    "eos": "uklc"
+  },
+  "u": [
+    30,
+    80
+  ],
+  "uses": [
+    "dense"
+  ],
+  "f": [
+    "wifi5",
+    "mesh",
+    "poe"
+  ],
+  "next": "ap1062c",
+  "hw": {
+    "uk": "business/vigorap-1000c",
+    "pwr": {
+      "v": "DC 12V hoặc PoE+ 802.3at",
+      "e": "DC 12V or PoE+ 802.3at"
+    },
+    "cons": "19.2 W",
+    "wt": "500 g",
+    "temp": "0–45 °C",
+    "mount": {
+      "v": "Ốp trần, treo tường",
+      "e": "Ceiling, wall"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "swq2300x",
+  "cat": "switch",
+  "m": "VigorSwitch Q2300x",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Switch L2+ 24 cổng 2.5G + 6 SFP+",
+    "e": "L2+ 24× 2.5G + 6 SFP+ switch"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G",
+      "n": 24
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 6
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "24× 2.5GbE",
+    "uplink": "6× 10G SFP+",
+    "poe": false,
+    "cap": 240,
+    "l3": "VLAN routing, DHCP server",
+    "stp": "STP, RSTP, MSTP",
+    "stack": true,
+    "redund": {
+      "v": "Nguồn DC dự phòng",
+      "e": "Backup DC input"
+    }
+  },
+  "src": {
+    "cap": "db26"
+  },
+  "u": [
+    24,
+    60
+  ],
+  "uses": [
+    "core",
+    "large",
+    "fast"
+  ],
+  "f": [
+    "2.5g",
+    "sfp+",
+    "10g",
+    "l3",
+    "stack"
+  ]
+}

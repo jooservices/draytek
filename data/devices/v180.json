@@ -1,0 +1,70 @@
+{
+  "id": "v180",
+  "cat": "router",
+  "m": "Vigor180",
+  "st": "cur",
+  "fw": "Vigor180",
+  "t": {
+    "v": "Bridge/router XGS-PON cho FTTH",
+    "e": "XGS-PON bridge/router for FTTH"
+  },
+  "var": [
+    [
+      "180",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ],
+    [
+      "180V",
+      {
+        "v": "VoIP (theo dự án)",
+        "e": "VoIP (project based)"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "pon",
+      "lb": "XGS-PON"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "10G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "sess": 10000,
+    "wan": "XGS-PON",
+    "lan": "1× 10GbE + 3× GbE",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "sess": "db26",
+    "lan": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    1,
+    30
+  ],
+  "uses": [
+    "isp",
+    "home",
+    "fast"
+  ],
+  "f": [
+    "xgspon",
+    "pon",
+    "10g"
+  ]
+}

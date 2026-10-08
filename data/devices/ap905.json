@@ -1,0 +1,87 @@
+{
+  "id": "ap905",
+  "cat": "ap",
+  "m": "VigorAP 905",
+  "st": "cur",
+  "fw": "VigorAP%20905",
+  "t": {
+    "v": "AP Wi-Fi 6 treo tường/để bàn, có 4 cổng LAN",
+    "e": "Wall/desk Wi-Fi 6 AP with 4 LAN ports"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 6 (802.11ax)",
+    "cls": "AX3000 2x3",
+    "bands": "2.4 + 5 GHz",
+    "link": "574 + 2402 Mbps",
+    "clients": 256,
+    "ssid": "8 + 8",
+    "ports": "1× 2.5GbE + 4× GbE",
+    "power": "DC / PoE+",
+    "poein": "PoE+",
+    "poeout": false,
+    "mount": {
+      "v": "Để bàn, treo tường",
+      "e": "Desktop, wall"
+    },
+    "outdoor": false,
+    "mesh": "Root (tối đa 20) / Node",
+    "antenna": {
+      "v": "2 đầu nối anten ngoài",
+      "e": "2 external antenna connectors"
+    },
+    "mgmt": "Router APM, VigorConnect, VigorACS"
+  },
+  "src": {
+    "link": "ukap",
+    "ports": "ukap",
+    "power": "ukap"
+  },
+  "u": [
+    10,
+    50
+  ],
+  "uses": [
+    "hotel",
+    "small",
+    "cafe",
+    "home"
+  ],
+  "f": [
+    "wifi6",
+    "2.5g",
+    "mesh",
+    "poe"
+  ],
+  "prev": [
+    "ap906"
+  ],
+  "hw": {
+    "uk": "business/vigorap-905",
+    "pwr": {
+      "v": "DC 12V (adapter có kèm) hoặc PoE+ 802.3at",
+      "e": "DC 12V (adapter supplied) or PoE+ 802.3at"
+    },
+    "cons": "17 W",
+    "dim": "115 × 40 × 158 mm",
+    "wt": "330 g",
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Đặt đứng, treo tường",
+      "e": "Free standing, wall"
+    }
+  }
+}

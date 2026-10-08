@@ -1,0 +1,105 @@
+{
+  "id": "v1000b",
+  "cat": "router",
+  "m": "Vigor1000B",
+  "st": "old",
+  "fw": "Vigor1000B",
+  "t": {
+    "v": "Cổng Internet 10G cho 500+ máy, chỉ 2 VPN",
+    "e": "10G gateway for 500+ hosts, only 2 VPN"
+  },
+  "var": [
+    [
+      "1000B",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "s",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 2
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 9400,
+    "sess": 1000000,
+    "vpn": 2,
+    "sslvpn": 2,
+    "wanmax": 6,
+    "wan": {
+      "v": "6 cổng WAN/LAN: 2× 10G SFP+, 4× GbE",
+      "e": "6 WAN/LAN ports: 2× 10G SFP+, 4× GbE"
+    },
+    "lan": "4× GbE",
+    "usb": "2× USB 3.0",
+    "vlan": 100,
+    "subnet": 100,
+    "routing": "Static, Inter-VLAN, RIP v1/v2",
+    "ha": "Active-Standby, Hot-Standby",
+    "lb": true,
+    "apm": true,
+    "swm": true,
+    "hotspot": "Click-Through, Social Login, SMS PIN, RADIUS, External Portal",
+    "os": "DrayOS 4",
+    "fwv": "4.4.3.6"
+  },
+  "src": {
+    "nat": "ds",
+    "sess": "ds",
+    "vpn": "ds",
+    "fwv": "fwl"
+  },
+  "u": [
+    300,
+    800
+  ],
+  "uses": [
+    "large",
+    "fast",
+    "multiwan",
+    "ha",
+    "hotel",
+    "dense"
+  ],
+  "f": [
+    "10g",
+    "sfp+",
+    "ha",
+    "lb",
+    "hotspot"
+  ],
+  "note": {
+    "v": [
+      "Thiết kế làm cổng Internet tốc độ cao; chỉ 2 kênh VPN, không hợp làm trung tâm VPN.",
+      "Không còn trong Databook 2026."
+    ],
+    "e": [
+      "Built as a high-speed Internet gateway; only 2 VPN tunnels, not a VPN hub.",
+      "Not in Databook 2026."
+    ]
+  },
+  "next": "v3912",
+  "cve": "4.4.3.6"
+}

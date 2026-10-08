@@ -1,0 +1,63 @@
+{
+  "id": "ap906",
+  "cat": "ap",
+  "m": "VigorAP 906",
+  "st": "eos",
+  "fw": "VigorAP%20906",
+  "eos": "2025-10-18",
+  "eol": "2028-10-18",
+  "t": {
+    "v": "AP Wi-Fi 6 AX3000 để bàn, 5 cổng Gigabit (đời trước 905)",
+    "e": "Desktop Wi-Fi 6 AX3000 AP, 5 Gigabit ports (pre-905)"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 5
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 6 (802.11ax)",
+    "cls": "AX3000",
+    "bands": "2.4 + 5 GHz",
+    "link": "574 + 2402 Mbps",
+    "clients": 254,
+    "ports": {
+      "v": "5× GbE (cổng A4 nhận PoE)",
+      "e": "5× GbE (port A4 accepts PoE)"
+    },
+    "launch": "2022-11-09"
+  },
+  "src": {
+    "link": "ukp",
+    "eos": "uklc"
+  },
+  "u": [
+    10,
+    40
+  ],
+  "uses": [
+    "small",
+    "hotel"
+  ],
+  "f": [
+    "wifi6"
+  ],
+  "next": "ap905",
+  "hw": {
+    "uk": "business/vigorap-906",
+    "pwr": {
+      "v": "DC 12V (adapter có kèm)",
+      "e": "DC 12V (adapter supplied)"
+    },
+    "cons": "17.3 W",
+    "wt": "680 g",
+    "temp": "0–45 °C",
+    "mount": {
+      "v": "Treo tường, đặt đứng",
+      "e": "Wall, free standing"
+    }
+  }
+}

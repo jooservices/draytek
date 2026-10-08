@@ -1,0 +1,102 @@
+{
+  "id": "v2925",
+  "cat": "router",
+  "m": "Vigor2925",
+  "st": "eos",
+  "fw": "Vigor2925",
+  "t": {
+    "v": "Router 2 WAN đời cũ, 50 VPN",
+    "e": "Legacy dual-WAN router, 50 VPN"
+  },
+  "var": [
+    [
+      "2925 / n / ac",
+      {
+        "v": "Có dây, Wi-Fi n, Wi-Fi 5",
+        "e": "Wired, Wi-Fi n, Wi-Fi 5"
+      }
+    ],
+    [
+      "2925Vn / Vac",
+      {
+        "v": "VoIP",
+        "e": "VoIP"
+      }
+    ],
+    [
+      "2925Fn",
+      {
+        "v": "WAN quang",
+        "e": "Fiber WAN"
+      }
+    ],
+    [
+      "2925L",
+      {
+        "v": "4G LTE",
+        "e": "4G LTE"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 5
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "vpn": 50,
+    "wanmax": 4,
+    "wan": "2× GbE + 2 USB 4G",
+    "lan": "5× GbE",
+    "usb": "2× USB 2.0",
+    "os": "DrayOS 3",
+    "fwv": "3.9.8.6"
+  },
+  "src": {
+    "vpn": "ds",
+    "fwv": "fwl"
+  },
+  "u": [
+    10,
+    60
+  ],
+  "uses": [
+    "small",
+    "multiwan"
+  ],
+  "f": [
+    "ssl",
+    "lb",
+    "usbmodem",
+    "voip"
+  ],
+  "next": "v2927",
+  "hw": {
+    "uk": "business/vigor-2925",
+    "pwr": {
+      "v": "DC 15V (adapter ngoài, có kèm)",
+      "e": "DC 15V (external adapter, supplied)"
+    },
+    "cons": "18 W",
+    "dim": "241 × 165 × 44 mm",
+    "temp": "0–45 °C",
+    "mount": {
+      "v": "Treo tường; rack cần giá RM1",
+      "e": "Wall; rack needs RM1 bracket"
+    }
+  }
+}

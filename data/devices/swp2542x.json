@@ -1,0 +1,86 @@
+{
+  "id": "swp2542x",
+  "cat": "switch",
+  "m": "VigorSwitch P2542x / P2542xh",
+  "st": "cur",
+  "fw": "VigorSwitch%20P2542x",
+  "t": {
+    "v": "Switch L2+ PoE+ 48 cổng, 400 W hoặc 680 W",
+    "e": "L2+ 48-port PoE+, 400 W or 680 W"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 48,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 6
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "48× GbE PoE+",
+    "uplink": "6× 10G SFP+",
+    "poe": "48× PoE+",
+    "budget": {
+      "v": "400 W (P2542x), 680 W (P2542xh)",
+      "e": "400 W (P2542x), 680 W (P2542xh)"
+    },
+    "cap": 216,
+    "vlan": 512,
+    "l3": "Static route, VLAN routing, DHCP server",
+    "stp": "STP, RSTP, MSTP",
+    "stack": 4,
+    "console": true,
+    "rack": true
+  },
+  "src": {
+    "cap": "db26",
+    "budget": "db26"
+  },
+  "u": [
+    40,
+    96
+  ],
+  "uses": [
+    "camera",
+    "large",
+    "hotel"
+  ],
+  "f": [
+    "poe",
+    "sfp+",
+    "10g",
+    "l3",
+    "stack",
+    "onvif"
+  ],
+  "prev": [
+    "swp2540x"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-p2542x",
+    "pwr": {
+      "v": "100–240VAC 5.8A; đầu vào DC dự phòng 12V 4.8A + 54V 7.5A",
+      "e": "100–240VAC 5.8A; backup DC input 12V 4.8A + 54V 7.5A"
+    },
+    "cons": "498.4 W (P2542x)",
+    "dim": "440 × 346 × 44 mm",
+    "wt": "5.49 kg",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "2 quạt thông minh",
+      "e": "Dual smart fan"
+    },
+    "mount": "Rack 1U",
+    "fwd": "160.7 Mpps",
+    "buf": "16 Mbit",
+    "jumbo": "12 KB"
+  }
+}

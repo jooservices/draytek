@@ -1,0 +1,89 @@
+{
+  "id": "ap1070c",
+  "cat": "ap",
+  "m": "VigorAP 1070C",
+  "st": "cur",
+  "fw": "VigorAP%201070C",
+  "t": {
+    "v": "AP Wi-Fi 7 BE19000 ba băng tần, cổng 10G",
+    "e": "Tri-band Wi-Fi 7 BE19000 AP, 10G port"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "10G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 7 (802.11be)",
+    "cls": "BE19000 4x4",
+    "bands": "2.4 + 5 + 6 GHz",
+    "link": "1376 + 5765 + 11530 Mbps",
+    "clients": 512,
+    "ssid": "8 + 8 + 8",
+    "ports": "1× 10GbE + 1× 2.5GbE",
+    "power": "DC / PoE++",
+    "poein": "PoE++ (802.3bt)",
+    "poeout": false,
+    "mount": {
+      "v": "Ốp trần",
+      "e": "Ceiling"
+    },
+    "outdoor": false,
+    "mesh": "Root / Node",
+    "mlo": true,
+    "mgmt": "Router APM, VigorConnect, VigorACS"
+  },
+  "src": {
+    "link": "db26",
+    "clients": "db26",
+    "ports": "ukap"
+  },
+  "u": [
+    60,
+    150
+  ],
+  "uses": [
+    "dense",
+    "large",
+    "mid"
+  ],
+  "f": [
+    "wifi7",
+    "10g",
+    "2.5g",
+    "mesh",
+    "poe",
+    "poe++"
+  ],
+  "note": {
+    "v": [
+      "Cần switch PoE++ (802.3bt) hoặc nguồn DC. Băng 6 GHz chỉ dùng được ở nước đã cấp phép."
+    ],
+    "e": [
+      "Needs a PoE++ (802.3bt) switch or DC power. 6 GHz use depends on local regulation."
+    ]
+  },
+  "hw": {
+    "uk": "business/vigorap-1070c",
+    "pwr": {
+      "v": "PoE++ 802.3bt hoặc DC 12V 3A (adapter không kèm)",
+      "e": "PoE++ 802.3bt or DC 12V 3A (adapter not supplied)"
+    },
+    "cons": "33 W",
+    "dim": "225 × 225 × 43 mm",
+    "wt": "1674 g",
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Ốp trần, treo tường",
+      "e": "Ceiling, wall"
+    }
+  }
+}

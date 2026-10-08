@@ -1,0 +1,32 @@
+{
+  "id": "daccx10",
+  "cat": "more",
+  "m": "DAC-CX10",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Cáp đồng SFP+ 10G nối trực tiếp, 1–3 m",
+    "e": "10G SFP+ direct attach cable, 1–3 m"
+  },
+  "s": {
+    "kind": {
+      "v": "Phụ kiện SFP+",
+      "e": "SFP+ accessory"
+    },
+    "what": {
+      "v": "Nối router–switch trong tủ rack; 1 m, 2 m, 3 m; chạy 1G và 10G",
+      "e": "Router-to-switch inside a rack; 1 m, 2 m, 3 m; 1G and 10G"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "core",
+    "fast"
+  ],
+  "f": [
+    "sfp+",
+    "10g"
+  ]
+}

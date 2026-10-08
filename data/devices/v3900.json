@@ -1,0 +1,91 @@
+{
+  "id": "v3900",
+  "cat": "router",
+  "m": "Vigor3900",
+  "st": "eos",
+  "fw": "Vigor3900",
+  "eos": "2021-03-09",
+  "eol": "2026-03-09",
+  "t": {
+    "v": "Router 500 VPN đời cũ, đã hết hỗ trợ",
+    "e": "Legacy 500-VPN router, out of support"
+  },
+  "var": [
+    [
+      "3900",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "w",
+      "m": "sfp",
+      "sp": "1G"
+    }
+  ],
+  "s": {
+    "ipsec": 760,
+    "vpn": 500,
+    "sslvpn": 200,
+    "wanmax": 5,
+    "wan": "4× GbE + 1× SFP",
+    "routing": "Static, RIP v2, OSPF v2",
+    "ha": {
+      "v": "Có (CARP)",
+      "e": "Yes (CARP)"
+    },
+    "lb": true,
+    "os": {
+      "v": "Linux (firmware 1.5)",
+      "e": "Linux (firmware 1.5)"
+    },
+    "fwv": "1.5.1.8",
+    "launch": "2010-10-15"
+  },
+  "src": {
+    "ipsec": "ds",
+    "vpn": "ds",
+    "fwv": "fwl",
+    "eos": "uklc"
+  },
+  "u": [
+    200,
+    500
+  ],
+  "uses": [
+    "hq",
+    "multiwan",
+    "ha"
+  ],
+  "f": [
+    "ssl",
+    "ospf",
+    "ha",
+    "lb",
+    "sfp"
+  ],
+  "next": "v3912",
+  "hw": {
+    "uk": "business/vigor-3900",
+    "pwr": "220–240VAC",
+    "cons": {
+      "v": "20 W tối đa (thường 10–15 W)",
+      "e": "20 W max (typically 10–15 W)"
+    },
+    "dim": "443 × 280 × 44 mm (1U)",
+    "temp": "0–45 °C",
+    "mount": {
+      "v": "Rack 1U, có kèm tai",
+      "e": "1U rack, brackets included"
+    }
+  }
+}

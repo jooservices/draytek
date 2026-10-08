@@ -1,0 +1,84 @@
+{
+  "id": "swpx2060",
+  "cat": "switch",
+  "m": "VigorSwitch PX2060",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Switch 10G PoE++ 4 cổng, 140 W (cho AP Wi-Fi 7)",
+    "e": "4-port 10G PoE++ switch, 140 W (for Wi-Fi 7 APs)"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "10G",
+      "n": 4,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 2
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "4× 10GbE PoE++",
+    "uplink": "2× 10G SFP+",
+    "poe": "4× PoE++",
+    "budget": 140,
+    "cap": 120,
+    "l3": "VLAN routing, DHCP server",
+    "stp": "STP, RSTP, MSTP"
+  },
+  "src": {
+    "cap": "db26",
+    "budget": "db26"
+  },
+  "u": [
+    5,
+    30
+  ],
+  "uses": [
+    "dense",
+    "core",
+    "fast"
+  ],
+  "f": [
+    "10g",
+    "sfp+",
+    "poe",
+    "poe++",
+    "l3"
+  ],
+  "note": {
+    "v": [
+      "Hợp đi kèm VigorAP 1070C (PoE++, cổng 10G).",
+      "Băng thông chuyển mạch: Databook ghi 120 Gbps, trang UK ghi 160 Gbps."
+    ],
+    "e": [
+      "Pairs with VigorAP 1070C (PoE++, 10G port).",
+      "Switching capacity: Databook says 120 Gbps, UK page says 160 Gbps."
+    ]
+  },
+  "hw": {
+    "uk": "business/vigorswitch-px2060",
+    "cons": "180 W",
+    "dim": "215 × 185 × 44 mm",
+    "wt": "2.38 kg",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "2 quạt",
+      "e": "Dual fan"
+    },
+    "fwd": "119.04 Mpps",
+    "buf": "12 Mbit",
+    "jumbo": "12 KB",
+    "poe": {
+      "v": "Tới 60 W mỗi cổng (802.3bt Type 3)",
+      "e": "Up to 60 W per port (802.3bt Type 3)"
+    }
+  }
+}

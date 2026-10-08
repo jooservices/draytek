@@ -1,0 +1,161 @@
+{
+  "id": "v2927l",
+  "cat": "router",
+  "m": "Vigor2927L / L-5G",
+  "st": "cur",
+  "fw": "Vigor2927",
+  "t": {
+    "v": "Vigor2927 tích hợp 4G hoặc 5G, 2 khe SIM",
+    "e": "Vigor2927 with built-in 4G or 5G, dual SIM"
+  },
+  "var": [
+    [
+      "2927L",
+      {
+        "v": "4G LTE Cat6",
+        "e": "4G LTE Cat6"
+      }
+    ],
+    [
+      "2927Lac",
+      {
+        "v": "4G + Wi-Fi 5",
+        "e": "4G + Wi-Fi 5"
+      }
+    ],
+    [
+      "2927L-5G",
+      {
+        "v": "5G NR",
+        "e": "5G NR"
+      }
+    ],
+    [
+      "2927Lax-5G",
+      {
+        "v": "5G + Wi-Fi 6",
+        "e": "5G + Wi-Fi 6"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "sim",
+      "lb": "4G/5G"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "lb": "WAN1"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 5
+    },
+    {
+      "r": "u",
+      "m": "usb"
+    }
+  ],
+  "s": {
+    "nat": 1800,
+    "sess": 60000,
+    "ipsec": 800,
+    "ssl": 120,
+    "vpn": 50,
+    "sslvpn": 25,
+    "proto": "PPTP, L2TP, IPsec, DrayTek SSL, GRE, IKEv2, OpenVPN, WireGuard",
+    "wanmax": 3,
+    "wan": {
+      "v": "Di động + 1× GbE + 1× GbE WAN/LAN",
+      "e": "Cellular + 1× GbE + 1× GbE WAN/LAN"
+    },
+    "lan": "5× GbE",
+    "usb": "1× USB 2.0",
+    "cell": {
+      "v": "L: LTE Cat6 300/50 Mbps. 5G: NR SA 2.4 Gbps/900 Mbps, NSA 3.4 Gbps/550 Mbps, LTE Cat19. 2 nano SIM (1 SIM hoạt động)",
+      "e": "L: LTE Cat6 300/50 Mbps. 5G: NR SA 2.4 Gbps/900 Mbps, NSA 3.4 Gbps/550 Mbps, LTE Cat19. 2 nano SIM (one active)"
+    },
+    "vlan": 16,
+    "subnet": 8,
+    "routing": "Static, Policy, RIP v1/v2, BGP",
+    "ha": "Active-Standby, Hot-Standby",
+    "lb": true,
+    "wifi": "Lac: Wi-Fi 5; Lax-5G: Wi-Fi 6",
+    "apm": 20,
+    "swm": 10,
+    "vpnm": 8,
+    "hotspot": "Click-Through, Social Login, SMS PIN, Voucher PIN, RADIUS, External Portal",
+    "os": "DrayOS 4",
+    "fwv": "4.5.2.2",
+    "launch": {
+      "v": "2020-08-05 (dòng LTE), 2024-04-24 (L-5G)",
+      "e": "2020-08-05 (LTE series), 2024-04-24 (L-5G)"
+    }
+  },
+  "src": {
+    "cell": "db26",
+    "vpn": "db26",
+    "sess": "db26",
+    "fwv": "fwl",
+    "launch": "uklc"
+  },
+  "u": [
+    10,
+    100
+  ],
+  "uses": [
+    "small",
+    "backup4g",
+    "mobile",
+    "retail",
+    "remote",
+    "ha"
+  ],
+  "f": [
+    "lte",
+    "5g",
+    "wifi5",
+    "wifi6",
+    "ssl",
+    "openvpn",
+    "wg",
+    "bgp",
+    "ha",
+    "lb",
+    "hotspot"
+  ],
+  "cve": "4.5.1",
+  "hw": {
+    "uk": "business/vigor-2927lax-5g",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": {
+      "v": "24 W (Lac), 31.2 W (Lax-5G)",
+      "e": "24 W (Lac), 31.2 W (Lax-5G)"
+    },
+    "dim": "241 × 165 × 44 mm",
+    "wt": "670 g (Lax-5G)",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Treo tường; gắn rack cần giá RM1",
+      "e": "Wall; rack needs RM1 bracket"
+    },
+    "ant": {
+      "v": "Anten di động: 3 dBi (Lac), 4.37 dBi (5G)",
+      "e": "Cellular antennas: 3 dBi (Lac), 4.37 dBi (5G)"
+    }
+  }
+}

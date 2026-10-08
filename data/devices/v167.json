@@ -1,0 +1,73 @@
+{
+  "id": "v167",
+  "cat": "router",
+  "m": "Vigor167",
+  "st": "cur",
+  "fw": "Vigor167",
+  "t": {
+    "v": "Modem/router VDSL2 35b tới 300 Mbps",
+    "e": "VDSL2 35b modem/router up to 300 Mbps"
+  },
+  "var": [
+    [
+      "167",
+      {
+        "v": "Modem/bridge hoặc router, TR-069",
+        "e": "Modem/bridge or router, TR-069"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "VDSL"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 300,
+    "sess": 10000,
+    "wan": "VDSL2 35b / ADSL2+",
+    "lan": "2× GbE",
+    "subnet": 1,
+    "fwv": "5.2.9"
+  },
+  "src": {
+    "nat": "ukr",
+    "sess": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    1,
+    10
+  ],
+  "uses": [
+    "home",
+    "isp"
+  ],
+  "f": [
+    "dsl"
+  ],
+  "hw": {
+    "uk": "business/vigor-167",
+    "pwr": {
+      "v": "DC 12V 0.4A (adapter ngoài, có kèm)",
+      "e": "DC 12V 0.4A (external adapter, supplied)"
+    },
+    "cons": "4.4 W",
+    "dim": "181 × 125 × 40 mm",
+    "wt": "270 g",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Treo tường",
+      "e": "Wall"
+    }
+  }
+}

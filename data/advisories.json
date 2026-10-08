@@ -1,0 +1,5 @@
+{
+  "id": "CVE-2025-10547",
+  "v": "Lỗi chạy mã từ xa không cần đăng nhập qua giao diện web (WebUI). Cập nhật firmware từ bản này trở lên:",
+  "e": "Unauthenticated remote code execution via the WebUI. Update to at least:"
+}

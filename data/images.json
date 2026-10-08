@@ -1,0 +1,512 @@
+{
+  "v167": {
+    "src": "v167.webp",
+    "thumb": "v167-sm.webp",
+    "full": "v167-full.webp",
+    "w": 1000,
+    "h": 454,
+    "fw": 1600,
+    "fh": 726,
+    "from": "Vigor_167"
+  },
+  "v2136": {
+    "src": "v2136.webp",
+    "thumb": "v2136-sm.webp",
+    "full": "v2136-full.webp",
+    "w": 1000,
+    "h": 897,
+    "fw": 1600,
+    "fh": 1435,
+    "from": "Vigor_2136ax"
+  },
+  "v2763": {
+    "src": "v2763.webp",
+    "thumb": "v2763-sm.webp",
+    "full": "v2763-full.webp",
+    "w": 1000,
+    "h": 467,
+    "fw": 1600,
+    "fh": 747,
+    "from": "Vigor_2763"
+  },
+  "v2766": {
+    "src": "v2766.webp",
+    "thumb": "v2766-sm.webp",
+    "full": "v2766-full.webp",
+    "w": 1000,
+    "h": 467,
+    "fw": 1600,
+    "fh": 747,
+    "from": "Vigor_2766"
+  },
+  "v2767": {
+    "src": "v2767.webp",
+    "thumb": "v2767-sm.webp",
+    "full": "v2767-full.webp",
+    "w": 1000,
+    "h": 466,
+    "fw": 1600,
+    "fh": 746,
+    "from": "Vigor_2767"
+  },
+  "v2865": {
+    "src": "v2865.webp",
+    "thumb": "v2865-sm.webp",
+    "full": "v2865-full.webp",
+    "w": 1000,
+    "h": 474,
+    "fw": 1600,
+    "fh": 759,
+    "from": "Vigor_2865"
+  },
+  "v2865l": {
+    "src": "v2865l.webp",
+    "thumb": "v2865l-sm.webp",
+    "full": "v2865l-full.webp",
+    "w": 1000,
+    "h": 987,
+    "fw": 1600,
+    "fh": 1579,
+    "from": "Vigor_2865Lac"
+  },
+  "v2866": {
+    "src": "v2866.webp",
+    "thumb": "v2866-sm.webp",
+    "full": "v2866-full.webp",
+    "w": 1000,
+    "h": 474,
+    "fw": 1600,
+    "fh": 759,
+    "from": "Vigor_2866"
+  },
+  "v2867": {
+    "src": "v2867.webp",
+    "thumb": "v2867-sm.webp",
+    "full": "v2867-full.webp",
+    "w": 1000,
+    "h": 480,
+    "fw": 1407,
+    "fh": 675,
+    "from": "Vigor_2867"
+  },
+  "v2925": {
+    "src": "v2925.webp",
+    "thumb": "v2925-sm.webp",
+    "full": "v2925-full.webp",
+    "w": 1000,
+    "h": 483,
+    "fw": 1600,
+    "fh": 772,
+    "from": "Vigor_2925"
+  },
+  "v2926": {
+    "src": "v2926.webp",
+    "thumb": "v2926-sm.webp",
+    "full": "v2926-full.webp",
+    "w": 1000,
+    "h": 483,
+    "fw": 1600,
+    "fh": 772,
+    "from": "Vigor_2926"
+  },
+  "v2927": {
+    "src": "v2927.webp",
+    "thumb": "v2927-sm.webp",
+    "full": "v2927-full.webp",
+    "w": 1000,
+    "h": 861,
+    "fw": 1600,
+    "fh": 1377,
+    "from": "Vigor_2927ax"
+  },
+  "v2927l": {
+    "src": "v2927l.webp",
+    "thumb": "v2927l-sm.webp",
+    "full": "v2927l-full.webp",
+    "w": 1000,
+    "h": 994,
+    "fw": 1600,
+    "fh": 1590,
+    "from": "Vigor_2927Lac"
+  },
+  "v2928": {
+    "src": "v2928.webp",
+    "thumb": "v2928-sm.webp",
+    "full": "v2928-full.webp",
+    "w": 1000,
+    "h": 788,
+    "fw": 1357,
+    "fh": 1069,
+    "from": "Vigor_2928be"
+  },
+  "v2952": {
+    "src": "v2952.webp",
+    "thumb": "v2952-sm.webp",
+    "full": "v2952-full.webp",
+    "w": 1000,
+    "h": 423,
+    "fw": 1600,
+    "fh": 677,
+    "from": "Vigor_2952"
+  },
+  "v2960": {
+    "src": "v2960.webp",
+    "thumb": "v2960-sm.webp",
+    "full": "v2960-full.webp",
+    "w": 1000,
+    "h": 211,
+    "fw": 1600,
+    "fh": 337,
+    "from": "Vigor_2960_front"
+  },
+  "v2962": {
+    "src": "v2962.webp",
+    "thumb": "v2962-sm.webp",
+    "full": "v2962-full.webp",
+    "w": 1000,
+    "h": 423,
+    "fw": 1600,
+    "fh": 677,
+    "from": "Vigor_2962"
+  },
+  "v3912": {
+    "src": "v3912.webp",
+    "thumb": "v3912-sm.webp",
+    "full": "v3912-full.webp",
+    "w": 1000,
+    "h": 402,
+    "fw": 1600,
+    "fh": 643,
+    "from": "Vigor_3912S"
+  },
+  "vc410": {
+    "src": "vc410.webp",
+    "thumb": "vc410-sm.webp",
+    "full": "vc410-full.webp",
+    "w": 1000,
+    "h": 817,
+    "fw": 1600,
+    "fh": 1307,
+    "from": "Vigor_C410ax"
+  },
+  "vc510": {
+    "src": "vc510.webp",
+    "thumb": "vc510-sm.webp",
+    "full": "vc510-full.webp",
+    "w": 1000,
+    "h": 817,
+    "fw": 1600,
+    "fh": 1307,
+    "from": "Vigor_C510ax"
+  },
+  "ap1000c": {
+    "src": "ap1000c.webp",
+    "thumb": "ap1000c-sm.webp",
+    "full": "ap1000c-full.webp",
+    "w": 1000,
+    "h": 512,
+    "fw": 1600,
+    "fh": 819,
+    "from": "VigorAP_1000C"
+  },
+  "ap1060c": {
+    "src": "ap1060c.webp",
+    "thumb": "ap1060c-sm.webp",
+    "full": "ap1060c-full.webp",
+    "w": 1000,
+    "h": 471,
+    "fw": 1600,
+    "fh": 754,
+    "from": "VigorAP_1060C"
+  },
+  "ap805": {
+    "src": "ap805.webp",
+    "thumb": "ap805-sm.webp",
+    "full": "ap805-full.webp",
+    "w": 1000,
+    "h": 1594,
+    "fw": 1600,
+    "fh": 2551,
+    "from": "VigorAP_805"
+  },
+  "ap903": {
+    "src": "ap903.webp",
+    "thumb": "ap903-sm.webp",
+    "full": "ap903-full.webp",
+    "w": 1000,
+    "h": 2648,
+    "fw": 1253,
+    "fh": 3318,
+    "from": "VigorAP_903"
+  },
+  "ap905": {
+    "src": "ap905.webp",
+    "thumb": "ap905-sm.webp",
+    "full": "ap905-full.webp",
+    "w": 1000,
+    "h": 2829,
+    "fw": 1257,
+    "fh": 3556,
+    "from": "VigorAP_905"
+  },
+  "ap906": {
+    "src": "ap906.webp",
+    "thumb": "ap906-sm.webp",
+    "full": "ap906-full.webp",
+    "w": 1000,
+    "h": 2414,
+    "fw": 1600,
+    "fh": 3862,
+    "from": "VigorAP_906"
+  },
+  "ap912c": {
+    "src": "ap912c.webp",
+    "thumb": "ap912c-sm.webp",
+    "full": "ap912c-full.webp",
+    "w": 1000,
+    "h": 589,
+    "fw": 1600,
+    "fh": 942,
+    "from": "VigorAP_912C"
+  },
+  "ap918r": {
+    "src": "ap918r.webp",
+    "thumb": "ap918r-sm.webp",
+    "full": "ap918r-full.webp",
+    "w": 891,
+    "h": 2473,
+    "fw": 891,
+    "fh": 2473,
+    "from": "VigorAP_918R"
+  },
+  "ap918rpd": {
+    "src": "ap918rpd.webp",
+    "thumb": "ap918rpd-sm.webp",
+    "full": "ap918rpd-full.webp",
+    "w": 891,
+    "h": 2473,
+    "fw": 891,
+    "fh": 2473,
+    "from": "VigorAP_918R"
+  },
+  "ap920r": {
+    "src": "ap920r.webp",
+    "thumb": "ap920r-sm.webp",
+    "full": "ap920r-full.webp",
+    "w": 1000,
+    "h": 2611,
+    "fw": 1253,
+    "fh": 3272,
+    "from": "VigorAP_920R"
+  },
+  "ap960c": {
+    "src": "ap960c.webp",
+    "thumb": "ap960c-sm.webp",
+    "full": "ap960c-full.webp",
+    "w": 1000,
+    "h": 610,
+    "fw": 1600,
+    "fh": 977,
+    "from": "VigorAP_960C"
+  },
+  "ap962c": {
+    "src": "ap962c.webp",
+    "thumb": "ap962c-sm.webp",
+    "full": "ap962c-full.webp",
+    "w": 1000,
+    "h": 581,
+    "fw": 1600,
+    "fh": 930,
+    "from": "VigorAP_962C"
+  },
+  "swfx2120": {
+    "src": "swfx2120.webp",
+    "thumb": "swfx2120-sm.webp",
+    "full": "swfx2120-full.webp",
+    "w": 1000,
+    "h": 152,
+    "fw": 1600,
+    "fh": 244,
+    "from": "VigorSwitch_FX2120"
+  },
+  "swg1080": {
+    "src": "swg1080.webp",
+    "thumb": "swg1080-sm.webp",
+    "full": "swg1080-full.webp",
+    "w": 1000,
+    "h": 452,
+    "fw": 1499,
+    "fh": 677,
+    "from": "VigorSwitch_G1080"
+  },
+  "swg1280": {
+    "src": "swg1280.webp",
+    "thumb": "swg1280-sm.webp",
+    "full": "swg1280-full.webp",
+    "w": 1000,
+    "h": 367,
+    "fw": 1600,
+    "fh": 587,
+    "from": "VigorSwitch_G1280"
+  },
+  "swg1282": {
+    "src": "swg1282.webp",
+    "thumb": "swg1282-sm.webp",
+    "full": "swg1282-full.webp",
+    "w": 1000,
+    "h": 367,
+    "fw": 1600,
+    "fh": 587,
+    "from": "VigorSwitch_G1282"
+  },
+  "swg2100": {
+    "src": "swg2100.webp",
+    "thumb": "swg2100-sm.webp",
+    "full": "swg2100-full.webp",
+    "w": 1000,
+    "h": 421,
+    "fw": 1600,
+    "fh": 674,
+    "from": "VigorSwitch_G2100"
+  },
+  "swg2280x": {
+    "src": "swg2280x.webp",
+    "thumb": "swg2280x-sm.webp",
+    "full": "swg2280x-full.webp",
+    "w": 1000,
+    "h": 367,
+    "fw": 1600,
+    "fh": 587,
+    "from": "VigorSwitch_G2280x"
+  },
+  "swg2282x": {
+    "src": "swg2282x.webp",
+    "thumb": "swg2282x-sm.webp",
+    "full": "swg2282x-full.webp",
+    "w": 1000,
+    "h": 367,
+    "fw": 1600,
+    "fh": 587,
+    "from": "VigorSwitch_G2282x"
+  },
+  "swg2540x": {
+    "src": "swg2540x.webp",
+    "thumb": "swg2540x-sm.webp",
+    "full": "swg2540x-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1600,
+    "fh": 596,
+    "from": "VigorSwitch_G2540x"
+  },
+  "swg2542x": {
+    "src": "swg2542x.webp",
+    "thumb": "swg2542x-sm.webp",
+    "full": "swg2542x-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1600,
+    "fh": 596,
+    "from": "VigorSwitch_G2542x"
+  },
+  "swp1280": {
+    "src": "swp1280.webp",
+    "thumb": "swp1280-sm.webp",
+    "full": "swp1280-full.webp",
+    "w": 1000,
+    "h": 367,
+    "fw": 1600,
+    "fh": 587,
+    "from": "VigorSwitch_P1280"
+  },
+  "swp1281x": {
+    "src": "swp1281x.webp",
+    "thumb": "swp1281x-sm.webp",
+    "full": "swp1281x-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1600,
+    "fh": 596,
+    "from": "VigorSwitch_P1281x"
+  },
+  "swp1282": {
+    "src": "swp1282.webp",
+    "thumb": "swp1282-sm.webp",
+    "full": "swp1282-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1600,
+    "fh": 596,
+    "from": "VigorSwitch_P1282"
+  },
+  "swp2100": {
+    "src": "swp2100.webp",
+    "thumb": "swp2100-sm.webp",
+    "full": "swp2100-full.webp",
+    "w": 1000,
+    "h": 395,
+    "fw": 1600,
+    "fh": 631,
+    "from": "VigorSwitch_P2100"
+  },
+  "swp2280x": {
+    "src": "swp2280x.webp",
+    "thumb": "swp2280x-sm.webp",
+    "full": "swp2280x-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1600,
+    "fh": 596,
+    "from": "VigorSwitch_P2280x"
+  },
+  "swp2282x": {
+    "src": "swp2282x.webp",
+    "thumb": "swp2282x-sm.webp",
+    "full": "swp2282x-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1600,
+    "fh": 596,
+    "from": "VigorSwitch_P2282x"
+  },
+  "swp2540x": {
+    "src": "swp2540x.webp",
+    "thumb": "swp2540x-sm.webp",
+    "full": "swp2540x-full.webp",
+    "w": 1000,
+    "h": 385,
+    "fw": 1600,
+    "fh": 616,
+    "from": "VigorSwitch_P2540x"
+  },
+  "swp2542x": {
+    "src": "swp2542x.webp",
+    "thumb": "swp2542x-sm.webp",
+    "full": "swp2542x-full.webp",
+    "w": 1000,
+    "h": 385,
+    "fw": 1600,
+    "fh": 616,
+    "from": "VigorSwitch_P2542x"
+  },
+  "swpq2200xb": {
+    "src": "swpq2200xb.webp",
+    "thumb": "swpq2200xb-sm.webp",
+    "full": "swpq2200xb-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1600,
+    "fh": 597,
+    "from": "VigorSwitch_PQ2200xb"
+  },
+  "swq2200x": {
+    "src": "swq2200x.webp",
+    "thumb": "swq2200x-sm.webp",
+    "full": "swq2200x-full.webp",
+    "w": 1000,
+    "h": 367,
+    "fw": 1600,
+    "fh": 587,
+    "from": "VigorSwitch_Q2200x"
+  }
+}

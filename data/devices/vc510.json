@@ -1,0 +1,135 @@
+{
+  "id": "vc510",
+  "cat": "router",
+  "m": "Vigor C510",
+  "st": "cur",
+  "fw": "Vigor%20C510",
+  "t": {
+    "v": "Router 5G làm đường chính, luôn bật",
+    "e": "5G primary-WAN router, always on"
+  },
+  "var": [
+    [
+      "C510",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "C510ax",
+      {
+        "v": "Wi-Fi 6",
+        "e": "Wi-Fi 6"
+      }
+    ],
+    [
+      "C510V / Vax",
+      {
+        "v": "VoIP (theo dự án)",
+        "e": "VoIP (project based)"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "sim",
+      "lb": "5G"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "nat": 940,
+    "sess": 50000,
+    "ipsec": 370,
+    "ssl": false,
+    "vpn": 16,
+    "sslvpn": false,
+    "wanmax": 3,
+    "wan": {
+      "v": "5G + 1× GbE (+1× GbE WAN/LAN)",
+      "e": "5G + 1× GbE (+1× GbE WAN/LAN)"
+    },
+    "lan": "3× GbE",
+    "cell": {
+      "v": "5G NR SA 2.4 Gbps/900 Mbps, NSA 3.4 Gbps/550 Mbps; n1,3,7,8,20,28,38,40,77,78; LTE Cat19",
+      "e": "5G NR SA 2.4 Gbps/900 Mbps, NSA 3.4 Gbps/550 Mbps; n1,3,7,8,20,28,38,40,77,78; LTE Cat19"
+    },
+    "vlan": 4,
+    "wifi": "ax: Wi-Fi 6, 574 + 2402",
+    "apm": 20,
+    "swm": 5,
+    "hotspot": true,
+    "secu": "IAM, Web filter",
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "nat": "ukr",
+    "cell": "db26",
+    "vpn": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    5,
+    60
+  ],
+  "uses": [
+    "mobile",
+    "retail",
+    "backup4g",
+    "small",
+    "fast"
+  ],
+  "f": [
+    "5g",
+    "lte",
+    "wifi6",
+    "iam",
+    "hotspot"
+  ],
+  "note": {
+    "v": [
+      "Bản UK chỉ 4 kênh VPN; Databook toàn cầu ghi 16."
+    ],
+    "e": [
+      "UK units have 4 VPN tunnels; the global Databook lists 16."
+    ]
+  },
+  "hw": {
+    "uk": "business/vigor-c510ax",
+    "pwr": {
+      "v": "DC 12V 1.4A (adapter ngoài 100–240VAC, có kèm)",
+      "e": "DC 12V 1.4A (external 100–240VAC adapter, supplied)"
+    },
+    "cons": "16 W (C510ax)",
+    "dim": "207 × 131 × 42 mm",
+    "wt": "840 g",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Treo tường",
+      "e": "Wall"
+    },
+    "ant": {
+      "v": "Wi-Fi: 2.4 GHz 2.1 dBi, 5 GHz 2.8 dBi; 5G/4G: 2 anten ngoài + 2 PIFA trong, 4 dBi; 2 khe nano SIM (1 SIM hoạt động)",
+      "e": "Wi-Fi: 2.4 GHz 2.1 dBi, 5 GHz 2.8 dBi; 5G/4G: 2 external + 2 internal PIFA, 4 dBi; 2 nano SIM (1 active)"
+    }
+  }
+}

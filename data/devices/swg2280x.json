@@ -1,0 +1,67 @@
+{
+  "id": "swg2280x",
+  "cat": "switch",
+  "m": "VigorSwitch G2280x",
+  "st": "eos",
+  "fw": "VigorSwitch%20G2280x",
+  "eos": "2024-10-18",
+  "eol": "2027-10-18",
+  "t": {
+    "v": "Switch L2+ 24 cổng + 4 SFP+ đời trước",
+    "e": "Earlier L2+ 24-port + 4 SFP+ switch"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 24
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "24× GbE",
+    "uplink": "4× SFP+ (1G/10G)",
+    "poe": false,
+    "cap": 128,
+    "launch": "2019-07-31"
+  },
+  "src": {
+    "ports": "ukp",
+    "eos": "uklc"
+  },
+  "u": [
+    20,
+    48
+  ],
+  "uses": [
+    "mid"
+  ],
+  "f": [
+    "sfp+",
+    "10g"
+  ],
+  "next": "swg2282x",
+  "hw": {
+    "uk": "business/vigorswitch-g2280x",
+    "pwr": "100–240VAC",
+    "cons": "25 W",
+    "dim": "441 × 270 × 45 mm",
+    "wt": "2.48 kg",
+    "temp": "0–45 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Passively cooled"
+    },
+    "mount": "Rack 1U",
+    "fwd": "95.24 Mpps",
+    "buf": "12 Mbit",
+    "jumbo": "12 KB"
+  }
+}

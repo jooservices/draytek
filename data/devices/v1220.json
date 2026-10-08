@@ -1,0 +1,107 @@
+{
+  "id": "v1220",
+  "cat": "router",
+  "m": "Vigor1220",
+  "st": "cur",
+  "fw": "Vigor1220",
+  "t": {
+    "v": "Router XGS-PON 10G, 2 WAN, Wi-Fi 7",
+    "e": "XGS-PON 10G dual-WAN router, Wi-Fi 7"
+  },
+  "var": [
+    [
+      "1220",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "1220be",
+      {
+        "v": "Wi-Fi 7",
+        "e": "Wi-Fi 7"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "pon",
+      "lb": "XGS-PON"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "10G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G"
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "sess": 60000,
+    "vpn": 50,
+    "wanmax": 3,
+    "wan": {
+      "v": "1× XGS-PON + 1× GbE + 1× 10GbE WAN/LAN",
+      "e": "1× XGS-PON + 1× GbE + 1× 10GbE WAN/LAN"
+    },
+    "lan": "3× GbE + 1× 2.5GbE + 1× SFP+",
+    "subnet": 8,
+    "wifi": "be: Wi-Fi 7, MLO",
+    "apm": 20,
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "sess": "db26",
+    "vpn": "db26",
+    "wan": "db26",
+    "lan": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    20,
+    150
+  ],
+  "uses": [
+    "isp",
+    "fast",
+    "small"
+  ],
+  "f": [
+    "xgspon",
+    "pon",
+    "10g",
+    "2.5g",
+    "sfp+",
+    "wifi7"
+  ],
+  "note": {
+    "v": [
+      "Cấu hình cổng đọc từ bảng tính năng Databook 2026 (chưa có datasheet riêng)."
+    ],
+    "e": [
+      "Port layout read from the Databook 2026 feature matrix (no separate datasheet found)."
+    ]
+  }
+}

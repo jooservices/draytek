@@ -1,0 +1,64 @@
+{
+  "id": "swpq2121x",
+  "cat": "switch",
+  "m": "VigorSwitch PQ2121x",
+  "st": "cur",
+  "fw": "VigorSwitch%20PQ2121x",
+  "t": {
+    "v": "Switch L2+ PoE+ 8 cổng 2.5G, 140 W",
+    "e": "L2+ 8× 2.5G PoE+ switch, 140 W"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G",
+      "n": 8,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "level": "L2+ Managed",
+    "ports": "8× 2.5GbE PoE+",
+    "uplink": "4× 10G SFP+",
+    "poe": "8× PoE+",
+    "budget": 140,
+    "cap": 120,
+    "l3": "Static route, VLAN routing, DHCP server",
+    "stp": "STP, RSTP, MSTP"
+  },
+  "src": {
+    "cap": "db26",
+    "budget": "db26"
+  },
+  "u": [
+    10,
+    40
+  ],
+  "uses": [
+    "mid",
+    "dense",
+    "camera"
+  ],
+  "f": [
+    "2.5g",
+    "sfp+",
+    "10g",
+    "poe",
+    "l3"
+  ],
+  "note": {
+    "v": [
+      "Hợp đi kèm AP Wi-Fi 6 cổng 2.5G (962C, 1062C)."
+    ],
+    "e": [
+      "Pairs well with 2.5G Wi-Fi 6 APs (962C, 1062C)."
+    ]
+  }
+}

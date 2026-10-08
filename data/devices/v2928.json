@@ -1,0 +1,213 @@
+{
+  "id": "v2928",
+  "cat": "router",
+  "m": "Vigor2928",
+  "st": "cur",
+  "fw": "Vigor2928",
+  "t": {
+    "v": "Router 10G (SFP+ và RJ-45 10G), Wi-Fi 7, DrayOS 5",
+    "e": "10G router (SFP+ and 10G RJ-45), Wi-Fi 7, DrayOS 5"
+  },
+  "var": [
+    [
+      "2928",
+      {
+        "v": "Bản có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2928be",
+      {
+        "v": "Wi-Fi 7 BE, MLO",
+        "e": "Wi-Fi 7 BE, MLO"
+      }
+    ],
+    [
+      "2928-4G / be-4G",
+      {
+        "v": "LTE Cat6",
+        "e": "LTE Cat6"
+      }
+    ],
+    [
+      "2928-5G / be-5G",
+      {
+        "v": "5G NR",
+        "e": "5G NR"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "lb": "P1"
+    },
+    {
+      "r": "w",
+      "m": "sfpp",
+      "sp": "10G",
+      "lb": "P2"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "10G",
+      "lb": "P3"
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "lb": "P4"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G",
+      "lb": "P5"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 9300,
+    "sess": 100000,
+    "ipsec": 430,
+    "ssl": false,
+    "vpn": 50,
+    "sslvpn": false,
+    "proto": "IPsec IKEv1/IKEv2, IKEv2-EAP, IPsec-XAuth, OpenVPN, WireGuard, EasyVPN",
+    "wanmax": 2,
+    "wan": {
+      "v": "P1 1G RJ-45; P2 10G SFP+; P3 10G RJ-45 (WAN/LAN). P2 và P3 không cùng làm WAN; thêm modem USB LTE",
+      "e": "P1 1G RJ-45; P2 10G SFP+; P3 10G RJ-45 (WAN/LAN). P2 and P3 cannot both be WAN; plus USB LTE modems"
+    },
+    "lan": {
+      "v": "P4 10G SFP+, P5 2.5GbE, P6–P8 3× GbE (chỉ 2 trong các cổng 10G hoạt động cùng lúc)",
+      "e": "P4 10G SFP+, P5 2.5GbE, P6–P8 3× GbE (only two 10G ports active at once)"
+    },
+    "usb": "2× USB 2.0",
+    "cell": {
+      "v": "Bản -4G/-5G tích hợp, 2 nano SIM + eSIM",
+      "e": "-4G/-5G built in, 2 nano SIM + eSIM"
+    },
+    "vlan": 8,
+    "subnet": 8,
+    "routing": "Static, Policy, Inter-VLAN, RIP v1/v2, OSPF v2/v3, BGP",
+    "ha": false,
+    "lb": {
+      "v": "Có (theo IP, theo session)",
+      "e": "Yes (IP / session based)"
+    },
+    "wifi": {
+      "v": "Bản be: Wi-Fi 7, 1376 + 5764 Mbps, MLO, MRU",
+      "e": "be: Wi-Fi 7, 1376 + 5764 Mbps, MLO, MRU"
+    },
+    "apm": 20,
+    "swm": {
+      "v": "10 (datasheet 09/2026); 5 (Databook, trang UK)",
+      "e": "10 (datasheet Sep 2026); 5 (Databook, UK page)"
+    },
+    "hotspot": "Click-Through, Social Login, SMS PIN, RADIUS, External Portal",
+    "secu": "IAM, URL/IP Reputation*, Threat Protection Guardian*",
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2",
+    "launch": "2026-02-24"
+  },
+  "src": {
+    "nat": "ukp",
+    "ipsec": "ukp",
+    "sess": "ds",
+    "vpn": "ds",
+    "wanmax": "ukr",
+    "vlan": "ds",
+    "fwv": "fwl",
+    "launch": "uklc"
+  },
+  "u": [
+    50,
+    200
+  ],
+  "uses": [
+    "small",
+    "mid",
+    "fast",
+    "multiwan",
+    "remote",
+    "hq",
+    "secure",
+    "iptv",
+    "cafe"
+  ],
+  "f": [
+    "10g",
+    "2.5g",
+    "sfp+",
+    "wifi7",
+    "wg",
+    "openvpn",
+    "ospf",
+    "bgp",
+    "lb",
+    "iam",
+    "threat",
+    "hotspot",
+    "usbmodem",
+    "lte",
+    "5g"
+  ],
+  "note": {
+    "v": [
+      "NAT sessions: datasheet toàn cầu 09/2026 ghi 100K; Databook 04/2026 và bản UK ghi 60K.",
+      "IPsec: trang sản phẩm UK 430 Mbps, bảng so sánh UK 540 Mbps.",
+      "Không có DrayTek SSL VPN và High Availability.",
+      "Bản -4G/-5G không có cổng LAN 2.5GbE (P5).",
+      "Trang UK của 2928be ghi IPsec 540 Mbps."
+    ],
+    "e": [
+      "NAT sessions: global datasheet (Sep 2026) says 100K; Databook (Apr 2026) and UK say 60K.",
+      "IPsec: UK product page 430 Mbps, UK comparison 540 Mbps.",
+      "No DrayTek SSL VPN and no High Availability.",
+      "-4G/-5G models lack the 2.5GbE LAN port (P5).",
+      "The UK 2928be page lists 540 Mbps IPsec."
+    ]
+  },
+  "next": "v2962",
+  "hw": {
+    "uk": "business/vigor-2928",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài 100–240VAC, có kèm)",
+      "e": "DC 12V (external 100–240VAC adapter, supplied)"
+    },
+    "cons": {
+      "v": "18 W (2928, 2928-4G); 33.6 W (2928be, -5G); 31.2 W (be-4G)",
+      "e": "18 W (2928, 2928-4G); 33.6 W (2928be, -5G); 31.2 W (be-4G)"
+    },
+    "dim": {
+      "v": "241 × 165 × 43 mm (2928); 241 × 210 × 44 mm (be, 4G, 5G)",
+      "e": "241 × 165 × 43 mm (2928); 241 × 210 × 44 mm (be, 4G, 5G)"
+    },
+    "wt": {
+      "v": "590.6 g (2928); 2928be: trang UK ghi \"1.157g\", nhiều khả năng là 1.157 kg",
+      "e": "590.6 g (2928); 2928be: UK page says \"1.157g\", likely 1.157 kg"
+    },
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường; gắn rack cần giá RM1",
+      "e": "Shelf, wall; rack needs RM1 bracket"
+    }
+  }
+}

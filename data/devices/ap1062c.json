@@ -1,0 +1,87 @@
+{
+  "id": "ap1062c",
+  "cat": "ap",
+  "m": "VigorAP 1062C",
+  "st": "cur",
+  "fw": "VigorAP%201062C",
+  "t": {
+    "v": "AP Wi-Fi 6 AX6000 4×4 cho mật độ cao",
+    "e": "Wi-Fi 6 AX6000 4×4 high-density AP"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 6 (802.11ax)",
+    "cls": "AX6000 4x4",
+    "bands": "2.4 + 5 GHz",
+    "link": "1200 + 4800 Mbps",
+    "clients": 256,
+    "ssid": "8 + 8",
+    "ports": "1× 2.5GbE",
+    "power": "DC / PoE+",
+    "poein": "PoE+",
+    "poeout": false,
+    "mount": {
+      "v": "Ốp trần",
+      "e": "Ceiling"
+    },
+    "outdoor": false,
+    "mesh": "Root / Node",
+    "mgmt": "Router APM, VigorConnect, VigorACS",
+    "launch": "2023-11-01"
+  },
+  "src": {
+    "link": "db26",
+    "clients": "db26",
+    "launch": "uklc"
+  },
+  "u": [
+    40,
+    100
+  ],
+  "uses": [
+    "dense",
+    "mid",
+    "large",
+    "hotel"
+  ],
+  "f": [
+    "wifi6",
+    "2.5g",
+    "mesh",
+    "poe"
+  ],
+  "prev": [
+    "ap1060c",
+    "ap1000c"
+  ],
+  "note": {
+    "v": [
+      "Tốc độ 5 GHz tối đa tuỳ quy định tần số từng nước."
+    ],
+    "e": [
+      "Max 5 GHz rate depends on regional rules."
+    ]
+  },
+  "hw": {
+    "uk": "business/vigorap-1062c",
+    "pwr": {
+      "v": "PoE+ 802.3at hoặc DC 12V",
+      "e": "PoE+ 802.3at or DC 12V"
+    },
+    "cons": "23 W",
+    "dim": "208 × 208 × 32.1 mm",
+    "wt": "813 g",
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Ốp trần, treo tường (đi dây phía sau)",
+      "e": "Ceiling, wall (rear cable entry)"
+    }
+  }
+}

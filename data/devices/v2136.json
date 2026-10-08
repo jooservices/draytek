@@ -1,0 +1,178 @@
+{
+  "id": "v2136",
+  "cat": "router",
+  "m": "Vigor2136",
+  "st": "cur",
+  "fw": "Vigor2136",
+  "t": {
+    "v": "Router bảo mật 2.5G, 2 WAN, DrayOS 5",
+    "e": "2.5G dual-WAN security router, DrayOS 5"
+  },
+  "var": [
+    [
+      "2136",
+      {
+        "v": "Bản có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2136ax",
+      {
+        "v": "Wi-Fi 6 AX3000",
+        "e": "Wi-Fi 6 AX3000"
+      }
+    ],
+    [
+      "2136F",
+      {
+        "v": "WAN quang 2.5G SFP",
+        "e": "2.5G SFP fiber WAN"
+      }
+    ],
+    [
+      "2136Fax",
+      {
+        "v": "SFP + Wi-Fi 6",
+        "e": "SFP + Wi-Fi 6"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "2.5G",
+      "lb": "WAN"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "2.5G",
+      "lb": "P2"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 2300,
+    "sess": 50000,
+    "ipsec": 390,
+    "ssl": false,
+    "vpn": 16,
+    "sslvpn": false,
+    "proto": "IPsec IKEv1/IKEv2, IKEv2-EAP, IPsec-XAuth, OpenVPN, WireGuard",
+    "wanmax": 2,
+    "wan": {
+      "v": "1× 2.5GbE RJ-45 (bản F: 1× 2.5G SFP) + 1× 2.5GbE WAN/LAN",
+      "e": "1× 2.5GbE RJ-45 (F: 1× 2.5G SFP) + 1× 2.5GbE WAN/LAN"
+    },
+    "lan": {
+      "v": "3× GbE (+ cổng 2.5GbE nếu không dùng làm WAN)",
+      "e": "3× GbE (+ the 2.5GbE port when not used as WAN)"
+    },
+    "usb": "2× USB 2.0",
+    "cell": false,
+    "vlan": 8,
+    "subnet": 4,
+    "routing": "Static, Policy, Inter-VLAN, RIP v1/v2, OSPF v2/v3, BGP",
+    "ha": false,
+    "lb": {
+      "v": "Không (chỉ failover)",
+      "e": "No (failover only)"
+    },
+    "wifi": {
+      "v": "Bản ax: Wi-Fi 6, 574 + 2402 Mbps, mesh root",
+      "e": "ax: Wi-Fi 6, 574 + 2402 Mbps, mesh root"
+    },
+    "apm": 20,
+    "swm": 5,
+    "hotspot": "Click-Through, Social Login, SMS PIN, RADIUS, External Portal",
+    "secu": {
+      "v": "IAM (người dùng/nhóm/chính sách), URL/IP Reputation*, Threat Protection Sentry*, Port Knocking",
+      "e": "IAM (users/groups/policies), URL/IP Reputation*, Threat Protection Sentry*, Port Knocking"
+    },
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2",
+    "launch": "2025-01-28"
+  },
+  "src": {
+    "nat": "db26",
+    "ipsec": "ukr",
+    "sess": "ds",
+    "vpn": "ds",
+    "vlan": "ds",
+    "lb": "ds",
+    "fwv": "fwl",
+    "launch": "uklc"
+  },
+  "u": [
+    10,
+    100
+  ],
+  "uses": [
+    "home",
+    "small",
+    "fast",
+    "iptv",
+    "remote",
+    "backup4g",
+    "secure",
+    "cafe"
+  ],
+  "f": [
+    "2.5g",
+    "wifi6",
+    "wg",
+    "openvpn",
+    "ospf",
+    "bgp",
+    "iam",
+    "threat",
+    "hotspot",
+    "usbmodem",
+    "sfp"
+  ],
+  "note": {
+    "v": [
+      "Bản bán tại UK giới hạn 4 kênh VPN; datasheet toàn cầu ghi 16.",
+      "DrayOS 5 không còn DrayTek SSL VPN; dùng OpenVPN hoặc WireGuard cho người dùng từ xa.",
+      "Không có cân bằng tải WAN theo datasheet, chỉ failover."
+    ],
+    "e": [
+      "UK units are limited to 4 VPN tunnels; the global datasheet lists 16.",
+      "DrayOS 5 drops DrayTek SSL VPN; use OpenVPN or WireGuard for remote users.",
+      "Datasheet lists failover only, no WAN load balancing."
+    ]
+  },
+  "next": "v2928",
+  "hw": {
+    "uk": "soho/vigor-2136ax",
+    "pwr": {
+      "v": "DC 12V 1.5A (adapter ngoài 100–240VAC, có kèm)",
+      "e": "DC 12V 1.5A (external 100–240VAC adapter, supplied)"
+    },
+    "cons": "18 W (2136ax)",
+    "dim": "207 × 131 × 42 mm",
+    "wt": "508 g (2136ax)",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường",
+      "e": "Desk, wall"
+    },
+    "ant": {
+      "v": "2 anten rời RP-SMA: 2.4 GHz 2.6 dBi, 5 GHz 2.7 dBi (ax)",
+      "e": "2 detachable RP-SMA: 2.4 GHz 2.6 dBi, 5 GHz 2.7 dBi (ax)"
+    }
+  }
+}

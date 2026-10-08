@@ -1,0 +1,74 @@
+{
+  "id": "v166",
+  "cat": "router",
+  "m": "Vigor166",
+  "st": "cur",
+  "fw": "Vigor166",
+  "t": {
+    "v": "Modem/router G.fast tới 1 Gbps",
+    "e": "G.fast modem/router up to 1 Gbps"
+  },
+  "var": [
+    [
+      "166",
+      {
+        "v": "Modem/bridge hoặc router",
+        "e": "Modem/bridge or router"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "G.fast"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 940,
+    "sess": 10000,
+    "wan": "G.fast / VDSL2 35b / ADSL2+",
+    "lan": "2× GbE",
+    "subnet": 1,
+    "fwv": "4.2.7"
+  },
+  "src": {
+    "nat": "ukr",
+    "sess": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    1,
+    10
+  ],
+  "uses": [
+    "home",
+    "isp"
+  ],
+  "f": [
+    "dsl",
+    "gfast"
+  ],
+  "hw": {
+    "uk": "business/vigor-166",
+    "pwr": {
+      "v": "DC 12V 1A (adapter ngoài, có kèm)",
+      "e": "DC 12V 1A (external adapter, supplied)"
+    },
+    "cons": "6.6 W",
+    "dim": "181 × 125 × 40 mm",
+    "wt": "280 g",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Treo tường",
+      "e": "Wall"
+    }
+  }
+}

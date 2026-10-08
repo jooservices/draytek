@@ -1,0 +1,28 @@
+{
+  "id": "reput",
+  "cat": "more",
+  "m": "URL / IP Reputation",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Dịch vụ phân loại URL và IP độc hại",
+    "e": "URL & IP threat intelligence service"
+  },
+  "s": {
+    "kind": {
+      "v": "Thuê bao (license)",
+      "e": "Subscription"
+    },
+    "what": {
+      "v": "43 tỷ+ URL, 4.39 tỷ+ IP, 82 nhóm (10 nhóm bảo mật); chặn TOR, proxy, botnet, phishing, spam",
+      "e": "43B+ URLs, 4.39B+ IPs, 82 categories (10 security); blocks TOR, proxies, botnets, phishing, spam"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "secure"
+  ],
+  "f": []
+}

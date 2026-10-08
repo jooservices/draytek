@@ -1,0 +1,141 @@
+{
+  "id": "v3910",
+  "cat": "router",
+  "m": "Vigor3910",
+  "st": "old",
+  "fw": "Vigor3910",
+  "t": {
+    "v": "Router 10G đời trước của 3912",
+    "e": "10G router, predecessor of the 3912"
+  },
+  "var": [
+    [
+      "3910",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "s",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 2
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "2.5G",
+      "n": 2
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 9000,
+    "sess": 1000000,
+    "ipsec": 2500,
+    "ssl": 1300,
+    "vpn": 500,
+    "sslvpn": 200,
+    "proto": "PPTP, L2TP, IPsec, L2TP/IPsec, DrayTek SSL, GRE, IKEv2, IPsec-XAuth, OpenVPN",
+    "wanmax": 8,
+    "wan": {
+      "v": "8 cổng WAN/LAN: 2× 10G SFP+, 2× 2.5GbE, 4× GbE",
+      "e": "8 WAN/LAN ports: 2× 10G SFP+, 2× 2.5GbE, 4× GbE"
+    },
+    "lan": "4× GbE",
+    "usb": "2× USB 3.0",
+    "vlan": 100,
+    "subnet": 100,
+    "routing": "Static, Policy, Inter-VLAN, RIP v1/v2, OSPF v2, BGP",
+    "ha": "Active-Standby, Hot-Standby",
+    "lb": true,
+    "os": "DrayOS 4",
+    "fwv": "4.4.6.3",
+    "launch": "2019-12-17"
+  },
+  "src": {
+    "nat": "ds",
+    "ipsec": "ds",
+    "ssl": "ds",
+    "sess": "ds",
+    "vpn": "ds",
+    "fwv": "fwl",
+    "launch": "uklc"
+  },
+  "u": [
+    300,
+    800
+  ],
+  "uses": [
+    "large",
+    "hq",
+    "fast",
+    "multiwan",
+    "ha"
+  ],
+  "f": [
+    "10g",
+    "2.5g",
+    "sfp+",
+    "ssl",
+    "openvpn",
+    "ospf",
+    "bgp",
+    "ha",
+    "lb",
+    "hotspot"
+  ],
+  "note": {
+    "v": [
+      "Không còn trong Databook 2026; DrayTek UK vẫn ghi \"Available\".",
+      "Bản UK ghi 150,000 session, IPsec 3.3 Gbps, SSL 1 Gbps. Datasheet toàn cầu ghi 1000K, 2.5 Gbps, 1.3 Gbps.",
+      "Datasheet không liệt kê WireGuard."
+    ],
+    "e": [
+      "Not in Databook 2026; DrayTek UK still lists it as Available.",
+      "UK spec: 150,000 sessions, 3.3 Gbps IPsec, 1 Gbps SSL. Global datasheet: 1000K, 2.5 Gbps, 1.3 Gbps.",
+      "Datasheet does not list WireGuard."
+    ]
+  },
+  "next": "v3912",
+  "cve": "4.4.3.6",
+  "hw": {
+    "uk": "business/vigor-3910",
+    "cpu": {
+      "v": "4 nhân 1.2 GHz",
+      "e": "Quad-core 1.2 GHz"
+    },
+    "pwr": {
+      "v": "220–240VAC cấp trực tiếp",
+      "e": "220–240VAC direct"
+    },
+    "cons": "35 W",
+    "dim": "443 × 285 × 45 mm",
+    "wt": "3.23 kg",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Rack 1U, có kèm bộ gắn",
+      "e": "1U rack, kit included"
+    }
+  }
+}

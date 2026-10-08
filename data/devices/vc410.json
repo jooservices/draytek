@@ -1,0 +1,136 @@
+{
+  "id": "vc410",
+  "cat": "router",
+  "m": "Vigor C410",
+  "st": "cur",
+  "fw": "Vigor%20C410",
+  "t": {
+    "v": "Router 4G làm đường chính, luôn bật",
+    "e": "4G primary-WAN router, always on"
+  },
+  "var": [
+    [
+      "C410",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "C410ax",
+      {
+        "v": "Wi-Fi 6",
+        "e": "Wi-Fi 6"
+      }
+    ],
+    [
+      "C410V / Vax",
+      {
+        "v": "VoIP (theo dự án)",
+        "e": "VoIP (project based)"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "sim",
+      "lb": "4G"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "nat": 940,
+    "sess": 50000,
+    "ipsec": 370,
+    "ssl": false,
+    "vpn": 16,
+    "sslvpn": false,
+    "wanmax": 3,
+    "wan": {
+      "v": "4G LTE + 1× GbE + 1× GbE WAN/LAN",
+      "e": "4G LTE + 1× GbE + 1× GbE WAN/LAN"
+    },
+    "lan": "4× GbE",
+    "cell": {
+      "v": "LTE Cat6 300/50 Mbps, 2 SIM",
+      "e": "LTE Cat6 300/50 Mbps, dual SIM"
+    },
+    "vlan": 4,
+    "wifi": "ax: Wi-Fi 6, 574 + 2402",
+    "apm": 20,
+    "swm": 5,
+    "hotspot": true,
+    "secu": "IAM, Web filter",
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "nat": "ukr",
+    "ipsec": "ukr",
+    "vpn": "db26",
+    "lan": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    5,
+    40
+  ],
+  "uses": [
+    "mobile",
+    "retail",
+    "backup4g",
+    "small"
+  ],
+  "f": [
+    "lte",
+    "wifi6",
+    "iam",
+    "hotspot"
+  ],
+  "note": {
+    "v": [
+      "Bản UK chỉ 4 kênh VPN; Databook toàn cầu ghi 16.",
+      "Giao thức VPN cụ thể chưa xác minh."
+    ],
+    "e": [
+      "UK units have 4 VPN tunnels; the global Databook lists 16.",
+      "Exact VPN protocols not verified."
+    ]
+  },
+  "hw": {
+    "uk": "business/vigor-c410ax",
+    "pwr": {
+      "v": "DC 12V 1.4A (adapter ngoài 100–240VAC, có kèm)",
+      "e": "DC 12V 1.4A (external 100–240VAC adapter, supplied)"
+    },
+    "cons": "16.2 W (C410ax)",
+    "dim": "207 × 131 × 42 mm",
+    "wt": "840 g",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Treo tường",
+      "e": "Wall"
+    },
+    "ant": {
+      "v": "Wi-Fi: 2.4 GHz 2.1 dBi, 5 GHz 2.8 dBi; 4G: 2 anten ngoài + 2 PIFA trong, 3.68 dBi; 2 khe nano SIM (1 SIM hoạt động)",
+      "e": "Wi-Fi: 2.4 GHz 2.1 dBi, 5 GHz 2.8 dBi; 4G: 2 external + 2 internal PIFA, 3.68 dBi; 2 nano SIM (1 active)"
+    }
+  }
+}

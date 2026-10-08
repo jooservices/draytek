@@ -1,0 +1,99 @@
+{
+  "id": "v2766",
+  "cat": "router",
+  "m": "Vigor2766",
+  "st": "cur",
+  "fw": "Vigor2766",
+  "t": {
+    "v": "Router G.fast, 2 kênh VPN",
+    "e": "G.fast router, 2 VPN tunnels"
+  },
+  "var": [
+    [
+      "2766",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2766ac",
+      {
+        "v": "Wi-Fi 5",
+        "e": "Wi-Fi 5"
+      }
+    ],
+    [
+      "2766Vac",
+      {
+        "v": "Wi-Fi 5 + VoIP",
+        "e": "Wi-Fi 5 + VoIP"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "G.fast"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "sess": 50000,
+    "vpn": 2,
+    "wan": "G.fast / VDSL2 35b / ADSL2+ + 1× GbE WAN/LAN",
+    "lan": "3× GbE",
+    "subnet": 4,
+    "wifi": "ac: Wi-Fi 5 Wave 2",
+    "os": "DrayOS 4",
+    "fwv": "4.5.3.2"
+  },
+  "src": {
+    "sess": "db26",
+    "vpn": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    1,
+    20
+  ],
+  "uses": [
+    "home"
+  ],
+  "f": [
+    "dsl",
+    "gfast",
+    "wifi5",
+    "voip"
+  ],
+  "cve": "4.5.1",
+  "hw": {
+    "uk": "soho/vigor-2766",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": {
+      "v": "18 W (2766), 19.8 W (ac), 24 W (Vac, ax)",
+      "e": "18 W (2766), 19.8 W (ac), 24 W (Vac, ax)"
+    },
+    "dim": "207 × 131 × 39 mm",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường",
+      "e": "Shelf, wall"
+    }
+  }
+}

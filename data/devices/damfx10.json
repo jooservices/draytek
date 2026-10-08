@@ -1,0 +1,32 @@
+{
+  "id": "damfx10",
+  "cat": "more",
+  "m": "DAM-FX10-20K",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Module quang SFP+ 10G single-mode, 20 km",
+    "e": "10G SFP+ single-mode optic, 20 km"
+  },
+  "s": {
+    "kind": {
+      "v": "Phụ kiện SFP+",
+      "e": "SFP+ accessory"
+    },
+    "what": {
+      "v": "1 sợi quang, dùng theo cặp Type A + Type B; xa tới 20 km",
+      "e": "Single fiber, used as Type A + Type B pair; up to 20 km"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "fast",
+    "core"
+  ],
+  "f": [
+    "sfp+",
+    "10g"
+  ]
+}

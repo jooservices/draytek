@@ -1,0 +1,186 @@
+{
+  "checked": "2026-10-08T16:25:33.925Z",
+  "source": "https://www.draytek.co.uk/support/security-advisories",
+  "items": [
+    {
+      "date": "2026-08-24",
+      "title": "Multiple Vulnerabilities in VigorSwitch Series",
+      "cves": [
+        "CVE-2026-71915",
+        "CVE-2026-71943"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2026-71915-cve-2026-71943",
+      "families": [
+        "VigorSwitch"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Multiple Remote Code Execution and Buffer Overflow Vulnerabilities in VigorAP Series",
+      "cves": [
+        "CVE-2026-71904",
+        "CVE-2026-71914"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2026-71904-cve-2026-71914",
+      "families": [
+        "VigorAP"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "title": "Multiple remote code execution vulnerabilty",
+      "cves": [
+        "CVE-2026-52497"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2026-52497-52503",
+      "families": []
+    },
+    {
+      "date": "2025-12-10",
+      "title": "WLAN Driver Vulnerabilities",
+      "cves": [
+        "CVE-2025-20710"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2025-20710",
+      "families": []
+    },
+    {
+      "date": "2025-10-03",
+      "title": "Use of Uninitialized Variable Vulnerabilities (CVE-2025-10547)",
+      "cves": [
+        "CVE-2025-10547",
+        "CVE-2025-10547"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2025-10547",
+      "families": []
+    },
+    {
+      "date": "2025-03-27",
+      "title": "Unexpected router disconnections and reboots",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-unexpected-router-disconnections-and-reboots",
+      "families": []
+    },
+    {
+      "date": "2025-03-04",
+      "title": "Buffer Overflow",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-buffer-overflow-march25",
+      "families": []
+    },
+    {
+      "date": "2025-03-04",
+      "title": "Denial of Service, Information Disclosure, and Code Execution Vulnerabilities",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-denial-of-service-march25",
+      "families": []
+    },
+    {
+      "date": "2024-10-04",
+      "title": "Cross-Site Scripting, Denial of Service and Remote Code execution vulnerabilities (CVE-2024-41583 ~ CVE-2024-41596)",
+      "cves": [
+        "CVE-2024-41583",
+        "CVE-2024-41596",
+        "CVE-2024-41583"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2024-41583",
+      "families": []
+    },
+    {
+      "date": "2024-03-28",
+      "title": "DrayTek Router Information Disclosure Vulnerability (CVE-2024-23721)",
+      "cves": [
+        "CVE-2024-23721",
+        "CVE-2024-23721"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2024-23721",
+      "families": []
+    },
+    {
+      "date": "2023-08-30",
+      "title": "Format string vulnerability (CVE-2023-31447)",
+      "cves": [
+        "CVE-2023-31447",
+        "CVE-2023-31447"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2023-31447",
+      "families": []
+    },
+    {
+      "date": "2023-03-02",
+      "title": "Cross-Site Scripting vulnerability (CVE-2023-23313)",
+      "cves": [
+        "CVE-2023-23313",
+        "CVE-2023-23313"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-cve-2023-23313",
+      "families": []
+    },
+    {
+      "date": "2022-08-04",
+      "title": "DrayTek Router unauthenticated remote code execution vulnerability (CVE-2022-32548)",
+      "cves": [
+        "CVE-2022-32548",
+        "CVE-2022-32548"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-aug2022-cve-2022-32548",
+      "families": []
+    },
+    {
+      "date": "2021-12-13",
+      "title": "Apache Log4J Vulnerability",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-dec2021-log4j",
+      "families": []
+    },
+    {
+      "date": "2021-07-08",
+      "title": "Vigor 3910 / 2962 Web Management Vulnerability",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-jul21",
+      "families": [
+        "Vigor3910"
+      ]
+    },
+    {
+      "date": "2020-06-24",
+      "title": "Vigor 3900 / 2960 / 300B Remote code injection/execution vulnerability (CVE-2020-14472 / CVE-2020-15415)",
+      "cves": [
+        "CVE-2020-14472",
+        "CVE-2020-15415"
+      ],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-jun20",
+      "families": [
+        "Vigor3900"
+      ]
+    },
+    {
+      "date": "2020-02-10",
+      "title": "3900 / 2960 Router Web Management Page Vulnerability (Feb 2020)",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-feb20",
+      "families": []
+    },
+    {
+      "date": "2019-03-12",
+      "title": "XSS WUI Issue (March 2019)",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-xss-wui-issue-march-2019",
+      "families": []
+    },
+    {
+      "date": "2018-05-18",
+      "title": "CSRF & DNS/DHCP/Web Attacks",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-csrf-and-dns-dhcp-web-attacks",
+      "families": []
+    },
+    {
+      "date": "2018-01-08",
+      "title": "Spectre & Meltdown CPU Vulnerabilities",
+      "cves": [],
+      "url": "https://www.draytek.co.uk/support/security-advisories/kb-advisory-meltdown-spectre",
+      "families": []
+    }
+  ]
+}

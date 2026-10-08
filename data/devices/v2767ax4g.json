@@ -1,0 +1,94 @@
+{
+  "id": "v2767ax4g",
+  "cat": "router",
+  "m": "Vigor2767ax-4G",
+  "st": "cur",
+  "fw": "Vigor2767",
+  "t": {
+    "v": "Router VDSL2 + 4G + 2.5GbE, Wi-Fi 6",
+    "e": "VDSL2 + 4G + 2.5GbE router, Wi-Fi 6"
+  },
+  "var": [
+    [
+      "2767ax-4G",
+      {
+        "v": "LTE Cat6, 2 SIM + eSIM",
+        "e": "LTE Cat6, 2 SIM + eSIM"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "VDSL"
+    },
+    {
+      "r": "x",
+      "m": "sim",
+      "lb": "4G"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "2.5G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "nat": 2300,
+    "sess": 50000,
+    "ipsec": 300,
+    "vpn": 16,
+    "wan": "VDSL2 35b + 4G LTE + 1× 2.5GbE",
+    "lan": "3× GbE",
+    "cell": "LTE Cat6 300/50 Mbps",
+    "wifi": "Wi-Fi 6",
+    "apm": 20,
+    "swm": 5,
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "nat": "db26",
+    "vpn": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    5,
+    60
+  ],
+  "uses": [
+    "home",
+    "small",
+    "backup4g"
+  ],
+  "f": [
+    "dsl",
+    "lte",
+    "2.5g",
+    "wifi6",
+    "iam",
+    "wg"
+  ],
+  "hw": {
+    "uk": "soho/vigor-2767ax-4g",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": "20.4 W",
+    "dim": "207 × 131 × 42 mm",
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường",
+      "e": "Shelf, wall"
+    }
+  }
+}

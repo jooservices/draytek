@@ -1,0 +1,502 @@
+{
+  "checked": "2026-10-08T16:31:17.625Z",
+  "source": "https://fw.draytek.com.tw",
+  "items": {
+    "VigorAP%201000C": {
+      "ids": [
+        "ap1000c"
+      ],
+      "version": "1.4.9",
+      "date": "2024-08-16",
+      "url": "https://fw.draytek.com.tw/VigorAP%201000C/Firmware/v1.4.9/"
+    },
+    "VigorAP%201060C": {
+      "ids": [
+        "ap1060c"
+      ],
+      "version": "1.4.12",
+      "date": "2026-08-24",
+      "url": "https://fw.draytek.com.tw/VigorAP%201060C/Firmware/v1.4.12/"
+    },
+    "VigorAP%201062C": {
+      "ids": [
+        "ap1062c"
+      ],
+      "version": "5.1.1",
+      "date": "2026-09-02",
+      "url": "https://fw.draytek.com.tw/VigorAP%201062C/Firmware/v5.1.1/"
+    },
+    "VigorAP%201070C": {
+      "ids": [
+        "ap1070c"
+      ],
+      "version": "5.1.1",
+      "date": "2026-09-02",
+      "url": "https://fw.draytek.com.tw/VigorAP%201070C/Firmware/v5.1.1/"
+    },
+    "VigorAP%20805": {
+      "ids": [
+        "ap805"
+      ],
+      "version": "5.1.1",
+      "date": "2026-07-08",
+      "url": "https://fw.draytek.com.tw/VigorAP%20805/Firmware/v5.1.1/"
+    },
+    "VigorAP%20903": {
+      "ids": [
+        "ap903"
+      ],
+      "version": "1.4.22",
+      "date": "2026-08-24",
+      "url": "https://fw.draytek.com.tw/VigorAP%20903/Firmware/v1.4.22/"
+    },
+    "VigorAP%20905": {
+      "ids": [
+        "ap905"
+      ],
+      "version": "5.1.1",
+      "date": "2026-07-08",
+      "url": "https://fw.draytek.com.tw/VigorAP%20905/Firmware/v5.1.1/"
+    },
+    "VigorAP%20906": {
+      "ids": [
+        "ap906"
+      ],
+      "version": "1.4.13",
+      "date": "2026-08-24",
+      "url": "https://fw.draytek.com.tw/VigorAP%20906/Firmware/v1.4.13/"
+    },
+    "VigorAP%20912C": {
+      "ids": [
+        "ap912c"
+      ],
+      "version": "1.4.15",
+      "date": "2026-08-24",
+      "url": "https://fw.draytek.com.tw/VigorAP%20912C/Firmware/v1.4.15/"
+    },
+    "VigorAP%20918R": {
+      "ids": [
+        "ap918r",
+        "ap918rpd"
+      ],
+      "version": "1.4.11",
+      "date": "2026-08-24",
+      "url": "https://fw.draytek.com.tw/VigorAP%20918R/Firmware/v1.4.11/"
+    },
+    "VigorAP%20920R": {
+      "ids": [
+        "ap920r"
+      ],
+      "version": "1.4.9",
+      "date": "2024-08-16",
+      "url": "https://fw.draytek.com.tw/VigorAP%20920R/Firmware/v1.4.9/"
+    },
+    "VigorAP%20960C": {
+      "ids": [
+        "ap960c"
+      ],
+      "version": "1.4.12",
+      "date": "2026-08-24",
+      "url": "https://fw.draytek.com.tw/VigorAP%20960C/Firmware/v1.4.12/"
+    },
+    "VigorAP%20962C": {
+      "ids": [
+        "ap962c"
+      ],
+      "version": "5.1.1",
+      "date": "2026-07-08",
+      "url": "https://fw.draytek.com.tw/VigorAP%20962C/Firmware/v5.1.1/"
+    },
+    "VigorSwitch%20FX2120": {
+      "ids": [
+        "swfx2120"
+      ],
+      "version": "3.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20FX2120/Firmware/v3.9.12/"
+    },
+    "VigorSwitch%20G1080": {
+      "ids": [
+        "swg1080"
+      ],
+      "version": "1.05.0",
+      "date": "2020-01-06",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G1080/Firmware/v1.05.0/"
+    },
+    "VigorSwitch%20G1280": {
+      "ids": [
+        "swg1280"
+      ],
+      "version": "2.9.10",
+      "date": "2026-08-21",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G1280/Firmware/v2.9.10/"
+    },
+    "VigorSwitch%20G1282": {
+      "ids": [
+        "swg1282"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G1282/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20G2100": {
+      "ids": [
+        "swg2100"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G2100/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20G2280x": {
+      "ids": [
+        "swg2280x"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G2280x/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20G2282x": {
+      "ids": [
+        "swg2282x"
+      ],
+      "version": "2.10.9",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G2282x/Firmware/v2.10.9/"
+    },
+    "VigorSwitch%20G2540x": {
+      "ids": [
+        "swg2540x"
+      ],
+      "version": "2.9.10",
+      "date": "2026-08-21",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G2540x/Firmware/v2.9.10/"
+    },
+    "VigorSwitch%20G2542x": {
+      "ids": [
+        "swg2542x"
+      ],
+      "version": "3.10.9",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20G2542x/Firmware/v3.10.9/"
+    },
+    "VigorSwitch%20P1280": {
+      "ids": [
+        "swp1280"
+      ],
+      "version": "2.9.10",
+      "date": "2026-08-21",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P1280/Firmware/v2.9.10/"
+    },
+    "VigorSwitch%20P1281x": {
+      "ids": [
+        "swp1281x"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P1281x/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20P1282": {
+      "ids": [
+        "swp1282"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P1282/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20P2100": {
+      "ids": [
+        "swp2100"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P2100/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20P2280x": {
+      "ids": [
+        "swp2280x"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P2280x/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20P2282x": {
+      "ids": [
+        "swp2282x"
+      ],
+      "version": "2.10.9",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P2282x/Firmware/v2.10.9/"
+    },
+    "VigorSwitch%20P2540x": {
+      "ids": [
+        "swp2540x"
+      ],
+      "version": "2.9.10",
+      "date": "2026-08-21",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P2540x/Firmware/v2.9.10/"
+    },
+    "VigorSwitch%20P2542x": {
+      "ids": [
+        "swp2542x"
+      ],
+      "version": "3.10.9",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20P2542x/Firmware/v3.10.9/"
+    },
+    "VigorSwitch%20PQ1070x": {
+      "ids": [
+        "swpq1070x"
+      ],
+      "version": "1.58.2",
+      "date": "2026-05-06",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20PQ1070x/Firmware/v1.58.2/"
+    },
+    "VigorSwitch%20PQ2121x": {
+      "ids": [
+        "swpq2121x"
+      ],
+      "version": "2.9.12",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20PQ2121x/Firmware/v2.9.12/"
+    },
+    "VigorSwitch%20PQ2300xb": {
+      "ids": [
+        "swpq2300xb"
+      ],
+      "version": "2.10.9",
+      "date": "2026-09-04",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20PQ2300xb/Firmware/v2.10.9/"
+    },
+    "VigorSwitch%20Q1070x": {
+      "ids": [
+        "swq1070x"
+      ],
+      "version": "1.58.2",
+      "date": "2026-05-06",
+      "url": "https://fw.draytek.com.tw/VigorSwitch%20Q1070x/Firmware/v1.58.2/"
+    },
+    "Vigor1000B": {
+      "ids": [
+        "v1000b"
+      ],
+      "version": "4.4.3.6",
+      "date": "2025-10-03",
+      "url": "https://fw.draytek.com.tw/Vigor1000B/Firmware/v4.4.3.6/"
+    },
+    "Vigor1220": {
+      "ids": [
+        "v1220"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-01",
+      "url": "https://fw.draytek.com.tw/Vigor1220/Firmware/v5.4.4.2/"
+    },
+    "Vigor166": {
+      "ids": [
+        "v166"
+      ],
+      "version": "4.2.7",
+      "date": "2024-08-08",
+      "url": "https://fw.draytek.com.tw/Vigor166/Firmware/v4.2.7/"
+    },
+    "Vigor167": {
+      "ids": [
+        "v167"
+      ],
+      "version": "5.2.9",
+      "date": "2026-07-20",
+      "url": "https://fw.draytek.com.tw/Vigor167/Firmware/v5.2.9/"
+    },
+    "Vigor180": {
+      "ids": [
+        "v180"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-07",
+      "url": "https://fw.draytek.com.tw/Vigor180/Firmware/v5.4.4.2/"
+    },
+    "Vigor2136": {
+      "ids": [
+        "v2136",
+        "v2136ax4g"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-07",
+      "url": "https://fw.draytek.com.tw/Vigor2136/Firmware/v5.4.4.2/"
+    },
+    "Vigor2763": {
+      "ids": [
+        "v2763"
+      ],
+      "version": "4.5.3.2",
+      "date": "2026-09-18",
+      "url": "https://fw.draytek.com.tw/Vigor2763/Firmware/v4.5.3.2/"
+    },
+    "Vigor2766": {
+      "ids": [
+        "v2766"
+      ],
+      "version": "4.5.3.2",
+      "date": "2026-09-18",
+      "url": "https://fw.draytek.com.tw/Vigor2766/Firmware/v4.5.3.2/"
+    },
+    "Vigor2767": {
+      "ids": [
+        "v2767",
+        "v2767ax4g"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-07",
+      "url": "https://fw.draytek.com.tw/Vigor2767/Firmware/v5.4.4.2/"
+    },
+    "Vigor2865": {
+      "ids": [
+        "v2865",
+        "v2865l"
+      ],
+      "version": "4.5.3.2",
+      "date": "2026-09-11",
+      "url": "https://fw.draytek.com.tw/Vigor2865/Firmware/v4.5.3.2/"
+    },
+    "Vigor2866": {
+      "ids": [
+        "v2866"
+      ],
+      "version": "4.5.3.2",
+      "date": "2026-09-11",
+      "url": "https://fw.draytek.com.tw/Vigor2866/Firmware/v4.5.3.2/"
+    },
+    "Vigor2867": {
+      "ids": [
+        "v2867"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-01",
+      "url": "https://fw.draytek.com.tw/Vigor2867/Firmware/v5.4.4.2/"
+    },
+    "Vigor2915": {
+      "ids": [
+        "v2915"
+      ],
+      "version": "4.4.10",
+      "date": "2026-09-23",
+      "url": "https://fw.draytek.com.tw/Vigor2915/Firmware/v4.4.10/"
+    },
+    "Vigor2925": {
+      "ids": [
+        "v2925"
+      ],
+      "version": "3.9.8.6",
+      "date": "2025-10-03",
+      "url": "https://fw.draytek.com.tw/Vigor2925/Firmware/v3.9.8.6/"
+    },
+    "Vigor2926": {
+      "ids": [
+        "v2926"
+      ],
+      "version": "3.9.9.13",
+      "date": "2026-09-30",
+      "url": "https://fw.draytek.com.tw/Vigor2926/Firmware/v3.9.9.13/"
+    },
+    "Vigor2927": {
+      "ids": [
+        "v2927",
+        "v2927l"
+      ],
+      "version": "4.5.2.2",
+      "date": "2026-08-19",
+      "url": "https://fw.draytek.com.tw/Vigor2927/Firmware/v4.5.2.2/"
+    },
+    "Vigor2928": {
+      "ids": [
+        "v2928"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-01",
+      "url": "https://fw.draytek.com.tw/Vigor2928/Firmware/v5.4.4.2/"
+    },
+    "Vigor2952": {
+      "ids": [
+        "v2952"
+      ],
+      "version": "3.9.8.9",
+      "date": "2026-05-07",
+      "url": "https://fw.draytek.com.tw/Vigor2952/Firmware/v3.9.8.9/"
+    },
+    "Vigor2960": {
+      "ids": [
+        "v2960"
+      ],
+      "version": "1.5.1.8",
+      "date": "2026-10-06",
+      "url": "https://fw.draytek.com.tw/Vigor2960/Firmware/v1.5.1.8/"
+    },
+    "Vigor2962": {
+      "ids": [
+        "v2962"
+      ],
+      "version": "4.4.6.3",
+      "stable": "4.4.5.3",
+      "date": "2026-09-30",
+      "url": "https://fw.draytek.com.tw/Vigor2962/Firmware/v4.4.6.3/"
+    },
+    "Vigor300B": {
+      "ids": [
+        "v300b"
+      ],
+      "version": "1.5.1.8",
+      "date": "2026-10-06",
+      "url": "https://fw.draytek.com.tw/Vigor300B/Firmware/v1.5.1.8/"
+    },
+    "Vigor3220": {
+      "ids": [
+        "v3220"
+      ],
+      "version": "3.9.8.9",
+      "date": "2026-05-07",
+      "url": "https://fw.draytek.com.tw/Vigor3220/Firmware/v3.9.8.9/"
+    },
+    "Vigor3900": {
+      "ids": [
+        "v3900"
+      ],
+      "version": "1.5.1.8",
+      "date": "2026-10-06",
+      "url": "https://fw.draytek.com.tw/Vigor3900/Firmware/v1.5.1.8/"
+    },
+    "Vigor3910": {
+      "ids": [
+        "v3910"
+      ],
+      "version": "4.4.6.3",
+      "stable": "4.4.5.3",
+      "date": "2026-09-30",
+      "url": "https://fw.draytek.com.tw/Vigor3910/Firmware/v4.4.6.3/"
+    },
+    "Vigor3912": {
+      "ids": [
+        "v3912"
+      ],
+      "version": "4.4.6.3",
+      "stable": "4.4.5.3",
+      "date": "2026-09-30",
+      "url": "https://fw.draytek.com.tw/Vigor3912/Firmware/v4.4.6.3/"
+    },
+    "Vigor%20C410": {
+      "ids": [
+        "vc410"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-07",
+      "url": "https://fw.draytek.com.tw/Vigor%20C410/Firmware/v5.4.4.2/"
+    },
+    "Vigor%20C510": {
+      "ids": [
+        "vc510"
+      ],
+      "version": "5.4.4.2",
+      "date": "2026-10-07",
+      "url": "https://fw.draytek.com.tw/Vigor%20C510/Firmware/v5.4.4.2/"
+    }
+  }
+}

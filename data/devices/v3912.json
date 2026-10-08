@@ -1,0 +1,194 @@
+{
+  "id": "v3912",
+  "cat": "router",
+  "m": "Vigor3912 / 3912S",
+  "st": "cur",
+  "fw": "Vigor3912",
+  "t": {
+    "v": "Router 10G cao cấp, 8 WAN, 500 VPN, 1 triệu session",
+    "e": "Flagship 10G router, 8 WAN, 500 VPN, 1M sessions"
+  },
+  "var": [
+    [
+      "3912",
+      {
+        "v": "Bản tiêu chuẩn",
+        "e": "Standard"
+      }
+    ],
+    [
+      "3912S",
+      {
+        "v": "SSD 256 GB + RAM 8 GB, chạy Docker (Suricata, VigorConnect)",
+        "e": "256 GB SSD + 8 GB RAM, Docker (Suricata, VigorConnect)"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "s",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 2,
+      "lb": "P1–2"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "2.5G",
+      "n": 2,
+      "lb": "P3–4"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4,
+      "lb": "P5–8"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4,
+      "lb": "P9–12"
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    },
+    {
+      "r": "u",
+      "m": "con"
+    }
+  ],
+  "s": {
+    "nat": 12500,
+    "sess": 1000000,
+    "ipsec": 5000,
+    "ssl": 3500,
+    "wg": 900,
+    "vpn": 500,
+    "sslvpn": 200,
+    "proto": "PPTP, L2TP, IPsec, L2TP/IPsec, DrayTek SSL, GRE, IKEv2, IKEv2-EAP, IPsec-XAuth, OpenVPN, WireGuard, EasyVPN",
+    "wanmax": 8,
+    "wan": {
+      "v": "8 cổng WAN/LAN độc lập: 2× 10G SFP+, 2× 2.5GbE, 4× GbE; thêm 40 WAN ảo (VLAN)",
+      "e": "8 independent WAN/LAN ports: 2× 10G SFP+, 2× 2.5GbE, 4× GbE; plus 40 virtual WANs"
+    },
+    "lan": {
+      "v": "4× GbE cố định (P9–P12)",
+      "e": "4× fixed GbE (P9–P12)"
+    },
+    "usb": "2× USB 3.0, cổng console RJ-45",
+    "cell": false,
+    "vlan": 100,
+    "subnet": 100,
+    "routing": "Static, Policy, Inter-VLAN, Fast Routing, RIP v1/v2, OSPF v2, BGP",
+    "ha": "Active-Standby, Hot-Standby",
+    "lb": {
+      "v": "Có (theo IP, theo session)",
+      "e": "Yes (IP / session based)"
+    },
+    "apm": 50,
+    "swm": 30,
+    "hotspot": "Click-Through, Social Login, SMS PIN, RADIUS, External Portal",
+    "auth": "Local, RADIUS, LDAP, TACACS+, mOTP, TOTP; VPN 2FA cho AD/LDAP",
+    "secu": {
+      "v": "Web Category*, Suricata (3912S, qua Docker)",
+      "e": "Web Category*, Suricata (3912S, via Docker)"
+    },
+    "extra": "PPPoE server, Server Load Balance, VPN from LAN, VPN isolation",
+    "os": "DrayOS 4",
+    "fwv": "4.4.6.3",
+    "launch": "2024-01-24"
+  },
+  "src": {
+    "nat": "ukp",
+    "ipsec": "ukp",
+    "ssl": "ukp",
+    "wg": "ukp",
+    "sess": "ds",
+    "vpn": "ds",
+    "usb": "ds",
+    "fwv": "fwl",
+    "launch": "uklc"
+  },
+  "u": [
+    300,
+    1000
+  ],
+  "uses": [
+    "large",
+    "mid",
+    "hq",
+    "fast",
+    "multiwan",
+    "remote",
+    "ha",
+    "secure",
+    "hotel",
+    "dense"
+  ],
+  "f": [
+    "10g",
+    "2.5g",
+    "sfp+",
+    "ssl",
+    "openvpn",
+    "wg",
+    "ospf",
+    "bgp",
+    "ha",
+    "lb",
+    "hotspot",
+    "docker",
+    "console"
+  ],
+  "note": {
+    "v": [
+      "Số hiệu năng lấy theo trang UK; phần hiệu năng trong datasheet toàn cầu là hình ảnh nên chưa đối chiếu được."
+    ],
+    "e": [
+      "Performance figures are from the UK page; the global datasheet shows them as an image."
+    ]
+  },
+  "prev": [
+    "v3910",
+    "v3900",
+    "v1000b"
+  ],
+  "cve": "4.4.3.6",
+  "hw": {
+    "uk": "business/vigor-3912",
+    "cpu": {
+      "v": "4 nhân 2 GHz",
+      "e": "Quad-core 2 GHz"
+    },
+    "mem": {
+      "v": "3912S: 8 GB DDR4",
+      "e": "3912S: 8 GB DDR4"
+    },
+    "store": {
+      "v": "3912S: SSD 256 GB",
+      "e": "3912S: 256 GB SSD"
+    },
+    "pwr": {
+      "v": "AC 100–240V 50/60Hz cấp trực tiếp",
+      "e": "AC 100–240V 50/60Hz direct"
+    },
+    "cons": "35 W",
+    "dim": "443 × 285 × 45 mm",
+    "wt": {
+      "v": "3.76 kg (3912), 3.82 kg (3912S)",
+      "e": "3.76 kg (3912), 3.82 kg (3912S)"
+    },
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Rack 1U, có kèm bộ gắn",
+      "e": "1U rack, kit included"
+    }
+  }
+}

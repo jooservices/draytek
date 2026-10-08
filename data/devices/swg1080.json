@@ -1,0 +1,55 @@
+{
+  "id": "swg1080",
+  "cat": "switch",
+  "m": "VigorSwitch G1080",
+  "st": "cur",
+  "fw": "VigorSwitch%20G1080",
+  "t": {
+    "v": "Switch 8 cổng Gigabit Smart Lite",
+    "e": "8-port Gigabit Smart Lite switch"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 8
+    }
+  ],
+  "s": {
+    "level": "Smart Lite",
+    "ports": "8× GbE",
+    "poe": false,
+    "cap": 16,
+    "vlan": 8,
+    "qos": 4,
+    "l3": false,
+    "launch": "2018-05-30"
+  },
+  "src": {
+    "cap": "db26",
+    "vlan": "uksw",
+    "launch": "uklc"
+  },
+  "u": [
+    1,
+    10
+  ],
+  "uses": [
+    "home",
+    "small"
+  ],
+  "f": [],
+  "hw": {
+    "uk": "business/vigorswitch-g1080",
+    "pwr": "220–240VAC",
+    "dim": "154 × 85 × 26 mm",
+    "wt": "325 g",
+    "temp": "0–40 °C",
+    "mount": {
+      "v": "Treo tường; không gắn rack",
+      "e": "Wall; not rack mountable"
+    },
+    "jumbo": "9 KB"
+  }
+}

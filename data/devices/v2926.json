@@ -1,0 +1,97 @@
+{
+  "id": "v2926",
+  "cat": "router",
+  "m": "Vigor2926",
+  "st": "eos",
+  "fw": "Vigor2926",
+  "eos": "2022-04-01",
+  "eol": "2027-04-01",
+  "t": {
+    "v": "Router 2 WAN đời cũ, 50 VPN",
+    "e": "Older dual-WAN router, 50 VPN"
+  },
+  "var": [
+    [
+      "2926 / ac / Vac",
+      {
+        "v": "Có dây, Wi-Fi 5, VoIP",
+        "e": "Wired, Wi-Fi 5, VoIP"
+      }
+    ],
+    [
+      "2926L",
+      {
+        "v": "4G LTE",
+        "e": "4G LTE"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "vpn": 50,
+    "sslvpn": 25,
+    "wanmax": 4,
+    "wan": "2× GbE + 2 USB 4G",
+    "lan": "4× GbE",
+    "usb": "2× USB",
+    "voip": "2 FXS + Life Line (V)",
+    "os": "DrayOS 3",
+    "fwv": "3.9.9.13",
+    "launch": "2017-11-08"
+  },
+  "src": {
+    "vpn": "ds",
+    "fwv": "fwl",
+    "launch": "uklc",
+    "eos": "uklc"
+  },
+  "u": [
+    10,
+    80
+  ],
+  "uses": [
+    "small",
+    "multiwan"
+  ],
+  "f": [
+    "ssl",
+    "lb",
+    "usbmodem",
+    "voip",
+    "wifi5"
+  ],
+  "next": "v2927",
+  "cve": "3.9.9.12",
+  "hw": {
+    "uk": "business/vigor-2926",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": "25 W",
+    "dim": "241 × 165 × 44 mm",
+    "temp": "0–45 °C",
+    "mount": {
+      "v": "Treo tường; rack cần giá RM1",
+      "e": "Wall; rack needs RM1 bracket"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "v1100vax",
+  "cat": "router",
+  "m": "Vigor1100Vax",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Router GPON có VoIP và Wi-Fi 6 cho nhà mạng",
+    "e": "GPON router with VoIP and Wi-Fi 6 for operators"
+  },
+  "var": [
+    [
+      "1100Vax",
+      {
+        "v": "GPON + 2 FXS + Wi-Fi 6",
+        "e": "GPON + 2 FXS + Wi-Fi 6"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "pon",
+      "lb": "GPON"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "sess": 50000,
+    "vpn": 2,
+    "wanmax": 2,
+    "wan": "1× GPON + 1× GbE",
+    "lan": "3× GbE",
+    "voip": "2 FXS",
+    "wifi": "Wi-Fi 6 (ax)",
+    "subnet": 4
+  },
+  "src": {
+    "sess": "db26",
+    "vpn": "db26",
+    "wan": "db26"
+  },
+  "u": [
+    5,
+    40
+  ],
+  "uses": [
+    "isp",
+    "home",
+    "voip",
+    "iptv"
+  ],
+  "f": [
+    "pon",
+    "wifi6",
+    "voip"
+  ],
+  "note": {
+    "v": [
+      "Tên đúng là Vigor1100Vax. Không có model \"Vigor1100ax\" trong tài liệu chính thức."
+    ],
+    "e": [
+      "The correct name is Vigor1100Vax. There is no \"Vigor1100ax\" in official documents."
+    ]
+  }
+}

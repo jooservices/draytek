@@ -1,0 +1,82 @@
+{
+  "id": "v300b",
+  "cat": "router",
+  "m": "Vigor300B",
+  "st": "eos",
+  "fw": "Vigor300B",
+  "eos": "2021-04-22",
+  "eol": "2026-04-22",
+  "t": {
+    "v": "Bộ cân bằng tải 4 WAN, đã hết hỗ trợ",
+    "e": "4-WAN load balancer, out of support"
+  },
+  "var": [
+    [
+      "300B",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 2
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "sess": 100000,
+    "vpn": false,
+    "wanmax": 4,
+    "wan": {
+      "v": "4× GbE (WAN4 có thể làm DMZ) + USB 3.5G",
+      "e": "4× GbE (WAN4 can be DMZ) + USB 3.5G"
+    },
+    "lan": "2× GbE",
+    "usb": "2× USB 2.0",
+    "vlan": 4,
+    "subnet": 4,
+    "routing": "Static, RIP v1/v2",
+    "lb": true,
+    "ha": false,
+    "os": {
+      "v": "Linux (firmware 1.5)",
+      "e": "Linux (firmware 1.5)"
+    },
+    "fwv": "1.5.1.8",
+    "launch": "2012-06-11"
+  },
+  "src": {
+    "sess": "ds",
+    "vlan": "ds",
+    "routing": "ds",
+    "fwv": "fwl",
+    "eos": "uklc"
+  },
+  "u": [
+    50,
+    300
+  ],
+  "uses": [
+    "multiwan"
+  ],
+  "f": [
+    "lb",
+    "usbmodem"
+  ],
+  "next": "v2962"
+}

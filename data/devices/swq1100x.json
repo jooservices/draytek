@@ -1,0 +1,48 @@
+{
+  "id": "swq1100x",
+  "cat": "switch",
+  "m": "VigorSwitch Q1100x",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Switch 8 cổng 2.5G + 2 SFP+",
+    "e": "8× 2.5G + 2 SFP+ switch"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G",
+      "n": 8
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 2
+    }
+  ],
+  "s": {
+    "level": "Smart Lite",
+    "ports": "8× 2.5GbE",
+    "uplink": "2× 10G SFP+",
+    "poe": false,
+    "cap": 80
+  },
+  "src": {
+    "cap": "db26"
+  },
+  "u": [
+    1,
+    30
+  ],
+  "uses": [
+    "small",
+    "fast"
+  ],
+  "f": [
+    "2.5g",
+    "sfp+",
+    "10g"
+  ]
+}

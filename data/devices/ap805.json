@@ -1,0 +1,80 @@
+{
+  "id": "ap805",
+  "cat": "ap",
+  "m": "VigorAP 805",
+  "st": "cur",
+  "fw": "VigorAP%20805",
+  "t": {
+    "v": "AP Wi-Fi 6 AX3000 để bàn, cổng 2.5G",
+    "e": "Desktop Wi-Fi 6 AX3000 AP, 2.5G port"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 6 (802.11ax)",
+    "cls": "AX3000",
+    "bands": "2.4 + 5 GHz",
+    "link": "574 + 2402 Mbps",
+    "clients": 256,
+    "ssid": "8 + 8",
+    "ports": "1× 2.5GbE + 1× GbE",
+    "power": "DC",
+    "poein": false,
+    "poeout": false,
+    "mount": {
+      "v": "Để bàn",
+      "e": "Desktop"
+    },
+    "outdoor": false,
+    "mesh": "Root / Node",
+    "mgmt": "Router APM, VigorConnect, VigorACS"
+  },
+  "src": {
+    "link": "ukap",
+    "clients": "ukap",
+    "ports": "ukap"
+  },
+  "u": [
+    10,
+    40
+  ],
+  "uses": [
+    "home",
+    "small",
+    "cafe"
+  ],
+  "f": [
+    "wifi6",
+    "2.5g",
+    "mesh"
+  ],
+  "hw": {
+    "uk": "business/vigorap-805",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": "12 W",
+    "dim": {
+      "v": "110 × 110 × 153 mm (cao)",
+      "e": "110 × 110 × 153 mm (H)"
+    },
+    "wt": "405 g",
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Đặt đứng",
+      "e": "Free standing"
+    }
+  }
+}

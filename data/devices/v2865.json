@@ -1,0 +1,141 @@
+{
+  "id": "v2865",
+  "cat": "router",
+  "m": "Vigor2865",
+  "st": "cur",
+  "fw": "Vigor2865",
+  "t": {
+    "v": "Router VDSL2 35b + Ethernet, 2 WAN, 32 VPN",
+    "e": "VDSL2 35b + Ethernet dual-WAN router, 32 VPN"
+  },
+  "var": [
+    [
+      "2865",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2865ac",
+      {
+        "v": "Wi-Fi 5",
+        "e": "Wi-Fi 5"
+      }
+    ],
+    [
+      "2865ax",
+      {
+        "v": "Wi-Fi 6",
+        "e": "Wi-Fi 6"
+      }
+    ],
+    [
+      "2865Vac",
+      {
+        "v": "Wi-Fi 5 + VoIP",
+        "e": "Wi-Fi 5 + VoIP"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "VDSL"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 5
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "nat": 1300,
+    "sess": 60000,
+    "ipsec": 800,
+    "ssl": 120,
+    "vpn": 32,
+    "sslvpn": 16,
+    "wan": "ADSL/VDSL2 35b + 1× GbE (+ cổng LAN/WAN)",
+    "lan": "5× GbE + 1 cổng chuyển đổi",
+    "usb": 2,
+    "vlan": 8,
+    "subnet": 8,
+    "ha": true,
+    "lb": true,
+    "routing": "Static, Policy, RIP, BGP",
+    "apm": 20,
+    "swm": 10,
+    "vpnm": 8,
+    "wifi": "ac/ax",
+    "os": "DrayOS 4",
+    "fwv": "4.5.3.2"
+  },
+  "src": {
+    "nat": "ukr",
+    "ipsec": "ukr",
+    "vpn": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    10,
+    80
+  ],
+  "uses": [
+    "small",
+    "multiwan",
+    "remote"
+  ],
+  "f": [
+    "dsl",
+    "wifi5",
+    "wifi6",
+    "ssl",
+    "openvpn",
+    "ha",
+    "lb",
+    "bgp",
+    "voip",
+    "usbmodem"
+  ],
+  "cve": "4.5.1",
+  "hw": {
+    "uk": "business/vigor-2865",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": {
+      "v": "24 W (ac), 28.2 W (ax)",
+      "e": "24 W (ac), 28.2 W (ax)"
+    },
+    "dim": "241 × 165 × 44 mm",
+    "wt": {
+      "v": "620 g (ac), 780 g (ax)",
+      "e": "620 g (ac), 780 g (ax)"
+    },
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường; rack cần giá RM1",
+      "e": "Shelf, wall; rack needs RM1 bracket"
+    }
+  }
+}

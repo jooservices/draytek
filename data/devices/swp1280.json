@@ -1,0 +1,73 @@
+{
+  "id": "swp1280",
+  "cat": "switch",
+  "m": "VigorSwitch P1280",
+  "st": "eos",
+  "fw": "VigorSwitch%20P1280",
+  "eos": "2023-02-07",
+  "eol": "2026-02-07",
+  "t": {
+    "v": "Switch PoE 24 cổng đời trước, đã hết hỗ trợ",
+    "e": "Earlier 24-port PoE switch, out of support"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 24,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "combo",
+      "sp": "1G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "level": "Web Smart",
+    "ports": {
+      "v": "24× GbE PoE + 4 cổng chọn RJ-45 hoặc SFP",
+      "e": "24× GbE PoE + 4 selectable RJ-45/SFP"
+    },
+    "poe": "24× PoE",
+    "budget": 340,
+    "cap": 56,
+    "launch": "2017-10-04"
+  },
+  "src": {
+    "ports": "ukp",
+    "budget": "ukp",
+    "eos": "uklc"
+  },
+  "u": [
+    10,
+    30
+  ],
+  "uses": [
+    "camera"
+  ],
+  "f": [
+    "poe",
+    "sfp"
+  ],
+  "next": "swp1282",
+  "hw": {
+    "uk": "business/vigorswitch-p1280",
+    "pwr": "100–240VAC",
+    "cons": "453.3 W",
+    "dim": "441 × 270 × 45 mm",
+    "wt": "4.35 kg",
+    "temp": "0–45 °C",
+    "cool": {
+      "v": "2 quạt",
+      "e": "Dual fan"
+    },
+    "mount": "Rack 1U",
+    "fwd": "41.7 Mpps",
+    "buf": "4.1 Mbit",
+    "mac": "8K",
+    "jumbo": "9 KB"
+  }
+}

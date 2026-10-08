@@ -1,0 +1,121 @@
+{
+  "id": "v2952",
+  "cat": "router",
+  "m": "Vigor2952",
+  "st": "eos",
+  "fw": "Vigor2952",
+  "eos": "2022-04-01",
+  "eol": "2027-04-01",
+  "t": {
+    "v": "Cổng VPN 200 tunnel đời cũ, HA",
+    "e": "Older 200-tunnel VPN gateway, HA"
+  },
+  "var": [
+    [
+      "2952",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ],
+    [
+      "2952P",
+      {
+        "v": "Cổng LAN PoE+",
+        "e": "PoE+ LAN ports"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "w",
+      "m": "combo",
+      "sp": "1G",
+      "lb": "WAN1"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G",
+      "lb": "WAN2"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    },
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "vpn": 200,
+    "sslvpn": 50,
+    "wanmax": 4,
+    "wan": {
+      "v": "WAN1 RJ-45/SFP combo + WAN2 GbE + 2 USB 4G",
+      "e": "WAN1 RJ-45/SFP combo + WAN2 GbE + 2 USB 4G"
+    },
+    "lan": "4× GbE",
+    "usb": 2,
+    "subnet": 8,
+    "ha": true,
+    "lb": true,
+    "apm": 30,
+    "swm": 10,
+    "os": "DrayOS 3",
+    "fwv": "3.9.8.9",
+    "launch": "2016-05-03"
+  },
+  "src": {
+    "vpn": "ds",
+    "fwv": "fwl",
+    "eos": "uklc"
+  },
+  "u": [
+    50,
+    150
+  ],
+  "uses": [
+    "hq",
+    "multiwan",
+    "ha"
+  ],
+  "f": [
+    "ssl",
+    "ha",
+    "lb",
+    "usbmodem",
+    "sfp"
+  ],
+  "next": "v2962",
+  "cve": "3.9.8.8",
+  "hw": {
+    "uk": "business/vigor-2952",
+    "pwr": {
+      "v": "220–240VAC cấp trực tiếp",
+      "e": "220–240VAC direct"
+    },
+    "cons": {
+      "v": "19 W; 2952P tới 100 W khi dùng hết PoE",
+      "e": "19 W; 2952P up to 100 W at full PoE"
+    },
+    "dim": "273 × 176 × 46 mm",
+    "temp": "0–45 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Fanless"
+    },
+    "mount": {
+      "v": "Rack, có kèm tai",
+      "e": "Rack, brackets included"
+    },
+    "poe": {
+      "v": "2952P: 4 cổng PoE/PoE+, tổng 60 W",
+      "e": "2952P: 4 PoE/PoE+ ports, 60 W total"
+    }
+  }
+}

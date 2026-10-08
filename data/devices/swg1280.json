@@ -1,0 +1,69 @@
+{
+  "id": "swg1280",
+  "cat": "switch",
+  "m": "VigorSwitch G1280",
+  "st": "eos",
+  "fw": "VigorSwitch%20G1280",
+  "eos": "2023-02-07",
+  "eol": "2026-02-07",
+  "t": {
+    "v": "Switch 24 cổng đời trước, đã hết hỗ trợ",
+    "e": "Earlier 24-port switch, out of support"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 24
+    },
+    {
+      "r": "l",
+      "m": "combo",
+      "sp": "1G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "level": "Web Smart",
+    "ports": {
+      "v": "24× GbE + 4 cổng chọn RJ-45 hoặc SFP",
+      "e": "24× GbE + 4 selectable RJ-45/SFP"
+    },
+    "poe": false,
+    "cap": 56,
+    "launch": "2017-12-20"
+  },
+  "src": {
+    "ports": "ukp",
+    "eos": "uklc"
+  },
+  "u": [
+    10,
+    30
+  ],
+  "uses": [
+    "small"
+  ],
+  "f": [
+    "sfp"
+  ],
+  "next": "swg1282",
+  "hw": {
+    "uk": "business/vigorswitch-g1280",
+    "pwr": "100–240VAC",
+    "cons": "17.8 W",
+    "dim": "441 × 197 × 45 mm",
+    "wt": "2.58 kg",
+    "temp": "0–45 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Fanless"
+    },
+    "mount": "Rack 1U",
+    "fwd": "41.7 Mpps",
+    "buf": "4.1 Mbit",
+    "mac": "8K",
+    "jumbo": "9 KB"
+  }
+}

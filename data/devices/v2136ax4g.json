@@ -1,0 +1,111 @@
+{
+  "id": "v2136ax4g",
+  "cat": "router",
+  "m": "Vigor2136ax-4G",
+  "st": "cur",
+  "fw": "Vigor2136",
+  "t": {
+    "v": "Router 4G LTE + 2.5G, Wi-Fi 6, 2 SIM",
+    "e": "4G LTE + 2.5G router, Wi-Fi 6, dual SIM"
+  },
+  "var": [
+    [
+      "2136ax-4G",
+      {
+        "v": "LTE Cat6, 2 khe nano SIM",
+        "e": "LTE Cat6, 2 nano SIM slots"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "sim",
+      "lb": "4G"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "2.5G",
+      "lb": "WAN"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "2.5G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    },
+    {
+      "r": "u",
+      "m": "usb"
+    }
+  ],
+  "s": {
+    "nat": 2300,
+    "sess": 50000,
+    "ssl": false,
+    "vpn": 16,
+    "sslvpn": false,
+    "proto": "IPsec IKEv1/IKEv2, IKEv2-EAP, IPsec-XAuth, OpenVPN, WireGuard",
+    "wanmax": 3,
+    "wan": {
+      "v": "4G LTE + 1× 2.5GbE + 1× 2.5GbE WAN/LAN",
+      "e": "4G LTE + 1× 2.5GbE + 1× 2.5GbE WAN/LAN"
+    },
+    "lan": "3× GbE",
+    "usb": "1× USB 2.0",
+    "cell": {
+      "v": "LTE Cat6 300/50 Mbps; FDD B1,3,7,8,20,28, TDD B38,40; 2 khe nano SIM; eSIM đa hồ sơ (hỗ trợ trong tương lai)",
+      "e": "LTE Cat6 300/50 Mbps; FDD B1,3,7,8,20,28, TDD B38,40; 2 nano SIM slots; multi-profile eSIM (future support)"
+    },
+    "vlan": 8,
+    "subnet": 4,
+    "routing": "Static, Policy, RIP v1/v2, OSPF v2/v3, BGP",
+    "ha": false,
+    "lb": {
+      "v": "Không (chỉ failover)",
+      "e": "No (failover only)"
+    },
+    "wifi": "Wi-Fi 6, 574 + 2402 Mbps",
+    "apm": 20,
+    "swm": 5,
+    "hotspot": "Click-Through, Social Login, SMS PIN, RADIUS, External Portal",
+    "secu": "IAM, URL/IP Reputation*, Threat Protection Sentry*",
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "nat": "db26",
+    "cell": "db26",
+    "vpn": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    5,
+    60
+  ],
+  "uses": [
+    "small",
+    "backup4g",
+    "mobile",
+    "retail",
+    "remote"
+  ],
+  "f": [
+    "2.5g",
+    "wifi6",
+    "lte",
+    "wg",
+    "openvpn",
+    "ospf",
+    "bgp",
+    "iam",
+    "threat",
+    "hotspot"
+  ]
+}

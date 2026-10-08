@@ -1,0 +1,45 @@
+{
+  "id": "ap920r",
+  "cat": "ap",
+  "m": "VigorAP 920R",
+  "st": "eos",
+  "fw": "VigorAP%20920R",
+  "eos": "2023-11-01",
+  "eol": "2026-11-01",
+  "t": {
+    "v": "AP ngoài trời đời trước",
+    "e": "Earlier outdoor AP"
+  },
+  "s": {
+    "outdoor": true,
+    "launch": "2018-06-06"
+  },
+  "src": {
+    "eos": "uklc"
+  },
+  "u": [
+    10,
+    60
+  ],
+  "uses": [
+    "outdoor"
+  ],
+  "f": [
+    "outdoor"
+  ],
+  "next": "ap918r",
+  "hw": {
+    "uk": "business/vigorap-920rpd",
+    "pwr": "PoE+ 802.3at",
+    "cons": {
+      "v": "18 W (RPD tổng 30 W khi cấp PoE ra 12 W)",
+      "e": "18 W (RPD 30 W total with 12 W PoE out)"
+    },
+    "wt": "1.7 kg (RPD)",
+    "temp": "−40 – 70 °C",
+    "mount": {
+      "v": "Ốp trần, cột",
+      "e": "Ceiling, pole"
+    }
+  }
+}

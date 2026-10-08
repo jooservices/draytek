@@ -1,0 +1,72 @@
+{
+  "id": "ap903",
+  "cat": "ap",
+  "m": "VigorAP 903",
+  "st": "old",
+  "fw": "VigorAP%20903",
+  "t": {
+    "v": "AP Wi-Fi 5 AC1300 để bàn, 5 cổng Gigabit",
+    "e": "Desktop Wi-Fi 5 AC1300 AP, 5 Gigabit ports"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 5
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 5 (802.11ac Wave 1 & 2)",
+    "cls": "AC1300",
+    "bands": "2.4 + 5 GHz",
+    "link": "400 + 866 Mbps",
+    "clients": {
+      "v": "64 mỗi băng tần",
+      "e": "64 per radio"
+    },
+    "ports": "5× GbE",
+    "mesh": "Root / Node",
+    "launch": "2019-01-29"
+  },
+  "src": {
+    "link": "ukp",
+    "ports": "ukp",
+    "launch": "uklc"
+  },
+  "u": [
+    5,
+    30
+  ],
+  "uses": [
+    "home",
+    "small"
+  ],
+  "f": [
+    "wifi5",
+    "mesh"
+  ],
+  "next": "ap905",
+  "note": {
+    "v": [
+      "Không còn trong Databook 2026; DrayTek UK vẫn ghi \"Available\"."
+    ],
+    "e": [
+      "Not in Databook 2026; DrayTek UK still lists it as Available."
+    ]
+  },
+  "hw": {
+    "uk": "business/vigorap-903",
+    "pwr": {
+      "v": "DC 12V (adapter có kèm)",
+      "e": "DC 12V (adapter supplied)"
+    },
+    "cons": "12 W",
+    "wt": "370 g",
+    "temp": "0–45 °C",
+    "mount": {
+      "v": "Treo tường, đặt đứng",
+      "e": "Wall, free standing"
+    }
+  }
+}

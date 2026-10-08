@@ -1,0 +1,79 @@
+{
+  "id": "v2960",
+  "cat": "router",
+  "m": "Vigor2960",
+  "st": "eos",
+  "fw": "Vigor2960",
+  "eos": "2021-12-09",
+  "eol": "2026-12-09",
+  "t": {
+    "v": "Router Linux đời cũ, hết hỗ trợ 12/2026",
+    "e": "Legacy Linux router, support ends Dec 2026"
+  },
+  "var": [
+    [
+      "2960",
+      {
+        "v": "Tiêu chuẩn",
+        "e": "Standard"
+      }
+    ],
+    [
+      "2960F",
+      {
+        "v": "WAN quang SFP",
+        "e": "SFP fiber WAN"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "u",
+      "m": "usb",
+      "n": 2
+    }
+  ],
+  "s": {
+    "usb": "2× USB 2.0 (lưu trữ, modem 3G)",
+    "lb": true,
+    "os": {
+      "v": "Linux (firmware 1.5)",
+      "e": "Linux (firmware 1.5)"
+    },
+    "fwv": "1.5.1.8",
+    "launch": "2012-08-01"
+  },
+  "src": {
+    "fwv": "fwl",
+    "eos": "uklc",
+    "usb": "ukp"
+  },
+  "u": [
+    50,
+    150
+  ],
+  "uses": [
+    "multiwan"
+  ],
+  "f": [
+    "lb",
+    "usbmodem"
+  ],
+  "next": "v2962",
+  "hw": {
+    "uk": "business/vigor-2960",
+    "pwr": {
+      "v": "220–240VAC (nguồn trong)",
+      "e": "220–240VAC (internal PSU)"
+    },
+    "cons": "19 W",
+    "dim": {
+      "v": "273 × 166 × 44 mm (1U)",
+      "e": "273 × 166 × 44 mm (1U)"
+    },
+    "mount": {
+      "v": "Rack, có kèm tai",
+      "e": "Rack, brackets included"
+    }
+  }
+}

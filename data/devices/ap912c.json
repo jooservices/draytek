@@ -1,0 +1,78 @@
+{
+  "id": "ap912c",
+  "cat": "ap",
+  "m": "VigorAP 912C",
+  "st": "cur",
+  "fw": "VigorAP%20912C",
+  "t": {
+    "v": "AP Wi-Fi 5 AC1200 ốp trần giá tốt",
+    "e": "Budget Wi-Fi 5 AC1200 ceiling AP"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 5 (802.11ac)",
+    "cls": "AC1200",
+    "bands": "2.4 + 5 GHz",
+    "link": "300 + 867 Mbps",
+    "clients": 256,
+    "ssid": "4 + 4",
+    "ports": "1× GbE",
+    "power": "DC / PoE",
+    "poein": "PoE (802.3af)",
+    "poeout": false,
+    "mount": {
+      "v": "Ốp trần, treo tường",
+      "e": "Ceiling, wall"
+    },
+    "outdoor": false,
+    "mesh": "Root / Node",
+    "hotspot": true,
+    "mgmt": "Router APM, VigorConnect, VigorACS",
+    "launch": "2020-02-05"
+  },
+  "src": {
+    "link": "ukap",
+    "clients": "db26",
+    "launch": "uklc"
+  },
+  "u": [
+    10,
+    40
+  ],
+  "uses": [
+    "small",
+    "cafe",
+    "hotel"
+  ],
+  "f": [
+    "wifi5",
+    "mesh",
+    "poe",
+    "hotspot"
+  ],
+  "hw": {
+    "uk": "business/vigorap-912c",
+    "pwr": {
+      "v": "PoE 802.3af hoặc DC 12V (adapter không kèm)",
+      "e": "PoE 802.3af or DC 12V (adapter not included)"
+    },
+    "cons": "10 W",
+    "dim": {
+      "v": "Đường kính 162 mm, cao 42 mm",
+      "e": "162 mm diameter, 42 mm high"
+    },
+    "wt": "300 g",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Ốp trần, treo tường (đi dây phía sau)",
+      "e": "Ceiling, wall (rear cable entry)"
+    }
+  }
+}

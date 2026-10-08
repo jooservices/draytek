@@ -1,0 +1,28 @@
+{
+  "id": "smartvpn",
+  "cat": "more",
+  "m": "SmartVPN Client",
+  "st": "cur",
+  "fw": null,
+  "t": {
+    "v": "Ứng dụng VPN miễn phí cho máy tính và điện thoại",
+    "e": "Free VPN client for desktop and mobile"
+  },
+  "s": {
+    "kind": {
+      "v": "Phần mềm miễn phí",
+      "e": "Free software"
+    },
+    "what": {
+      "v": "Windows: PPTP, L2TP, L2TP/IPsec, IPsec, IKEv2, OpenVPN, WireGuard, SSL VPN. macOS: SSL VPN, IPsec XAuth, IKEv2 EAP. Android: SSL VPN, OpenVPN. iOS: SSL VPN, IPsec XAuth, IKEv2 EAP",
+      "e": "Windows: PPTP, L2TP, L2TP/IPsec, IPsec, IKEv2, OpenVPN, WireGuard, SSL VPN. macOS: SSL VPN, IPsec XAuth, IKEv2 EAP. Android: SSL VPN, OpenVPN. iOS: SSL VPN, IPsec XAuth, IKEv2 EAP"
+    }
+  },
+  "src": {
+    "what": "db26"
+  },
+  "uses": [
+    "remote"
+  ],
+  "f": []
+}

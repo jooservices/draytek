@@ -1,0 +1,92 @@
+{
+  "id": "v2763",
+  "cat": "router",
+  "m": "Vigor2763",
+  "st": "cur",
+  "fw": "Vigor2763",
+  "t": {
+    "v": "Router VDSL nhỏ, 2 kênh VPN (thị trường UK)",
+    "e": "Small VDSL router, 2 VPN tunnels (UK market)"
+  },
+  "var": [
+    [
+      "2763",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2763ac",
+      {
+        "v": "Wi-Fi 5",
+        "e": "Wi-Fi 5"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "VDSL"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "nat": 950,
+    "sess": 50000,
+    "ipsec": 150,
+    "ssl": 50,
+    "vpn": 2,
+    "sslvpn": 2,
+    "lan": "4× GbE",
+    "vlan": 4,
+    "apm": 2,
+    "wifi": "ac: 300 + 866",
+    "os": "DrayOS 4",
+    "fwv": "4.5.3.2"
+  },
+  "src": {
+    "nat": "ukr",
+    "vpn": "ukr",
+    "fwv": "fwl"
+  },
+  "u": [
+    1,
+    15
+  ],
+  "uses": [
+    "home"
+  ],
+  "f": [
+    "dsl",
+    "wifi5",
+    "ssl"
+  ],
+  "cve": "4.5.1",
+  "hw": {
+    "uk": "soho/vigor-2763-series",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài, có kèm)",
+      "e": "DC 12V (external adapter, supplied)"
+    },
+    "cons": "21 W (2763ac)",
+    "dim": "207 × 131 × 42 mm",
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường",
+      "e": "Shelf, wall"
+    }
+  }
+}

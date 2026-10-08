@@ -1,0 +1,169 @@
+{
+  "os": [
+    {
+      "platform": "DrayOS 5",
+      "models": "Vigor2136, 2767, 2867, 2928, 1220, 180, C410, C510",
+      "note": {
+        "v": "Giao diện mới, IAM, Threat Protection, WireGuard; bỏ DrayTek SSL VPN",
+        "e": "New UI, IAM, Threat Protection, WireGuard; drops DrayTek SSL VPN"
+      },
+      "fw": "5.4.4.2"
+    },
+    {
+      "platform": "DrayOS 4",
+      "models": "Vigor2927, 2865, 2866, 2766, 2763, 2915, 2962, 3910, 3912, 1000B",
+      "note": {
+        "v": "Giao diện truyền thống, đủ VPN (SSL, OpenVPN, WireGuard trên bản mới)",
+        "e": "Classic UI, full VPN set (SSL, OpenVPN, WireGuard on newer builds)"
+      },
+      "fw": "4.4.x – 4.5.x"
+    },
+    {
+      "platform": "DrayOS 3",
+      "models": "Vigor2925, 2926, 2952, 3220",
+      "note": {
+        "v": "Đời cũ, chỉ còn bản vá bảo mật tới khi hết hỗ trợ",
+        "e": "Legacy; security fixes only until end of support"
+      },
+      "fw": "3.9.x"
+    },
+    {
+      "platform": "Linux",
+      "models": "Vigor2960, 3900, 300B",
+      "note": {
+        "v": "Nền tảng cũ, đã hoặc sắp hết hỗ trợ",
+        "e": "Old platform, support ended or ending"
+      },
+      "fw": "1.5.1.8"
+    }
+  ],
+  "terms": [
+    {
+      "k": "NAT throughput",
+      "v": "Tốc độ tối đa router chuyển dữ liệu giữa Internet và mạng nội bộ. Là số đo trong phòng thí nghiệm; bật nhiều tính năng (lọc web, QoS) sẽ thấp hơn.",
+      "e": "Max rate between the Internet and the LAN, measured in lab conditions; features like web filtering and QoS lower it."
+    },
+    {
+      "k": "NAT session",
+      "v": "Mỗi kết nối mạng đang mở chiếm 1 session. Một máy có thể mở hàng trăm session cùng lúc, nên số session tối đa giới hạn quy mô mạng.",
+      "e": "Each open connection uses one session. One device can hold hundreds at once, so the session limit caps network size."
+    },
+    {
+      "k": "Kênh VPN (tunnel)",
+      "v": "Một kết nối VPN đồng thời: một chi nhánh nối về (LAN-to-LAN) hoặc một người dùng từ xa đều tốn 1 kênh.",
+      "e": "One concurrent VPN connection: a branch (LAN-to-LAN) or a remote user each uses one."
+    },
+    {
+      "k": "IPsec / SSL / OpenVPN / WireGuard",
+      "v": "IPsec hợp nối chi nhánh; SSL VPN và OpenVPN dễ đi qua tường lửa cho người dùng từ xa; WireGuard nhẹ và nhanh trên thiết bị mới.",
+      "e": "IPsec suits site-to-site; SSL VPN and OpenVPN pass firewalls easily for remote users; WireGuard is light and fast on newer devices."
+    },
+    {
+      "k": "SFP / SFP+ / combo",
+      "v": "SFP là khe cắm module quang 1G, SFP+ là 10G. Cổng combo cho chọn dùng RJ-45 hoặc SFP.",
+      "e": "SFP is a 1G optical module slot, SFP+ is 10G. A combo port lets you use RJ-45 or SFP."
+    },
+    {
+      "k": "Cổng WAN/LAN chuyển đổi",
+      "v": "Cổng tự chọn làm WAN hoặc LAN, giúp thêm đường Internet mà không cần đổi router.",
+      "e": "A port you set as WAN or LAN, so you can add Internet lines without a new router."
+    },
+    {
+      "k": "Cân bằng tải và failover",
+      "v": "Cân bằng tải chia lưu lượng qua nhiều đường; failover chỉ chuyển sang đường dự phòng khi đường chính mất.",
+      "e": "Load balancing spreads traffic over lines; failover only switches when the main line drops."
+    },
+    {
+      "k": "High Availability (HA)",
+      "v": "Hai router cùng model chạy cặp; router chính hỏng thì router dự phòng tự nhận việc (Active-Standby hoặc Hot-Standby).",
+      "e": "Two identical routers run as a pair; the standby takes over automatically (Active-Standby or Hot-Standby)."
+    },
+    {
+      "k": "APM / SWM",
+      "v": "Router quản lý tập trung AP (APM) và switch (SWM): cấu hình, theo dõi, nâng cấp từ một nơi.",
+      "e": "Router-based central management of APs (APM) and switches (SWM)."
+    },
+    {
+      "k": "Mesh",
+      "v": "Các AP nối với nhau qua sóng Wi-Fi khi không đi dây được tới từng AP.",
+      "e": "APs link to each other over Wi-Fi where cabling is not possible."
+    },
+    {
+      "k": "PoE, PoE+, PoE++",
+      "v": "Cấp nguồn qua dây mạng. PoE (802.3af) 15.4 W, PoE+ (802.3at) 30 W, PoE++ (802.3bt) 60–90 W mỗi cổng.",
+      "e": "Power over the network cable. PoE (802.3af) 15.4 W, PoE+ (802.3at) 30 W, PoE++ (802.3bt) 60–90 W per port."
+    },
+    {
+      "k": "Hotspot / captive portal",
+      "v": "Trang đăng nhập Wi-Fi cho khách: bấm đồng ý, đăng nhập mạng xã hội, mã PIN qua SMS, hoặc nối với nền tảng Wi-Fi Marketing bên ngoài.",
+      "e": "Guest Wi-Fi login page: click-through, social login, SMS PIN, or an external Wi-Fi marketing platform."
+    },
+    {
+      "k": "VLAN và subnet",
+      "v": "VLAN tách mạng nội bộ thành nhiều nhóm (nhân viên, khách, camera). Subnet là dải IP riêng của mỗi nhóm.",
+      "e": "VLANs split the LAN into groups (staff, guests, cameras). A subnet is each group’s IP range."
+    },
+    {
+      "k": "IAM",
+      "v": "Trên DrayOS 5: quản lý người dùng, nhóm và chính sách truy cập theo danh tính.",
+      "e": "On DrayOS 5: identity-based users, groups and access policies."
+    }
+  ],
+  "suffixes": [
+    {
+      "k": "F",
+      "v": "Cổng WAN quang (SFP)",
+      "e": "Fiber WAN (SFP)"
+    },
+    {
+      "k": "n / ac / ax / be",
+      "v": "Wi-Fi 4 / 5 / 6 / 7 tích hợp",
+      "e": "Built-in Wi-Fi 4 / 5 / 6 / 7"
+    },
+    {
+      "k": "V",
+      "v": "Có cổng điện thoại analog FXS (VoIP)",
+      "e": "Analog phone FXS ports (VoIP)"
+    },
+    {
+      "k": "L / -4G",
+      "v": "Modem 4G LTE tích hợp",
+      "e": "Built-in 4G LTE modem"
+    },
+    {
+      "k": "-5G",
+      "v": "Modem 5G tích hợp",
+      "e": "Built-in 5G modem"
+    },
+    {
+      "k": "S (3912S)",
+      "v": "Có SSD, chạy ứng dụng Docker",
+      "e": "SSD for Docker apps"
+    },
+    {
+      "k": "P (2952P)",
+      "v": "Cổng LAN cấp PoE",
+      "e": "PoE LAN ports"
+    },
+    {
+      "k": "x (switch)",
+      "v": "Có uplink 10G SFP+",
+      "e": "Has 10G SFP+ uplinks"
+    },
+    {
+      "k": "Q / PQ (switch)",
+      "v": "Cổng 2.5G; P = có PoE",
+      "e": "2.5G ports; P = PoE"
+    },
+    {
+      "k": "C (AP)",
+      "v": "AP ốp trần",
+      "e": "Ceiling AP"
+    },
+    {
+      "k": "R / RPD (AP)",
+      "v": "Ngoài trời; PD = có PoE ra, anten định hướng",
+      "e": "Outdoor; PD = PoE out, directional antenna"
+    }
+  ]
+}

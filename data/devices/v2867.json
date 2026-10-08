@@ -1,0 +1,122 @@
+{
+  "id": "v2867",
+  "cat": "router",
+  "m": "Vigor2867",
+  "st": "cur",
+  "fw": "Vigor2867",
+  "t": {
+    "v": "Router VDSL2 + 10G, Wi-Fi 7, DrayOS 5",
+    "e": "VDSL2 + 10G router, Wi-Fi 7, DrayOS 5"
+  },
+  "var": [
+    [
+      "2867",
+      {
+        "v": "Có dây",
+        "e": "Wired"
+      }
+    ],
+    [
+      "2867be",
+      {
+        "v": "Wi-Fi 7",
+        "e": "Wi-Fi 7"
+      }
+    ]
+  ],
+  "fp": [
+    {
+      "r": "x",
+      "m": "dsl",
+      "lb": "VDSL"
+    },
+    {
+      "r": "w",
+      "m": "rj",
+      "sp": "1G"
+    },
+    {
+      "r": "s",
+      "m": "rj",
+      "sp": "10G"
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G"
+    },
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 3
+    }
+  ],
+  "s": {
+    "nat": 9100,
+    "sess": 60000,
+    "ipsec": 540,
+    "ssl": false,
+    "vpn": 50,
+    "vlan": 8,
+    "apm": 20,
+    "swm": 10,
+    "wifi": "be: Wi-Fi 7, 1376 + 5764",
+    "secu": "IAM, Threat Protection Guardian*",
+    "os": "DrayOS 5",
+    "fwv": "5.4.4.2"
+  },
+  "src": {
+    "nat": "ukr",
+    "ipsec": "ukr",
+    "vpn": "db26",
+    "fwv": "fwl"
+  },
+  "u": [
+    20,
+    150
+  ],
+  "uses": [
+    "small",
+    "fast",
+    "secure"
+  ],
+  "f": [
+    "dsl",
+    "10g",
+    "sfp+",
+    "2.5g",
+    "wifi7",
+    "threat",
+    "iam",
+    "wg",
+    "openvpn"
+  ],
+  "hw": {
+    "uk": "business/vigor-2867",
+    "pwr": {
+      "v": "DC 12V (adapter ngoài 100–240VAC, có kèm)",
+      "e": "DC 12V (external 100–240VAC adapter, supplied)"
+    },
+    "cons": {
+      "v": "18 W (2867, 2867-4G); 33.6 W (2867be, -5G)",
+      "e": "18 W (2867, 2867-4G); 33.6 W (2867be, -5G)"
+    },
+    "dim": {
+      "v": "241 × 165 × 43 mm (2867); 241 × 210 × 44 mm (be, 4G, 5G)",
+      "e": "241 × 165 × 43 mm (2867); 241 × 210 × 44 mm (be, 4G, 5G)"
+    },
+    "wt": "1.283 kg (2867)",
+    "temp": "0–45 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Để bàn, treo tường; rack cần giá RM1",
+      "e": "Shelf, wall; rack needs RM1 bracket"
+    }
+  }
+}

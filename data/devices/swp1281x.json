@@ -1,0 +1,69 @@
+{
+  "id": "swp1281x",
+  "cat": "switch",
+  "m": "VigorSwitch P1281x",
+  "st": "cur",
+  "fw": "VigorSwitch%20P1281x",
+  "t": {
+    "v": "Switch PoE+ 24 cổng + 4 SFP+, 140 W",
+    "e": "24-port PoE+ switch + 4 SFP+, 140 W"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "1G",
+      "n": 24,
+      "poe": 1
+    },
+    {
+      "r": "l",
+      "m": "sfpp",
+      "sp": "10G",
+      "n": 4
+    }
+  ],
+  "s": {
+    "level": "Web Smart",
+    "ports": "24× GbE PoE+",
+    "uplink": "4× 10G SFP+",
+    "poe": "24× PoE+",
+    "budget": 140,
+    "vlan": 512,
+    "onvif": true,
+    "rack": true
+  },
+  "src": {
+    "budget": "db26",
+    "uplink": "uksw"
+  },
+  "u": [
+    10,
+    30
+  ],
+  "uses": [
+    "camera",
+    "mid"
+  ],
+  "f": [
+    "poe",
+    "sfp+",
+    "10g",
+    "onvif"
+  ],
+  "hw": {
+    "uk": "business/vigorswitch-p1281x",
+    "pwr": "100–240VAC",
+    "cons": "200 W",
+    "dim": "440 × 216 × 44 mm",
+    "temp": "0–50 °C",
+    "cool": {
+      "v": "Không quạt",
+      "e": "Fanless"
+    },
+    "mount": "Rack 1U",
+    "fwd": "41.7 Mpps",
+    "buf": "4.2 Mbit",
+    "jumbo": "9 KB"
+  }
+}

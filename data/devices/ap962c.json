@@ -1,0 +1,80 @@
+{
+  "id": "ap962c",
+  "cat": "ap",
+  "m": "VigorAP 962C",
+  "st": "cur",
+  "fw": "VigorAP%20962C",
+  "t": {
+    "v": "AP Wi-Fi 6 AX3000 ốp trần, cổng 2.5G",
+    "e": "Wi-Fi 6 AX3000 ceiling AP, 2.5G port"
+  },
+  "fp": [
+    {
+      "r": "l",
+      "m": "rj",
+      "sp": "2.5G"
+    }
+  ],
+  "s": {
+    "std": "Wi-Fi 6 (802.11ax)",
+    "cls": "AX3000 2x3",
+    "bands": "2.4 + 5 GHz",
+    "link": "574 + 2402 Mbps",
+    "clients": 256,
+    "ssid": "8 + 8",
+    "ports": "1× 2.5GbE",
+    "power": "DC / PoE+",
+    "poein": "PoE+",
+    "poeout": false,
+    "mount": {
+      "v": "Ốp trần, treo tường",
+      "e": "Ceiling, wall"
+    },
+    "outdoor": false,
+    "mesh": "Root / Node",
+    "mgmt": "Router APM, VigorConnect, VigorACS"
+  },
+  "src": {
+    "link": "ukap",
+    "clients": "db26"
+  },
+  "u": [
+    20,
+    60
+  ],
+  "uses": [
+    "small",
+    "mid",
+    "cafe",
+    "hotel",
+    "dense"
+  ],
+  "f": [
+    "wifi6",
+    "2.5g",
+    "mesh",
+    "poe"
+  ],
+  "prev": [
+    "ap960c"
+  ],
+  "hw": {
+    "uk": "business/vigorap-962c",
+    "pwr": {
+      "v": "PoE+ 802.3at hoặc DC 12V (adapter không kèm)",
+      "e": "PoE+ 802.3at or DC 12V (adapter not supplied)"
+    },
+    "cons": "12 W",
+    "dim": {
+      "v": "Đường kính 190 mm, cao 30 mm",
+      "e": "190 mm diameter, 30 mm high"
+    },
+    "wt": "520 g",
+    "temp": "0–40 °C",
+    "hum": "10–90%",
+    "mount": {
+      "v": "Ốp trần, treo tường (đi dây phía sau)",
+      "e": "Ceiling, wall (rear cable entry)"
+    }
+  }
+}
