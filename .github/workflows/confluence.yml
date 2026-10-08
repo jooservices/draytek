@@ -1,0 +1,52 @@
+name: Confluence
+
+# Syncs the Draytek Confluence space (key JOODT) from repository content.
+# Runs when data, research docs or the sync scripts change on develop, after the weekly
+# data update, and on demand. Needs repository secrets ATLASSIAN_EMAIL and ATLASSIAN_TOKEN;
+# without them the job reports a notice and skips.
+on:
+  push:
+    branches: [develop]
+    paths:
+      - 'data/**'
+      - 'docs/research/**'
+      - 'scripts/confluence/**'
+      - 'scripts/sync-confluence.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: confluence
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      JIRA_URL: ${{ vars.ATLASSIAN_URL || 'https://jooservices.atlassian.net' }}
+      JIRA_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+      JIRA_TOKEN: ${{ secrets.ATLASSIAN_TOKEN }}
+    steps:
+      - name: Check credentials
+        id: creds
+        run: |
+          if [ -z "$JIRA_EMAIL" ] || [ -z "$JIRA_TOKEN" ]; then
+            echo "::notice::ATLASSIAN_EMAIL / ATLASSIAN_TOKEN secrets are not set; skipping Confluence sync."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v7
+        if: steps.creds.outputs.ready == 'true'
+      - uses: actions/setup-node@v7
+        if: steps.creds.outputs.ready == 'true'
+        with:
+          node-version: 24
+          cache: npm
+      - if: steps.creds.outputs.ready == 'true'
+        run: npm ci
+      - name: Sync pages
+        if: steps.creds.outputs.ready == 'true'
+        run: node scripts/sync-confluence.mjs

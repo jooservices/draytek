@@ -46,3 +46,4 @@ jobs:
           git push origin HEAD:develop
           # Pushes made with GITHUB_TOKEN do not trigger other workflows, so start the deploy explicitly.
           gh workflow run pages.yml --ref develop
+          gh workflow run confluence.yml --ref develop

@@ -4,14 +4,16 @@ import fs from 'node:fs';
 import { loadData, val, fmtMbps, fmtK } from './data.mjs';
 
 const D = loadData();
-const today = new Date().toISOString().slice(0, 10);
+// Pages show when their content was last reviewed, not when the sync ran, so unchanged content does not create new versions.
+const REVIEWED = '2026-10-08';
+const DATA_DATE = D.firmware.checked.slice(0, 10);
 const JIRA = 'https://jooservices.atlassian.net/browse/';
 const jira = (...keys) => keys.map((k) => `[${k}](${JIRA}${k})`).join(', ');
 const REPO = 'https://github.com/jooservices/draytek';
 const SITE = 'https://jooservices.github.io/draytek/';
 const SPACE_HOME = 'Draytek';
 
-const head = ({ verified = today, sources = [], jira: keys = [], generated = false }) =>
+const head = ({ verified = REVIEWED, sources = [], jira: keys = [], generated = false }) =>
   `:::info\n**Owner:** Viet Vu. **Last verified:** ${verified}. ${sources.length ? `**Sources:** ${sources.join('; ')}. ` : ''}${keys.length ? `**Jira:** ${jira(...keys)}.` : ''}${generated ? ` **Generated** from repository data (${REPO}/tree/develop/data) by \`npm run sync:confluence\`; do not edit this table by hand.` : ''}\n:::\n\n`;
 
 const table = (headers, rows) => `| ${headers.join(' | ')} |\n|${headers.map(() => '---').join('|')}|\n${rows.map((r) => `| ${r.join(' | ')} |`).join('\n')}\n`;
@@ -75,7 +77,7 @@ What DrayTek devices are, how the lines differ, and how long they are supported.
     title: 'Product lines overview', parent: 'Product knowledge', labels: ['draytek', 'product'],
     body: () => {
       const cur = (c) => of(c).filter((d) => d.st === 'cur').length;
-      return head({ sources: ['Databook 2026', 'repository data/devices'], jira: ['JOODT-1'], generated: true }) + `
+      return head({ verified: DATA_DATE, sources: ['Databook 2026', 'repository data/devices'], jira: ['JOODT-1'], generated: true }) + `
 ## Summary
 
 The dataset covers ${D.devices.length} devices: ${cur('router')} current routers, ${cur('ap')} current access points, ${cur('switch')} current switches and ${cur('more')} software, service and accessory items, plus older models still common in Vietnam.
@@ -109,20 +111,20 @@ Details per device: [[Routers]], [[Wi-Fi access points]], [[Switches]]. Reading 
   },
   {
     title: 'Routers', parent: 'Product knowledge', labels: ['draytek', 'product', 'generated'],
-    body: () => head({ sources: ['repository data/devices', 'official datasheets'], jira: ['JOODT-1', 'JOODT-3'], generated: true }) +
+    body: () => head({ verified: DATA_DATE, sources: ['repository data/devices', 'official datasheets'], jira: ['JOODT-1', 'JOODT-3'], generated: true }) +
       `Values come from official datasheets, the Databook 2026 and DrayTek UK pages; "not verified" means the value was not found. Throughput is a vendor lab figure.\n\n` +
       table(['Model', 'Status', 'Summary', 'NAT', 'Sessions', 'VPN', 'Max WAN', 'DrayOS', 'Latest firmware'],
         of('router').map((d) => [link(d), status(d), val(d.t), val(d.s.nat, 'mbps'), val(d.s.sess, 'k'), val(d.s.vpn), val(d.s.wanmax), val(d.s.os), fw(d)])),
   },
   {
     title: 'Wi-Fi access points', parent: 'Product knowledge', labels: ['draytek', 'product', 'generated'],
-    body: () => head({ sources: ['repository data/devices', 'DrayTek UK AP comparison'], jira: ['JOODT-1'], generated: true }) +
+    body: () => head({ verified: DATA_DATE, sources: ['repository data/devices', 'DrayTek UK AP comparison'], jira: ['JOODT-1'], generated: true }) +
       table(['Model', 'Status', 'Standard', 'Class', 'Max link rate', 'Clients', 'Ports', 'Latest firmware'],
         of('ap').map((d) => [link(d), status(d), val(d.s.std), val(d.s.cls), val(d.s.link), val(d.s.clients), val(d.s.ports), fw(d)])),
   },
   {
     title: 'Switches', parent: 'Product knowledge', labels: ['draytek', 'product', 'generated'],
-    body: () => head({ sources: ['repository data/devices', 'DrayTek UK switch comparison'], jira: ['JOODT-1'], generated: true }) +
+    body: () => head({ verified: DATA_DATE, sources: ['repository data/devices', 'DrayTek UK switch comparison'], jira: ['JOODT-1'], generated: true }) +
       table(['Model', 'Status', 'Level', 'Access ports', 'Uplink', 'PoE budget', 'Latest firmware'],
         of('switch').map((d) => [link(d), status(d), val(d.s.level), val(d.s.ports), val(d.s.uplink), val(d.s.budget, 'w'), fw(d)])),
   },
@@ -134,7 +136,7 @@ Details per device: [[Routers]], [[Wi-Fi access points]], [[Switches]]. Reading 
   },
   {
     title: 'DrayOS and firmware', parent: 'Product knowledge', labels: ['draytek', 'product', 'generated'],
-    body: () => head({ sources: ['firmware server fw.draytek.com.tw', 'repository data/guides.json'], jira: ['JOODT-3'], generated: true }) + `
+    body: () => head({ verified: DATA_DATE, sources: ['firmware server fw.draytek.com.tw', 'repository data/guides.json'], jira: ['JOODT-3'], generated: true }) + `
 ## Operating systems
 
 ${table(['Platform', 'Models', 'Notes', 'Firmware line'], D.guides.os.map((o) => [`**${o.platform}**`, o.models, o.note.e, o.fw]))}
