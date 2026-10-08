@@ -50,6 +50,10 @@ Firmware versions come from the official firmware server (`latest.txt` per model
 
 Fetched firmware overrides the curated version in `data/devices/*.json`. Devices without a firmware folder (software, accessories) keep curated values.
 
+## Confluence
+
+DrayTek knowledge lives in the Confluence space `JOODT` (https://jooservices.atlassian.net/wiki/spaces/JOODT). Narrative pages are defined in `scripts/confluence/pages.mjs`; device tables are generated from `data/`. Refresh with `node --env-file=<env file> scripts/sync-confluence.mjs` (or `npm run sync:confluence` with `JIRA_URL`, `JIRA_EMAIL`, `JIRA_TOKEN` set; never commit them). `-- --dry` lists pages without writing. Unchanged pages are skipped.
+
 ## Deploy
 
 `Pages` workflow builds and deploys to GitHub Pages on every push to `develop` (validate data, type check, build). It sets `BASE_PATH=/<repo>` and `SITE_URL`.

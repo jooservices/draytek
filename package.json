@@ -16,7 +16,8 @@
     "images": "node scripts/build-images.mjs",
     "update:firmware": "node scripts/update-firmware.mjs",
     "update:advisories": "node scripts/update-advisories.mjs",
-    "update:data": "npm run update:firmware && npm run update:advisories"
+    "update:data": "npm run update:firmware && npm run update:advisories",
+    "sync:confluence": "node scripts/sync-confluence.mjs"
   },
   "dependencies": {
     "@astrojs/preact": "^6.0.6",
