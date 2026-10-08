@@ -26,6 +26,32 @@ const MAP = {
   swq2200x: 'VigorSwitch_Q2200x',
 };
 
+// Additional photos from other official or distributor product pages: id -> [file, origin].
+// origin: uk = DrayTek UK product page, au = DrayTek AU, an = distributor product image.
+const EXTRA = {
+  ap1062c: ['Ext_ap1062c_an', 'an'],
+  ap1070c: ['Ext_ap1070c_au', 'au'],
+  daccx10: ['Ext_daccx10_au', 'au'],
+  swpq1070x: ['Ext_swpq1070x_uk', 'uk'],
+  swq1070x: ['Ext_swq1070x_au', 'au'],
+  swq60x: ['Ext_swq60x_uk', 'uk'],
+  swpq2121x: ['Ext_swpq2121x_an', 'an'],
+  swpq2300xb: ['Ext_swpq2300xb_au', 'au'],
+  swq1100x: ['Ext_swq1100x_an', 'an'],
+  swq2121x: ['Ext_swq2121x_au', 'au'],
+  swq2300x: ['Ext_swq2300x_an', 'an'],
+  v1000b: ['Ext_v1000b_an', 'an'],
+  v166: ['Ext_v166_uk', 'uk'],
+  v2136ax4g: ['Ext_v2136ax4g_au', 'au'],
+  v2767ax4g: ['Ext_v2767ax4g_au', 'au'],
+  v2915: ['Ext_v2915_an', 'an'],
+  v3220: ['Ext_v3220_uk', 'uk'],
+  v3900: ['Ext_v3900_uk', 'uk'],
+  v3910: ['Ext_v3910_an', 'an'],
+  ant1205: ['Ext_ant1205_au', 'au'],
+};
+for (const [id, [file]] of Object.entries(EXTRA)) MAP[id] = file;
+
 fs.mkdirSync(OUT, { recursive: true });
 const files = fs.readdirSync(SRC);
 const manifest = {};
@@ -38,7 +64,7 @@ for (const [id, base] of Object.entries(MAP)) {
   await img.clone().resize({ width: 400, withoutEnlargement: true }).webp({ quality: 80 }).toFile(path.join(OUT, `${id}-sm.webp`));
   // Full-size copy for the zoom modal (original resolution, capped at 1600px wide).
   const full = await img.clone().resize({ width: 1600, withoutEnlargement: true }).webp({ quality: 86 }).toFile(path.join(OUT, `${id}-full.webp`));
-  manifest[id] = { src: `${id}.webp`, thumb: `${id}-sm.webp`, full: `${id}-full.webp`, w: width, h: height, fw: full.width, fh: full.height, from: base };
+  manifest[id] = { src: `${id}.webp`, thumb: `${id}-sm.webp`, full: `${id}-full.webp`, w: width, h: height, fw: full.width, fh: full.height, from: base, ...(EXTRA[id] ? { origin: EXTRA[id][1] } : { origin: 'uk-press' }) };
 }
 fs.writeFileSync('data/images.json', JSON.stringify(manifest, null, 2) + '\n');
 console.log(Object.keys(manifest).length, 'images');

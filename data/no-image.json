@@ -1,0 +1,21 @@
+{
+  "checked": "2026-10-08",
+  "note": "Devices without a product photo. Hardware entries had no suitable official or distributor photo on checked sources (DrayTek UK, DrayTek AU, distributor catalog); software and services have no physical product.",
+  "items": {
+    "damex10": "no-photo-found",
+    "damfx10": "no-photo-found",
+    "poe600": "no-photo-found",
+    "swpq1100x": "no-photo-found",
+    "swpx2060": "no-photo-found",
+    "swx2060": "no-photo-found",
+    "v1100vax": "no-photo-found",
+    "v1220": "no-photo-found",
+    "v180": "no-photo-found",
+    "v300b": "no-photo-found",
+    "acs3": "software",
+    "reput": "software",
+    "smartvpn": "software",
+    "threat": "software",
+    "vconnect": "software"
+  }
+}

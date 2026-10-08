@@ -7,7 +7,8 @@
     "h": 454,
     "fw": 1600,
     "fh": 726,
-    "from": "Vigor_167"
+    "from": "Vigor_167",
+    "origin": "uk-press"
   },
   "v2136": {
     "src": "v2136.webp",
@@ -17,7 +18,8 @@
     "h": 897,
     "fw": 1600,
     "fh": 1435,
-    "from": "Vigor_2136ax"
+    "from": "Vigor_2136ax",
+    "origin": "uk-press"
   },
   "v2763": {
     "src": "v2763.webp",
@@ -27,7 +29,8 @@
     "h": 467,
     "fw": 1600,
     "fh": 747,
-    "from": "Vigor_2763"
+    "from": "Vigor_2763",
+    "origin": "uk-press"
   },
   "v2766": {
     "src": "v2766.webp",
@@ -37,7 +40,8 @@
     "h": 467,
     "fw": 1600,
     "fh": 747,
-    "from": "Vigor_2766"
+    "from": "Vigor_2766",
+    "origin": "uk-press"
   },
   "v2767": {
     "src": "v2767.webp",
@@ -47,7 +51,8 @@
     "h": 466,
     "fw": 1600,
     "fh": 746,
-    "from": "Vigor_2767"
+    "from": "Vigor_2767",
+    "origin": "uk-press"
   },
   "v2865": {
     "src": "v2865.webp",
@@ -57,7 +62,8 @@
     "h": 474,
     "fw": 1600,
     "fh": 759,
-    "from": "Vigor_2865"
+    "from": "Vigor_2865",
+    "origin": "uk-press"
   },
   "v2865l": {
     "src": "v2865l.webp",
@@ -67,7 +73,8 @@
     "h": 987,
     "fw": 1600,
     "fh": 1579,
-    "from": "Vigor_2865Lac"
+    "from": "Vigor_2865Lac",
+    "origin": "uk-press"
   },
   "v2866": {
     "src": "v2866.webp",
@@ -77,7 +84,8 @@
     "h": 474,
     "fw": 1600,
     "fh": 759,
-    "from": "Vigor_2866"
+    "from": "Vigor_2866",
+    "origin": "uk-press"
   },
   "v2867": {
     "src": "v2867.webp",
@@ -87,7 +95,8 @@
     "h": 480,
     "fw": 1407,
     "fh": 675,
-    "from": "Vigor_2867"
+    "from": "Vigor_2867",
+    "origin": "uk-press"
   },
   "v2925": {
     "src": "v2925.webp",
@@ -97,7 +106,8 @@
     "h": 483,
     "fw": 1600,
     "fh": 772,
-    "from": "Vigor_2925"
+    "from": "Vigor_2925",
+    "origin": "uk-press"
   },
   "v2926": {
     "src": "v2926.webp",
@@ -107,7 +117,8 @@
     "h": 483,
     "fw": 1600,
     "fh": 772,
-    "from": "Vigor_2926"
+    "from": "Vigor_2926",
+    "origin": "uk-press"
   },
   "v2927": {
     "src": "v2927.webp",
@@ -117,7 +128,8 @@
     "h": 861,
     "fw": 1600,
     "fh": 1377,
-    "from": "Vigor_2927ax"
+    "from": "Vigor_2927ax",
+    "origin": "uk-press"
   },
   "v2927l": {
     "src": "v2927l.webp",
@@ -127,7 +139,8 @@
     "h": 994,
     "fw": 1600,
     "fh": 1590,
-    "from": "Vigor_2927Lac"
+    "from": "Vigor_2927Lac",
+    "origin": "uk-press"
   },
   "v2928": {
     "src": "v2928.webp",
@@ -137,7 +150,8 @@
     "h": 788,
     "fw": 1357,
     "fh": 1069,
-    "from": "Vigor_2928be"
+    "from": "Vigor_2928be",
+    "origin": "uk-press"
   },
   "v2952": {
     "src": "v2952.webp",
@@ -147,7 +161,8 @@
     "h": 423,
     "fw": 1600,
     "fh": 677,
-    "from": "Vigor_2952"
+    "from": "Vigor_2952",
+    "origin": "uk-press"
   },
   "v2960": {
     "src": "v2960.webp",
@@ -157,7 +172,8 @@
     "h": 211,
     "fw": 1600,
     "fh": 337,
-    "from": "Vigor_2960_front"
+    "from": "Vigor_2960_front",
+    "origin": "uk-press"
   },
   "v2962": {
     "src": "v2962.webp",
@@ -167,7 +183,8 @@
     "h": 423,
     "fw": 1600,
     "fh": 677,
-    "from": "Vigor_2962"
+    "from": "Vigor_2962",
+    "origin": "uk-press"
   },
   "v3912": {
     "src": "v3912.webp",
@@ -177,7 +194,8 @@
     "h": 402,
     "fw": 1600,
     "fh": 643,
-    "from": "Vigor_3912S"
+    "from": "Vigor_3912S",
+    "origin": "uk-press"
   },
   "vc410": {
     "src": "vc410.webp",
@@ -187,7 +205,8 @@
     "h": 817,
     "fw": 1600,
     "fh": 1307,
-    "from": "Vigor_C410ax"
+    "from": "Vigor_C410ax",
+    "origin": "uk-press"
   },
   "vc510": {
     "src": "vc510.webp",
@@ -197,7 +216,8 @@
     "h": 817,
     "fw": 1600,
     "fh": 1307,
-    "from": "Vigor_C510ax"
+    "from": "Vigor_C510ax",
+    "origin": "uk-press"
   },
   "ap1000c": {
     "src": "ap1000c.webp",
@@ -207,7 +227,8 @@
     "h": 512,
     "fw": 1600,
     "fh": 819,
-    "from": "VigorAP_1000C"
+    "from": "VigorAP_1000C",
+    "origin": "uk-press"
   },
   "ap1060c": {
     "src": "ap1060c.webp",
@@ -217,7 +238,8 @@
     "h": 471,
     "fw": 1600,
     "fh": 754,
-    "from": "VigorAP_1060C"
+    "from": "VigorAP_1060C",
+    "origin": "uk-press"
   },
   "ap805": {
     "src": "ap805.webp",
@@ -227,7 +249,8 @@
     "h": 1594,
     "fw": 1600,
     "fh": 2551,
-    "from": "VigorAP_805"
+    "from": "VigorAP_805",
+    "origin": "uk-press"
   },
   "ap903": {
     "src": "ap903.webp",
@@ -237,7 +260,8 @@
     "h": 2648,
     "fw": 1253,
     "fh": 3318,
-    "from": "VigorAP_903"
+    "from": "VigorAP_903",
+    "origin": "uk-press"
   },
   "ap905": {
     "src": "ap905.webp",
@@ -247,7 +271,8 @@
     "h": 2829,
     "fw": 1257,
     "fh": 3556,
-    "from": "VigorAP_905"
+    "from": "VigorAP_905",
+    "origin": "uk-press"
   },
   "ap906": {
     "src": "ap906.webp",
@@ -257,7 +282,8 @@
     "h": 2414,
     "fw": 1600,
     "fh": 3862,
-    "from": "VigorAP_906"
+    "from": "VigorAP_906",
+    "origin": "uk-press"
   },
   "ap912c": {
     "src": "ap912c.webp",
@@ -267,7 +293,8 @@
     "h": 589,
     "fw": 1600,
     "fh": 942,
-    "from": "VigorAP_912C"
+    "from": "VigorAP_912C",
+    "origin": "uk-press"
   },
   "ap918r": {
     "src": "ap918r.webp",
@@ -277,7 +304,8 @@
     "h": 2473,
     "fw": 891,
     "fh": 2473,
-    "from": "VigorAP_918R"
+    "from": "VigorAP_918R",
+    "origin": "uk-press"
   },
   "ap918rpd": {
     "src": "ap918rpd.webp",
@@ -287,7 +315,8 @@
     "h": 2473,
     "fw": 891,
     "fh": 2473,
-    "from": "VigorAP_918R"
+    "from": "VigorAP_918R",
+    "origin": "uk-press"
   },
   "ap920r": {
     "src": "ap920r.webp",
@@ -297,7 +326,8 @@
     "h": 2611,
     "fw": 1253,
     "fh": 3272,
-    "from": "VigorAP_920R"
+    "from": "VigorAP_920R",
+    "origin": "uk-press"
   },
   "ap960c": {
     "src": "ap960c.webp",
@@ -307,7 +337,8 @@
     "h": 610,
     "fw": 1600,
     "fh": 977,
-    "from": "VigorAP_960C"
+    "from": "VigorAP_960C",
+    "origin": "uk-press"
   },
   "ap962c": {
     "src": "ap962c.webp",
@@ -317,7 +348,8 @@
     "h": 581,
     "fw": 1600,
     "fh": 930,
-    "from": "VigorAP_962C"
+    "from": "VigorAP_962C",
+    "origin": "uk-press"
   },
   "swfx2120": {
     "src": "swfx2120.webp",
@@ -327,7 +359,8 @@
     "h": 152,
     "fw": 1600,
     "fh": 244,
-    "from": "VigorSwitch_FX2120"
+    "from": "VigorSwitch_FX2120",
+    "origin": "uk-press"
   },
   "swg1080": {
     "src": "swg1080.webp",
@@ -337,7 +370,8 @@
     "h": 452,
     "fw": 1499,
     "fh": 677,
-    "from": "VigorSwitch_G1080"
+    "from": "VigorSwitch_G1080",
+    "origin": "uk-press"
   },
   "swg1280": {
     "src": "swg1280.webp",
@@ -347,7 +381,8 @@
     "h": 367,
     "fw": 1600,
     "fh": 587,
-    "from": "VigorSwitch_G1280"
+    "from": "VigorSwitch_G1280",
+    "origin": "uk-press"
   },
   "swg1282": {
     "src": "swg1282.webp",
@@ -357,7 +392,8 @@
     "h": 367,
     "fw": 1600,
     "fh": 587,
-    "from": "VigorSwitch_G1282"
+    "from": "VigorSwitch_G1282",
+    "origin": "uk-press"
   },
   "swg2100": {
     "src": "swg2100.webp",
@@ -367,7 +403,8 @@
     "h": 421,
     "fw": 1600,
     "fh": 674,
-    "from": "VigorSwitch_G2100"
+    "from": "VigorSwitch_G2100",
+    "origin": "uk-press"
   },
   "swg2280x": {
     "src": "swg2280x.webp",
@@ -377,7 +414,8 @@
     "h": 367,
     "fw": 1600,
     "fh": 587,
-    "from": "VigorSwitch_G2280x"
+    "from": "VigorSwitch_G2280x",
+    "origin": "uk-press"
   },
   "swg2282x": {
     "src": "swg2282x.webp",
@@ -387,7 +425,8 @@
     "h": 367,
     "fw": 1600,
     "fh": 587,
-    "from": "VigorSwitch_G2282x"
+    "from": "VigorSwitch_G2282x",
+    "origin": "uk-press"
   },
   "swg2540x": {
     "src": "swg2540x.webp",
@@ -397,7 +436,8 @@
     "h": 373,
     "fw": 1600,
     "fh": 596,
-    "from": "VigorSwitch_G2540x"
+    "from": "VigorSwitch_G2540x",
+    "origin": "uk-press"
   },
   "swg2542x": {
     "src": "swg2542x.webp",
@@ -407,7 +447,8 @@
     "h": 373,
     "fw": 1600,
     "fh": 596,
-    "from": "VigorSwitch_G2542x"
+    "from": "VigorSwitch_G2542x",
+    "origin": "uk-press"
   },
   "swp1280": {
     "src": "swp1280.webp",
@@ -417,7 +458,8 @@
     "h": 367,
     "fw": 1600,
     "fh": 587,
-    "from": "VigorSwitch_P1280"
+    "from": "VigorSwitch_P1280",
+    "origin": "uk-press"
   },
   "swp1281x": {
     "src": "swp1281x.webp",
@@ -427,7 +469,8 @@
     "h": 373,
     "fw": 1600,
     "fh": 596,
-    "from": "VigorSwitch_P1281x"
+    "from": "VigorSwitch_P1281x",
+    "origin": "uk-press"
   },
   "swp1282": {
     "src": "swp1282.webp",
@@ -437,7 +480,8 @@
     "h": 373,
     "fw": 1600,
     "fh": 596,
-    "from": "VigorSwitch_P1282"
+    "from": "VigorSwitch_P1282",
+    "origin": "uk-press"
   },
   "swp2100": {
     "src": "swp2100.webp",
@@ -447,7 +491,8 @@
     "h": 395,
     "fw": 1600,
     "fh": 631,
-    "from": "VigorSwitch_P2100"
+    "from": "VigorSwitch_P2100",
+    "origin": "uk-press"
   },
   "swp2280x": {
     "src": "swp2280x.webp",
@@ -457,7 +502,8 @@
     "h": 373,
     "fw": 1600,
     "fh": 596,
-    "from": "VigorSwitch_P2280x"
+    "from": "VigorSwitch_P2280x",
+    "origin": "uk-press"
   },
   "swp2282x": {
     "src": "swp2282x.webp",
@@ -467,7 +513,8 @@
     "h": 373,
     "fw": 1600,
     "fh": 596,
-    "from": "VigorSwitch_P2282x"
+    "from": "VigorSwitch_P2282x",
+    "origin": "uk-press"
   },
   "swp2540x": {
     "src": "swp2540x.webp",
@@ -477,7 +524,8 @@
     "h": 385,
     "fw": 1600,
     "fh": 616,
-    "from": "VigorSwitch_P2540x"
+    "from": "VigorSwitch_P2540x",
+    "origin": "uk-press"
   },
   "swp2542x": {
     "src": "swp2542x.webp",
@@ -487,7 +535,8 @@
     "h": 385,
     "fw": 1600,
     "fh": 616,
-    "from": "VigorSwitch_P2542x"
+    "from": "VigorSwitch_P2542x",
+    "origin": "uk-press"
   },
   "swpq2200xb": {
     "src": "swpq2200xb.webp",
@@ -497,7 +546,8 @@
     "h": 373,
     "fw": 1600,
     "fh": 597,
-    "from": "VigorSwitch_PQ2200xb"
+    "from": "VigorSwitch_PQ2200xb",
+    "origin": "uk-press"
   },
   "swq2200x": {
     "src": "swq2200x.webp",
@@ -507,6 +557,227 @@
     "h": 367,
     "fw": 1600,
     "fh": 587,
-    "from": "VigorSwitch_Q2200x"
+    "from": "VigorSwitch_Q2200x",
+    "origin": "uk-press"
+  },
+  "ap1062c": {
+    "src": "ap1062c.webp",
+    "thumb": "ap1062c-sm.webp",
+    "full": "ap1062c-full.webp",
+    "w": 1000,
+    "h": 618,
+    "fw": 1413,
+    "fh": 873,
+    "from": "Ext_ap1062c_an",
+    "origin": "an"
+  },
+  "ap1070c": {
+    "src": "ap1070c.webp",
+    "thumb": "ap1070c-sm.webp",
+    "full": "ap1070c-full.webp",
+    "w": 730,
+    "h": 345,
+    "fw": 730,
+    "fh": 345,
+    "from": "Ext_ap1070c_au",
+    "origin": "au"
+  },
+  "daccx10": {
+    "src": "daccx10.webp",
+    "thumb": "daccx10-sm.webp",
+    "full": "daccx10-full.webp",
+    "w": 276,
+    "h": 227,
+    "fw": 276,
+    "fh": 227,
+    "from": "Ext_daccx10_au",
+    "origin": "au"
+  },
+  "swpq1070x": {
+    "src": "swpq1070x.webp",
+    "thumb": "swpq1070x-sm.webp",
+    "full": "swpq1070x-full.webp",
+    "w": 846,
+    "h": 214,
+    "fw": 846,
+    "fh": 214,
+    "from": "Ext_swpq1070x_uk",
+    "origin": "uk"
+  },
+  "swq1070x": {
+    "src": "swq1070x.webp",
+    "thumb": "swq1070x-sm.webp",
+    "full": "swq1070x-full.webp",
+    "w": 520,
+    "h": 225,
+    "fw": 520,
+    "fh": 225,
+    "from": "Ext_swq1070x_au",
+    "origin": "au"
+  },
+  "swq60x": {
+    "src": "swq60x.webp",
+    "thumb": "swq60x-sm.webp",
+    "full": "swq60x-full.webp",
+    "w": 909,
+    "h": 275,
+    "fw": 909,
+    "fh": 275,
+    "from": "Ext_swq60x_uk",
+    "origin": "uk"
+  },
+  "swpq2121x": {
+    "src": "swpq2121x.webp",
+    "thumb": "swpq2121x-sm.webp",
+    "full": "swpq2121x-full.webp",
+    "w": 1000,
+    "h": 381,
+    "fw": 1506,
+    "fh": 574,
+    "from": "Ext_swpq2121x_an",
+    "origin": "an"
+  },
+  "swpq2300xb": {
+    "src": "swpq2300xb.webp",
+    "thumb": "swpq2300xb-sm.webp",
+    "full": "swpq2300xb-full.webp",
+    "w": 935,
+    "h": 348,
+    "fw": 935,
+    "fh": 348,
+    "from": "Ext_swpq2300xb_au",
+    "origin": "au"
+  },
+  "swq1100x": {
+    "src": "swq1100x.webp",
+    "thumb": "swq1100x-sm.webp",
+    "full": "swq1100x-full.webp",
+    "w": 1000,
+    "h": 400,
+    "fw": 1494,
+    "fh": 597,
+    "from": "Ext_swq1100x_an",
+    "origin": "an"
+  },
+  "swq2121x": {
+    "src": "swq2121x.webp",
+    "thumb": "swq2121x-sm.webp",
+    "full": "swq2121x-full.webp",
+    "w": 711,
+    "h": 270,
+    "fw": 711,
+    "fh": 270,
+    "from": "Ext_swq2121x_au",
+    "origin": "au"
+  },
+  "swq2300x": {
+    "src": "swq2300x.webp",
+    "thumb": "swq2300x-sm.webp",
+    "full": "swq2300x-full.webp",
+    "w": 1000,
+    "h": 373,
+    "fw": 1385,
+    "fh": 517,
+    "from": "Ext_swq2300x_an",
+    "origin": "an"
+  },
+  "v1000b": {
+    "src": "v1000b.webp",
+    "thumb": "v1000b-sm.webp",
+    "full": "v1000b-full.webp",
+    "w": 1000,
+    "h": 403,
+    "fw": 1493,
+    "fh": 601,
+    "from": "Ext_v1000b_an",
+    "origin": "an"
+  },
+  "v166": {
+    "src": "v166.webp",
+    "thumb": "v166-sm.webp",
+    "full": "v166-full.webp",
+    "w": 1000,
+    "h": 453,
+    "fw": 1600,
+    "fh": 726,
+    "from": "Ext_v166_uk",
+    "origin": "uk"
+  },
+  "v2136ax4g": {
+    "src": "v2136ax4g.webp",
+    "thumb": "v2136ax4g-sm.webp",
+    "full": "v2136ax4g-full.webp",
+    "w": 860,
+    "h": 503,
+    "fw": 860,
+    "fh": 503,
+    "from": "Ext_v2136ax4g_au",
+    "origin": "au"
+  },
+  "v2767ax4g": {
+    "src": "v2767ax4g.webp",
+    "thumb": "v2767ax4g-sm.webp",
+    "full": "v2767ax4g-full.webp",
+    "w": 800,
+    "h": 467,
+    "fw": 800,
+    "fh": 467,
+    "from": "Ext_v2767ax4g_au",
+    "origin": "au"
+  },
+  "v2915": {
+    "src": "v2915.webp",
+    "thumb": "v2915-sm.webp",
+    "full": "v2915-full.webp",
+    "w": 1000,
+    "h": 472,
+    "fw": 1600,
+    "fh": 755,
+    "from": "Ext_v2915_an",
+    "origin": "an"
+  },
+  "v3220": {
+    "src": "v3220.webp",
+    "thumb": "v3220-sm.webp",
+    "full": "v3220-full.webp",
+    "w": 977,
+    "h": 414,
+    "fw": 977,
+    "fh": 414,
+    "from": "Ext_v3220_uk",
+    "origin": "uk"
+  },
+  "v3900": {
+    "src": "v3900.webp",
+    "thumb": "v3900-sm.webp",
+    "full": "v3900-full.webp",
+    "w": 969,
+    "h": 390,
+    "fw": 969,
+    "fh": 390,
+    "from": "Ext_v3900_uk",
+    "origin": "uk"
+  },
+  "v3910": {
+    "src": "v3910.webp",
+    "thumb": "v3910-sm.webp",
+    "full": "v3910-full.webp",
+    "w": 523,
+    "h": 211,
+    "fw": 523,
+    "fh": 211,
+    "from": "Ext_v3910_an",
+    "origin": "an"
+  },
+  "ant1205": {
+    "src": "ant1205.webp",
+    "thumb": "ant1205-sm.webp",
+    "full": "ant1205-full.webp",
+    "w": 436,
+    "h": 1113,
+    "fw": 436,
+    "fh": 1113,
+    "from": "Ext_ant1205_au",
+    "origin": "au"
   }
 }

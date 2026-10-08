@@ -9,6 +9,7 @@ const ids = new Set(devices.map((x) => x.d.id));
 const uses = new Set(JSON.parse(fs.readFileSync('data/uses.json', 'utf8')).map((u) => u.id));
 const sources = JSON.parse(fs.readFileSync('data/sources.json', 'utf8'));
 const images = fs.existsSync('data/images.json') ? JSON.parse(fs.readFileSync('data/images.json', 'utf8')) : {};
+const noImage = fs.existsSync('data/no-image.json') ? JSON.parse(fs.readFileSync('data/no-image.json', 'utf8')).items : {};
 const errors = [];
 const err = (f, m) => errors.push(`${f}: ${m}`);
 
@@ -26,6 +27,10 @@ for (const { f, d } of devices) {
 for (const [id, img] of Object.entries(images)) {
   if (!ids.has(id)) err('images.json', `unknown device "${id}"`);
   for (const k of ['src', 'thumb']) if (!fs.existsSync(path.join('public/img/devices', img[k]))) err('images.json', `${id}: missing file ${img[k]}`);
+}
+for (const id of ids) {
+  if (!images[id] && !noImage[id]) err('images.json', `${id}: no image entry and not listed in no-image.json`);
+  if (images[id] && noImage[id]) err('no-image.json', `${id}: listed as no-image but has an image`);
 }
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`OK: ${devices.length} devices, ${Object.keys(images).length} images`);
