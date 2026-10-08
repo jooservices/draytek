@@ -1,0 +1,32 @@
+{
+  "name": "draytek",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static DrayTek device reference site: catalog, compare, advisor, config tools.",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "validate:data": "node scripts/validate-data.mjs",
+    "images": "node scripts/build-images.mjs",
+    "update:firmware": "node scripts/update-firmware.mjs",
+    "update:advisories": "node scripts/update-advisories.mjs",
+    "update:data": "npm run update:firmware && npm run update:advisories"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^6.0.6",
+    "astro": "^7.3.8",
+    "minisearch": "^7.0.2",
+    "preact": "^10.0.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "latest",
+    "typescript": "^6.0.0"
+  }
+}
