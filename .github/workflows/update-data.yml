@@ -1,0 +1,48 @@
+name: Update data
+
+# Refreshes firmware versions and security advisories from official sources.
+# Runs weekly and on demand (Actions tab -> Update data -> Run workflow).
+on:
+  schedule:
+    - cron: '17 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: develop
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Fetch firmware and advisories
+        run: npm run update:data
+      - name: Validate
+        run: npm run validate:data
+      - name: Commit and redeploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name 'Viet Vu'
+          git config user.email 'jooservices@gmail.com'
+          git add data
+          git commit -m 'chore: Refresh firmware and advisory data'
+          git push origin HEAD:develop
+          # Pushes made with GITHUB_TOKEN do not trigger other workflows, so start the deploy explicitly.
+          gh workflow run pages.yml --ref develop
